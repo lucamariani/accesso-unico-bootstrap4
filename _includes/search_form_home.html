@@ -1,0 +1,48 @@
+<form class="Form u-padding-all-xl u-text-r-xs u-layoutCenter u-layout-prose" id="home-search-form">
+    <!--<p class="Form-legend u-color-grey-70 u-text-m u-margin-bottom-xs">Ciao, come posso aiutarti?</p>-->
+
+  <div class="Grid Grid--equalHeight u-background-white u-color-grey-30" role="search">
+    <div class="Form-field Form-field--withPlaceholder Grid-cell u-md-size5of6 u-lg-size5of6">
+      <input class="Form-input u-text-r-s u-text-r-xs u-borderHideFocus u-border-all-xxs u-color-50"
+      placeholder="cerca il servizio di tuo interesse...." id="home-cerca" autocomplete="off" value="" />
+      <!-- <label class="Form-label u-color-grey-50 u-text-r-xxs" for="cerca">cerca nel sito...</label> -->
+    </div>
+
+    <div class="Form-field Grid-cell u-md-size1of6 u-lg-size1of6 u-textRight">
+     <button id="home-search-btn" type="submit" class="Button Button--default u-text-m u-sizeFull">
+        <span class="u-text-r-l Icon Icon-search"></span>
+     </button>
+    </div>
+
+  </div>
+</form>
+
+<div id="no-results-div">Spiacenti, non ci sono risultati per questa ricerca.</div>
+<div id="results-div" class="u-margin-right-xl u-margin-left-xl u-padding-right-xl u-padding-left-xl u-padding-top-l">
+  <div class="Grid Grid--withGutter">
+    <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+        <div class="u-sizeFull u-text-r-s u-color-70">
+            <h3 class="u-border-bottom-m">
+                <p class="u-block u-text-h4 u-color-60">Servizi</p>
+            </h3>
+            <ul id="schede-result-list" class="Linklist Prose u-text-r-xs search-listing"></ul>
+        </div>
+    </div>
+    <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+        <div class="u-sizeFull u-text-r-s u-color-70">
+            <h3 class="u-border-bottom-m">
+                <p class="u-block u-text-h4 u-textClean u-color-60">Documenti</p>
+            </h3>
+            <ul id="docs-result-list" class="Linklist Prose u-text-r-xs search-listing"></ul>
+        </div>
+    </div>
+    <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+      <div class="u-sizeFull u-text-r-s u-color-70">
+          <h3 class="u-border-bottom-m">
+              <p class="u-block u-text-h4 u-textClean u-color-60">Novità</p>
+          </h3>
+          <ul id="news-result-list" class="Linklist Prose u-text-r-xs search-listing"></ul>
+      </div>
+  </div>
+  </div>
+</div>
