@@ -2,11 +2,69 @@
 layout: default
 ---
 
-<article class="container my-4">
+<div id="main">
 
-  <h1>{{ page.title }}</h1>
+  <!-- Page Title -->
+  {% if page.background %}
+  <div class="container my-4" style="height: 350px; background-size: cover; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <div class="container my-4">
+  {% endif %}
 
-  <div class="entry">
-    {{ content }}
+    <div class="container mx-auto pt-3 mb-3 px-4">
+      <section class="row">
+        <div class="w-100">
+          <h1>{{ page.title }}</h1>
+          {% if page.img %}
+          <div class="page-img-div">
+            <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+          </div>
+          {% endif %}
+          {% if page.subtitle %}
+          <h6>{{ page.subtitle }}</h6>
+          {% endif %}
+          {% if page.author %}
+          <h6>{{ page.author }}</h6>
+          {% endif %}
+          {% if page.date %}
+          <br>
+          <span class="meta">{{ page.date | date: '%B %d, %Y' }}</span>
+          <br>
+          {% endif %}
+        </div>
+      <section>
+    </div>
+
   </div>
-</article>
+
+  <div class="container mx-auto mb-3 px-4">
+    <section class="row">
+      <div class="w-100 col-md-9 col-lg-9">
+
+        <article class="w-75">
+
+        {% include pages/content.html %}
+
+        </article>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-3 col-lg-3 p-3">
+        {% include share.html %}
+        <!-- add separator -->
+        <div class="p-5"></div>
+        {% include pages/sidebar.html %}
+      </div>
+      <!-- / Sidebar -->
+
+    </section>
+  </div>
+</div>
+
+<script>
+  // underline menu
+  setTimeout(function() {
+    underlineMenu(3)
+  }, 500)
+</script>
