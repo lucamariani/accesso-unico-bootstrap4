@@ -8,7 +8,12 @@
     <div class="row">
       <div class="col-12">
         <div class="it-hero-text-wrapper bg-dark">
-          <h1 class="no_toc">{{ page.title }}</h1>
+          {% if page.titleForHero %}
+            {% assign herotitle = page.titleForHero %}
+          {% else %}
+            {% assign herotitle = page.title %}
+          {% endif %}
+          <h1 class="no_toc">{{ herotitle }}</h1>
           <p class="d-none d-lg-block">{{ page.description }}</p>
           <div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="#">Link di esempio</a></div>
         </div>
@@ -22,7 +27,10 @@
       <div class="card-wrapper card-space">
         <div class="card card-bg">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+            <h5 class="card-title">
+              Lo scopo di questo portale è fornire informazioni e strumenti utili per conoscere servizi e gestire pratiche. E’ in versione beta quale strumento condiviso con gli operatori della PA e dei cittadini.
+              <a href="{{ site.baseUrl }}/{{ page.lang }}/programma/">per saperne di più></a>
+            </h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
