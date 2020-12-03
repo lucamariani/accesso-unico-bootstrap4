@@ -2,7 +2,7 @@
 
 {% for box in include_file %}
 
-  {% capture box-content %}{% include pages/{{ page.metatitle | downcase }}/sidebarbox/{{ box.file }} %}{% endcapture %}
+  {% capture box-content %}{% include pages/{{page.lang}}/{{ page.metatitle | downcase }}/sidebarbox/{{ box.file }} %}{% endcapture %}
 
   {% assign additionalClasses = box.classes ? box.classes : '' %}
   <div class="callout {{ additionalClasses }}">
