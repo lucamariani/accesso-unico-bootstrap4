@@ -25,19 +25,28 @@ social-links:
   en:
     twitter:
       name: "twitter"
-      url: "https://twitter.com/ITdigitalteam"
-    medium:
-      name: "medium"
-      url: "https://medium.com/team-per-la-trasformazione-digitale/"
+      url: "https://twitter.com/RegioneUmbria/"
+    facebook:
+      name: "facebook"
+      url: "https://www.facebook.com/Regione.Umbria.official/"
+    github:
+      name: "GitHub"
+      url: "https://github.com/Regione-Umbria/"
   it:
     twitter:
       name: "twitter"
-      url: "https://twitter.com/teamdigitaleIT"
-    medium:
-      name: "medium"
-      url: "https://medium.com/team-per-la-trasformazione-digitale/"
+      url: "https://twitter.com/RegioneUmbria"
+    facebook:
+      name: "facebook"
+      url: "https://www.facebook.com/Regione.Umbria.official/"
+    github:
+      name: "github"
+      url: "https://github.com/Regione-Umbria/"
 
 ## Labels
+share:
+  en: "Share"
+  it: "Condividi"
 italian-version:
   en: "Italian version"
   it: "Versione italiana"

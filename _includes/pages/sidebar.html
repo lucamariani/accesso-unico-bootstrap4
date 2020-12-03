@@ -1,0 +1,18 @@
+{% assign include_file = site.data.pages.[page.metatitle].sidebarboxes %}
+
+{% for box in include_file %}
+
+  {% capture box-content %}{% include pages/{{ page.metatitle | downcase }}/sidebarbox/{{ box.file }} %}{% endcapture %}
+
+  {% assign additionalClasses = box.classes ? box.classes : '' %}
+  <div class="callout {{ additionalClasses }}">
+    <div class="callout-title">
+      {% if box.icon %}
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-{{ box.icon }}"></use></svg>
+    {% endif %}
+    <!--      <span class="sr-only">Confermato</span> {{ box.title }}</div>-->
+      <span class="sr-only">Confermato</span> {{ box.title[page.lang] }}</div>
+    <p>{{ box-content | markdownify }}</p>
+  </div>
+
+{% endfor %}

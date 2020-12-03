@@ -1,0 +1,11 @@
+<div id="page-content">
+{% assign include_file = site.data.pages.[page.metatitle].content %}
+
+{% for content in include_file %}
+
+  {% capture file-content %}{% include pages/{{ page.metatitle | downcase }}/content/{{ content.file }} %}{% endcapture %}
+
+  {{ file-content | markdownify }}
+
+{% endfor %}
+</div>
