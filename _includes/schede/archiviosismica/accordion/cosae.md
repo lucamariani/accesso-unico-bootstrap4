@@ -1,0 +1,1 @@
+L'accesso agli atti riguarda la consultazione ed eventuale copia dei progetti strutturali depositati negli archivi di competenza su richiesta dell’interessato per le pratiche dal gennaio 1972 ad oggi.

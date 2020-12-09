@@ -1,0 +1,28 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: conditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+
+- title: "Cosa è"
+  file: "cosae.md"
+  utenza:
+    - cittadini
+
+- title: "Chi lo può richiedere"
+  file: "chi.md"
+  utenza:
+    - cittadini
+
+- title: "Come richiederlo"
+  file: "come.md"
+  utenza:
+    - cittadini
+
+- title: "Modalità di pagamento, costi e durata"
+  file: "modalita.md"
+  utenza:
+    - cittadini

@@ -1,0 +1,40 @@
+<div class="u-text-r-s u-layout-wide">
+  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
+
+    <form class="Form Form--spaced u-color-40 u-text-r-xs u-layout-prose">
+
+      <fieldset class="Form-fieldset">
+<!--
+        <legend class="Form-legend">Scegli il comune</legend>
+-->
+        <div class="Form-field" style="padding-bottom:0 !important">
+          <select class="Form-input" id="modulistica" aria-required="true" required>
+            <option disabled selected>seleziona</option>
+            <option value="http://www.va.regione.umbria.it/documents/3852172/10456087/Modello+Unico+Istanza+AUA/4af6cf34-bf66-42d4-9d16-2e4af39c6aaa">Modello istanza AUA - Modifica sostanziale - Rinnovo</option>
+            <option value="http://www.va.regione.umbria.it/documents/3852172/10456087/Modello+Istanza+Voltura+AUA/6a35d1c2-e45a-46a0-9014-49695894b5ef">Modello istanza voltura AUA</option>
+            <option value="http://www.va.regione.umbria.it/documents/3852172/10456087/Modello+Comunicazione+modifica+non+sostanziale+AUA/5efbbbf0-f9f0-43fb-8167-82d72cd54ce7">Modello comunicazione modifica non sostanziale AUA</option>
+            <option value="http://www.va.regione.umbria.it/documents/3852172/10456087/Modello+Comunicazione+Cessazione+Attivit%C3%A0%20AUA/c2faf0b9-2d11-4d72-af85-a44f2f2cd40c">Modello comunicazione cessazione attività AUA</option>
+            <option value="http://www.va.regione.umbria.it/documents/3852172/10456087/MODULISTICA+PER+ATTIVIT%C3%80%20SOGGETTE+SOLO+A+COMUNICAZIONI+%28FUORI+AUA%29/daa0ced3-8d84-4d46-80dd-42a7a34ee5ce">Modulistica per attività soggette solo a comunicazioni (fuori AUA)</option>
+          </select>
+        </div>
+
+      </fieldset>
+<!--
+        <div class="Form-field Grid-cell u-textLeft" style="padding-bottom: 0px !important;">
+          <a id="gobutton" type="button" href="#" target="_blank"
+            class="Button u-text-xs u-background-50 u-color-white u-sizeFull"
+            style="max-width:15em;">Vai al servizio</a>
+        </div>
+
+-->
+    </form>
+  </div>
+</div>
+
+<script>
+  $('#modulistica').on('change', function(event) {
+    console.log( 'selected ' + $(this).val() );
+    //$('#gobutton').attr( 'href', $(this).val() );
+    window.location.href = $(this).val()
+  });
+</script>

@@ -1,0 +1,1 @@
+Un insieme di cruscotti predisposti dall’Osservatorio Faunistico Regionale che forniscono dati aggiornati sulle battute di caccia, le squadre e gli esemplari abbattuti e l'informazione in tempo reale delle battute di caccia in svolgimento nei settori del territorio regionale delimitati

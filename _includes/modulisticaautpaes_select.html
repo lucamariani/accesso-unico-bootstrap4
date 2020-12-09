@@ -1,0 +1,39 @@
+<div class="u-text-r-s u-layout-wide">
+  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
+
+    <form class="Form Form--spaced u-color-40 u-text-r-xs u-layout-prose">
+
+      <fieldset class="Form-fieldset">
+<!--
+        <legend class="Form-legend">Scegli il comune</legend>
+-->
+        <div class="Form-field" style="padding-bottom:0 !important">
+          <select class="Form-input" id="modulistica" aria-required="true" required>
+            <option disabled selected>seleziona</option>
+            <option value="/docs/modulistica/ModelloOrdinaria.pdf">Istanza di autorizzazione paesaggistica con procedimento ordinario</option>
+            <option value="/docs/modulistica/ModelloSemplificata.pdf">Istanza di autorizzazione paesaggistica con procedimento semplificato</option>
+            <option value="/docs/modulistica/SchedaSemplificata.pdf">Scheda semplificata di cui all'allegato D del D.P.R. 31/2017</option>
+            <option value="/docs/modulistica/ModelloRichiestaAccertamento.pdf">Istanza di accertamento di compatibilità paesaggistica</option>
+          </select>
+        </div>
+
+      </fieldset>
+<!--
+        <div class="Form-field Grid-cell u-textLeft" style="padding-bottom: 0px !important;">
+          <a id="gobutton" type="button" href="#" target="_blank"
+            class="Button u-text-xs u-background-50 u-color-white u-sizeFull"
+            style="max-width:15em;">Vai al servizio</a>
+        </div>
+
+-->
+    </form>
+  </div>
+</div>
+
+<script>
+  $('#modulistica').on('change', function(event) {
+    console.log( 'selected ' + $(this).val() );
+    //$('#gobutton').attr( 'href', $(this).val() );
+    window.location.href = $(this).val()
+  });
+</script>

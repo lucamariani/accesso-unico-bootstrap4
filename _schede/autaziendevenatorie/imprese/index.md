@@ -1,0 +1,13 @@
+---
+layout: scheda
+object: autaziendevenatorie
+utenza: imprese
+tema: cacciapesca
+tipo: pratica
+title: Autorizzazioni per la costituzione di Aziende Faunistico Venatorie e Aziende Agrituristico Venatorie
+description: Aperture di aziende nel settore faunistico
+subtitle: caccia, fauna, immissioni, prelievi, territorio
+status: Livello2
+statusLink: /onboard
+evidenza: no
+---

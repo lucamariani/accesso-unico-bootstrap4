@@ -1,0 +1,1 @@
+[pagamento della tariffa fitosanitaria](https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=12&nome_famiglia=Servizio%20Fitosanitario%20Regionale&form_id=Conferma_iscrizione)

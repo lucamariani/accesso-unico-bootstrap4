@@ -1,0 +1,2 @@
+A seguito dell'accordo tra Governo, Regioni ed Enti locali siglato in Conferenza unificata il 4 maggio 2017, ha preso avvio il processo di standardizzazione dei moduli unificati e standardizzati per la  presentazione  di istanze, segnalazioni o comunicazioni alle amministrazioni  regionali o locali, con  riferimento all'**edilizia** e all'**avvio di attivita' commerciali ed assimilate**.  
+Con successivi accordi la Conferenza approva sia integrazioni e/o modifiche ai moduli già in uso sia l’adozione di nuovi modelli.

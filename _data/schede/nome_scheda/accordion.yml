@@ -1,0 +1,13 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# file: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Primo_accordion"
+  file: "Primo_accordion.md"
+
+- title: "Secondo_accordion"
+  file: "Secondo_accordion.md"

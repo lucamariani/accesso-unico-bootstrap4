@@ -1,0 +1,26 @@
+
+- title: Modulistica
+  file: modulistica.md
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: Documenti
+  file: documenti.md
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: Informazioni
+  file: informazioni.md
+  utenza:
+    - imprese
+    - cittadini
+
+- title: Servizi collegati
+  file: servizicollegati.md
+  utenza:
+    - imprese
+    - cittadini

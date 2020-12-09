@@ -1,0 +1,23 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: conditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+
+- title: "Cosa sono"
+  file: "cosasono.md"
+  utenza:
+    - cittadini
+
+- title: "Pescare nei tratti No Kill della Valnerina"
+  file: "nera_corno.md"
+  utenza:
+    - cittadini
+
+- title: "Pescare nei tratti No Kill dell'Alto Tevere"
+  file: "tevere.md"
+  utenza:
+    - cittadini

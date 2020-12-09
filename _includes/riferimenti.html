@@ -1,0 +1,46 @@
+<!-- add contacts widget -->
+<div class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-50 u-background-white u-margin-bottom-xl">
+    <div class="u-text-r-l u-padding-r-all u-layout-prose">
+      <p class="u-text-h6 u-margin-bottom-l">
+        <span class="u-color-50">
+          Riferimenti e contatti    
+        </span>
+      </p>
+
+      {% assign riferimenti = site.data.schede.riferimenti[page.object] %}
+      <div>
+            <p class="">
+                {{ riferimenti.descrizione_direzione }}
+            </p>
+            <p class="u-margin-top-xs u-margin-bottom-xs">
+                {{ riferimenti.nome_ufficio }}
+            </p>
+            <p class="u-margin-bottom-xs">
+                {{ riferimenti.indirizzo }}
+            </p>
+            <p class="u-margin-bottom-xs">
+                Tel: {{ riferimenti.telefono }}
+            </p>
+            <p class="u-margin-bottom-xs">
+                E-mail: {{ riferimenti.email }}
+            </p>
+            <p class="u-margin-bottom-xs">
+                PEC: {{ riferimenti.pec }}
+            </p>
+            <p class="u-textWeight-600 u-margin-top-xs">
+                Responsabile
+            </p>
+            <p class="u-margin-bottom-xs">
+                {{ riferimenti.nome_responsabile }}
+             </p>
+             <p class="u-margin-bottom-xs">
+                Tel: {{ riferimenti.telefono_responsabile }}
+             </p>
+             <p class="u-margin-bottom-xs">
+                E-mail: {{ riferimenti.email_responsabile }}
+             </p>            
+      </div>
+        
+    </div>
+  </div>
+  

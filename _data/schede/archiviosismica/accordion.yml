@@ -1,0 +1,87 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Cosa è"
+  file: "cosae.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Chi può fare accesso"
+  file: "chi_accede.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Come fare accesso per progetti dal 01/01/1972 al 31/12/2017"
+  file: "accesso1972_2017_cittadini.md"
+  utenza:
+    - cittadini
+
+- title: "Come fare accesso per progetti dal 01/01/1972 al 31/12/2017"
+  file: "accesso1972_2017.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+
+- title: "Come fare accesso per progetti dal 01/01/2018"
+  file: "accesso2018_cittadini.md"
+  utenza:
+    - cittadini
+
+- title: "Come fare accesso per progetti dal 01/01/2018"
+  file: "accesso2018.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+
+- title: "Modalità e tempi"
+  file: "modalita_tempi.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Costi"
+  file: "costi.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Riferimenti e contatti per progetti dal 01/01/1972 all'08/12/1981"
+  file: "riferimentiante1981.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Riferimenti e contatti per progetti dal 09/12/1981 ad oggi"
+  file: "riferimentipost1981.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Riferimenti per progetti antecedenti il 1972"
+  file: "modalita_ante1972.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini

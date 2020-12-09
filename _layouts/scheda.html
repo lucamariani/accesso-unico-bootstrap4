@@ -1,0 +1,119 @@
+---
+layout: default
+scripts:
+  - /assets/scripts/news-carousel.js
+---
+
+<div id="main">
+
+  <!-- Page Title -->
+  <div class="u-sizeFull">
+    <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
+      <section class="Grid">
+        <div class="Grid-cell u-sizeFull u-md-size3of4 u-lg-size3of4">
+          <h1 class="u-text-h1 u-color-{% if site.main_color %}{{ site.main_color }}{% else %}black{% endif %}">
+            {{ page.title }}
+            {% if page.status%}
+            <span class="scheda-title-label"><a href="{{site.baseurl}}{{page.statusLink}}">{{page.status}}</a></span>
+            {% endif %}
+          </h1>
+          {% if page.img %}
+          <div class="page-img-div">
+            <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+          </div>
+          {% endif %}
+          {% if page.subtitle %}
+          <h6 class="u-text-h6 u-color-{% if site.main_color %}{{ site.main_color }}{% else %}black{% endif %}">{{ page.subtitle }}</h6>
+          {% endif %}
+          </div>
+
+          {% assign user_items = site.data.profiles | where_exp: "item", "item.metaname == page.utenza" %}
+          {% assign user_item = user_items[0] %}
+          {% assign theme_items = site.data.themes | where_exp: "item", "item.metaname == page.tema" %}
+          {% assign theme_item = theme_items[0] %}
+          {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
+          {% assign type_item = type_items[0] %}
+
+          <div class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4 u-text-r-s u-padding-r-all">
+              <div id="scheda-icons-div" class="u-textCenter u-sm-hidden">
+                <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_grigio_{{ page.utenza }}.png">
+                <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema }}.png">
+                <img title="{{ type_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
+              </div>
+          </div>
+      <section>
+    </div> <!-- /.u-layout-wide -->
+  </div> <!-- /.u-sizeFull -->
+
+
+
+  <div class="u-layout-wide u-layoutCenter u-text-r-l u-margin-r-bottom u-layout-r-withGutter">
+    <section class="Grid">
+      <div class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3">
+
+        <article class="Prose u-layout-prose">
+
+          {{ page.description | markdownify }}
+
+
+          {% include schede/accordion.html %}
+
+        </article>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-text-r-s u-padding-r-all">
+
+        {% capture theprofile %}{{ page.utenza }}{% endcapture %}
+        {% capture theme %}{{ page.tema }}{% endcapture %}
+        {% include schede/sidebar.html utenza=theprofile tema=theme %}
+      <!-- si nasconde perchè non attivo ma solo dimostrativo
+        <div id="handle-favorite" class="u-margin-bottom-l" scheda_title="{{ page.object }}-{{ page.utenza }}" scheda_url="{{ page.url }}">
+          <button id="add-scheda-to-favorites-btn" class="Button Button--default u-text-xs u-sizeFull">
+            Aggiungi ai preferiti
+            <!-- <span id="" class="white u-text-r-xxs Icon Icon-favorite" title="Aggiungi ai preferiti"></span>
+          </button>
+          <button id="remove-scheda-from-favorites-btn" class="Button Button--default u-text-xs u-sizeFull">
+            Rimuovi dai preferiti
+            <!-- <span id="" class="white u-text-r-xxs Icon Icon-cancel" title="Rimuovi dai preferiti"></span>
+          </button>
+        </div>
+        -->
+        {% if site.data.schede.riferimenti[page.object] %}
+          {% include riferimenti.html %}
+        {% endif %}
+
+        <!-- qui c'è originariamente il sidebar.tml spostato all'inizio dell'aside-->
+
+        {% include novita_box.html %}
+
+        <div id="tue-scelte" role="note" class="Callout Callout--example u-textCenter u-text-r-s u-margin-bottom-xl">
+          <p title="" class="u-color-50 u-textWeight-700 u-text-xs" style="margin-bottom: 0px !important;">La tua scelta</p>
+          <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}grigio_{{ page.utenza }}.png">
+          <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}rosso_{{ page.tema }}.png">
+
+          <div class="Form-field" style="padding-bottom: 0px !important;">
+            <a id="research" type="button" href="{{ site.baseurl}}/schede_search" class="Button Button--default u-text-xs u-sizeFull" style="max-width:15em;">
+              Nuova ricerca
+            </a>
+          </div>
+        </div>
+
+        {% include partecipa.html %}
+
+        {% include share.html %}
+
+      </aside>
+      <!-- / Sidebar -->
+
+    </section>
+  </div>
+</div>
+
+<script>
+  // underline menu
+  setTimeout(function() {
+    underlineMenu(1)
+  }, 500)
+</script>

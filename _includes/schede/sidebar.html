@@ -1,0 +1,44 @@
+{% capture theprofile %}{{ include.utenza }}{% endcapture %}
+{% assign include_file = site.data.schede.[page.object].sidebarboxes %}
+
+{% for box in include_file %}
+
+  <!-- show boxes conditionally -->
+  {% assign show_box = false %}
+
+  {% if box.utenza %}
+    <!-- show boxes only if utenza key mathces -->
+    {% for utenza_name in box.utenza %}
+      {% if utenza_name == theprofile %}
+        {% assign show_box = true %}
+      {% endif %}
+    {% endfor %}
+  <!-- boxes with not utenza key are visible for all -->
+  {% else %}
+    {% assign show_box = true %}
+  {% endif %}
+
+  {% if show_box %}
+
+    {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
+
+    <div class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-50 u-background-white u-margin-bottom-xl">
+      <!--<img src="//placehold.it/400x220" class="u-sizeFull" alt="consequatur cumque et" />-->
+      <div class="u-text-r-l u-textCenter u-padding-r-all u-layout-prose">
+        <p class="u-text-h6 u-textLeft u-margin-bottom-l">
+          <span class="u-color-50" href="">{{ box.title }}</span>
+        </p>
+        <!--<h3 class="u-text-h4 u-margin-r-bottom">
+          <a class="u-text-r-m u-textWeight-400 u-textClean u-color-{% if site.main_color %}{{ site.main_color }}{% else %}black{% endif %}" href="">
+            {{ box.title }}
+          </a>
+        </h3>-->
+        <p class="u-text-p u-textSecondary">
+          {{ box-content | markdownify }}
+        </p>
+      </div>
+    </div>
+
+  {% endif %}
+
+{% endfor %}

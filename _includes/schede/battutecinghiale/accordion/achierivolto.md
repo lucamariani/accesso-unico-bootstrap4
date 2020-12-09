@@ -1,0 +1,1 @@
+Agli ATC, i capisquadra, loro delegati, ovvero solo alcuni cacciatori autorizzati per ciascuna squadra iscritta presso gli ATC che necessitano di registrazione per utilizzare i servizi riservati quali le iscrizioni delle squadre, le segnalazioni di battuta e la trasmissione dei dati di abbattimento

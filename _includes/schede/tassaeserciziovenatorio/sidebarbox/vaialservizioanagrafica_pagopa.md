@@ -1,0 +1,1 @@
+[Effettua il pagamento tramite l'anagrafica regionale cacciatori](https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=4&nome_famiglia=Abilitazione%20regionale%20esercizio%20della%20caccia&form_id=pagamento_tassa_regionale)
