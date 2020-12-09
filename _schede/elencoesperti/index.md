@@ -10,4 +10,5 @@ subtitle: commissione comunale, qualità architettonica, paesaggio
 status: Livello2,3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

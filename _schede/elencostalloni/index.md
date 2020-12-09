@@ -10,4 +10,5 @@ subtitle: stallone, equini, asini, stazione di monta naturale
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

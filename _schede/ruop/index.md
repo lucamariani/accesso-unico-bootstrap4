@@ -10,4 +10,5 @@ subtitle: servizi fitosanitari, passaporto delle piante, fitosanitario, certific
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

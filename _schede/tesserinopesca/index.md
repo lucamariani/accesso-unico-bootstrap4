@@ -10,4 +10,5 @@ subtitle: segnacatture, trota, diario, pagamento, licenza
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

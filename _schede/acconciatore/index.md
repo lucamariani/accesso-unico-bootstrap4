@@ -10,4 +10,5 @@ subtitle: barbiere, parrucchiere, coiffeur, salone
 status: ALFA
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

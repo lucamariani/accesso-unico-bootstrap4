@@ -10,4 +10,5 @@ subtitle: conferenza unificata, moduli, suape, edilizia, attività commerciali e
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

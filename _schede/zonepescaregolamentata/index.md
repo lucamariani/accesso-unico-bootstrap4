@@ -10,4 +10,5 @@ subtitle: tesserino no kill, pesca, ittico, permesso, tratti, giornaliero, preno
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

@@ -10,4 +10,5 @@ subtitle: servizi fitosanitari, costruzione del verde, attestato, idoneità, res
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

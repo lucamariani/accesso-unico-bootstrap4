@@ -10,4 +10,5 @@ subtitle: caccia, venatorio, licenza, cacciatore, esame
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

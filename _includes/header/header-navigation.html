@@ -5,6 +5,7 @@ tutte le pagine del sito che:
 - hanno l'attributo "order" valorizzato
 {% endcomment %}
 
+site pages: {{ site.pages | inspect }}
 {% assign current_lang_menu_pages = site.pages | where: "lang", page.lang | where_exp: "page", "page.order != nil" | sort: "order" %}
 <div class="it-nav-wrapper">
   <div class="it-header-center-wrapper">

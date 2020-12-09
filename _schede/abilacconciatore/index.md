@@ -10,4 +10,5 @@ subtitle: barbiere, parrucchiere, esame finale, corso di formazione, qualifica, 
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

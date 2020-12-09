@@ -10,4 +10,5 @@ subtitle: emissioni in atmosfera, ridotto inquinamento, procedura semplificata
 status: Livello2
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

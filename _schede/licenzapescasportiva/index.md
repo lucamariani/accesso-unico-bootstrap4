@@ -10,4 +10,5 @@ subtitle: pesca, ittico, pescatore, tassa, pagamento
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

@@ -10,4 +10,5 @@ subtitle: scarichi, emissioni in atmosfera, utilizzazione agronomica, acustica, 
 status: Livello2,3
 statusLink: /onboard
 evidenza: si
+lang: it
 ---

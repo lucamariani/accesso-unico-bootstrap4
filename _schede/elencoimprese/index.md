@@ -10,4 +10,5 @@ subtitle: opere pubbliche, affidamento lavori pubblici, elenco, imprese
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

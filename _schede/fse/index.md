@@ -10,4 +10,5 @@ subtitle: FSE, referti, prescrizioni mediche, vaccinazioni, storia clinica, stat
 status: Livello4
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

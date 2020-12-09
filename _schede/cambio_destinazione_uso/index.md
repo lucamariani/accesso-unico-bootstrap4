@@ -10,4 +10,5 @@ subtitle: mutamento della destinazione di appartamenti, uffici, magazzini, negoz
 status: BETA
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

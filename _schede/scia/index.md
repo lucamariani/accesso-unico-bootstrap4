@@ -11,4 +11,5 @@ accordion_open: false
 status: BETA
 statusLink: /onboard
 evidenza: no
+lang: it
 ---

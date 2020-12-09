@@ -10,4 +10,5 @@ subtitle: opere pubbliche, affidamento diretto, architettura, ingegneria
 status: Livello3
 statusLink: /onboard
 evidenza: no
+lang: it
 ---
