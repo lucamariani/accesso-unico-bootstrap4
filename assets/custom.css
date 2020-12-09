@@ -1,2 +1,5 @@
 .Share-reveal {cursor: pointer;height: 48px}
 .Share-reveal span {font-weight: 600; font-size:1.355rem}
+
+/* SCHEDE */
+ul.list-inline img {max-width: 45px}
