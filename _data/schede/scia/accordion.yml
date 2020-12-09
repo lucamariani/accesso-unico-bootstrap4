@@ -1,0 +1,73 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Introduzione"
+  file: "introduzione.md"
+  utenza:
+    - imprese
+    - cittadini
+- title: "Interventi subordinati alla SCIA"
+  file: "interventi_scia.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Tipologie di interventi"
+  file: "tipologie.md"
+  utenza:
+    - cittadini
+- title: "Requisiti"
+  file: "requisiti.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Chi può presentare la SCIA"
+  file: "requisiti_cittadini.md"
+  utenza:
+    - cittadini
+
+- title: "Controlli"
+  file: "controlli.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Costi"
+  file: "costi.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Costi"
+  file: "costi_cittadini.md"
+  utenza:
+    - cittadini
+
+- title: "Adempimenti di tecnici professionisti"
+  file: "adempimenti.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Compiti dei tecnici professionisti"
+  file: "compiti.md"
+  utenza:
+    - cittadini
+
+- title: "Istruttoria preliminare"
+  file: "istruttoria.md"
+  utenza:
+    - imprese
+    - intermediari
+- title: "Documenti da allegare alla SCIA"
+  file: "allegati.md"
+  utenza:
+    - imprese
+    - intermediari
+
+- title: "Iter amministrativo"
+  file: "iter.md"
+  utenza:
+    - imprese
+    - intermediari

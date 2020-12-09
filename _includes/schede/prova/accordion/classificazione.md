@@ -1,0 +1,1 @@
+Le attività di Bed and breakfast si classificano in "standard", "comfort" e "superior" se in possesso dei requisiti di cui all'allegato <<H>> alla L.R. 9 dicembre 2016 n. 21 Disciplina delle politiche regionali nel settore turistico e dell'attrattività del territorio regionale, nonchè modifiche a leggi regionali in materia di turismo e attività produttive.

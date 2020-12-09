@@ -1,0 +1,1 @@
+ Il gestore deve presentare una comunicazione annuale compilando e inviando l’apposito modulo (MOD. EL) al seguente indirizzo pec: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it).

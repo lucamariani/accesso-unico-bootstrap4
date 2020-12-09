@@ -1,0 +1,24 @@
+
+- title: Vai al servizio
+  file: piattaforma.md
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: Modulistica
+  file: modulistica.md
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: Documenti
+  file: documenti.md
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini

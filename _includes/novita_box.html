@@ -1,0 +1,38 @@
+{% if site.categories[page.tema]%}
+  <!-- show the box only for news for this theme -->
+<div class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-50 u-background-white u-margin-bottom-xl">
+
+  <div class="u-text-r-l u-textCenter u-padding-r-all u-layout-prose">
+    <p class="u-text-h6 u-textLeft u-margin-bottom-l">
+      <span class="u-color-50" href="#">Novità</span>
+    </p>
+
+    <p class="u-text-p u-textSecondary">
+      <div class="u-text-r-s u-layout-wide">
+        <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
+
+          <section class="u-padding-all-xs">
+            <div class="u-layout-medium">
+
+              <div id="news-container">
+                <ul id="news-slider" class="">
+                  <!-- show last 3 news for this theme -->
+                  {% for news in site.categories[page.tema] | limit: 3 %}
+                  <li id="news-slide-{{ forloop.index }}"><a class="u-textLeft u-text-r-xs u-color-grey-80"
+                      href="{{site.baseurl}}{{ news.url }}">{{ news.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </p>
+  </div>
+</div>
+
+
+
+{% endif %}

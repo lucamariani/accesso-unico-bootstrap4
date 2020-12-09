@@ -54,3 +54,12 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+collections:
+#  docs:
+#    output: true
+  pages:
+    output: true
+    permalink: /:path/
+#  schede:
+#    output: true

@@ -1,0 +1,39 @@
+<div class="u-text-r-s u-layout-wide">
+  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
+
+    <form class="Form Form--spaced u-color-40 u-text-r-xs u-layout-prose">
+
+      <fieldset class="Form-fieldset">
+<!--
+        <legend class="Form-legend">Scegli il comune</legend>
+-->
+        <div class="Form-field" style="padding-bottom:0 !important">
+          <select class="Form-input" id="modulistica" aria-required="true" required>
+            <option disabled selected>seleziona</option>
+            <option value="https://www.regione.umbria.it/documents/18/2030951/Richiesta+Autorizzazione+Stazione+di+Monta+-+MOD.1E/03dc9b43-bd4f-41b8-a9e1-f8bae87dc923">Richiesta Autorizzazione Stazione di Monta - MOD. 1E</option>
+            <option value="https://www.regione.umbria.it/documents/18/2030951/Rinnovo+Autorizzazione+a+gestire+una+Stazione+di+Monta+-+MOD.+2E/624ccd18-5cbf-48fb-a591-bc0d05566501">Rinnovo Autorizzazione Stazione di Monta - MOD. 2E</option>
+            <option value="https://www.regione.umbria.it/documents/18/2030951/Richiesta+Integrativa+Autorizzazione+Stazione+di+Monta+-+MOD.+3E/c225810c-b0cd-43ac-b769-775e705456dd">Richiesta Integrativa Autorizzazione Stazione di Monta - MOD. 3E</option>
+            <option value="https://www.regione.umbria.it/documents/18/2030951/Dichiarazione+per+assolvimento+Imposta+di+Bollo/630f48f0-fa2a-4eca-a9ae-266543c70608">Dichiarazione per assolvimento Imposta di Bollo</option>
+          </select>
+        </div>
+
+      </fieldset>
+<!--
+        <div class="Form-field Grid-cell u-textLeft" style="padding-bottom: 0px !important;">
+          <a id="gobutton" type="button" href="#" target="_blank"
+            class="Button u-text-xs u-background-50 u-color-white u-sizeFull"
+            style="max-width:15em;">Vai al servizio</a>
+        </div>
+
+-->
+    </form>
+  </div>
+</div>
+
+<script>
+  $('#modulistica').on('change', function(event) {
+    console.log( 'selected ' + $(this).val() );
+    //$('#gobutton').attr( 'href', $(this).val() );
+    window.location.href = $(this).val()
+  });
+</script>

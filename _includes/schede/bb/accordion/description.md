@@ -1,0 +1,1 @@
+Il bed and breakfast è il servizio di alloggio e prima colazione esercitato all'interno dell'abitazione ove il titolare ha la residenza e dimora abitualmente, avvalendosi della normale organizzazione familiare.

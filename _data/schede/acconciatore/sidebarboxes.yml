@@ -1,0 +1,26 @@
+- title: Presenta la Pratica
+  file: presenta-pratica.md
+  utenza:
+    - cittadini
+    - imprese
+    - intermediari
+
+- title: Modulistica
+  file: modulistica.md
+  utenza:
+    - imprese
+    - intermediari
+    - cittadini
+
+- title: Servizi collegati
+  file: servizicollegati.md
+  utenza:
+    - cittadini
+    - imprese
+    - intermediari
+
+- title: Documenti
+  file: documenti.md
+  utenza:
+    - intermediari
+    - imprese

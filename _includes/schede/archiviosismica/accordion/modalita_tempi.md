@@ -1,0 +1,4 @@
+- visione (entro 30 giorni dalla richiesta)
+- richiesta copia semplice in carta libera (entro 30 giorni dalla richiesta)
+- copia conforme in bollo (entro 30 giorni dalla richiesta)
+- richiesta copia digitale (entro 30 giorni dalla richiesta)

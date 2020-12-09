@@ -1,0 +1,14 @@
+- title: Vai al Servizio
+  file: vaialservizio.md
+  utenza:
+    - cittadini
+
+- title: Manualistica
+  file: manualistica.md
+  utenza:
+    - cittadini
+
+- title: Accordi interregionali
+  file: accordiinterregionali.md
+  utenza:
+    - cittadini

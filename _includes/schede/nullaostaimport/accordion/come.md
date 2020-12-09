@@ -1,0 +1,1 @@
+La modulistica completa di richiesta e autodichiarazione va spedita tramite PEC al seguente indirizzo: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it).

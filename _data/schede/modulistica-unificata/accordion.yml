@@ -1,0 +1,37 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# file: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+- title: "Introduzione"
+  file: "Introduzione.md"
+  utenza:
+    - pa
+    - cittadini
+    - imprese
+    - intermediari
+- title: "Obblighi per le amministrazioni comunali"
+  file: "Obblighi.md"
+  utenza:
+    - pa
+    - cittadini
+    - imprese
+    - intermediari
+
+- title: "Risorse in rete"
+  file: "risorse_rete.md"
+  utenza:
+    - pa
+    - cittadini
+    - imprese
+    - intermediari
+
+- title: "Faq"
+  file: "Faq.md"
+  utenza:
+    - pa
+    - cittadini
+    - imprese
+    - intermediari

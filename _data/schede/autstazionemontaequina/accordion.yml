@@ -1,0 +1,41 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Cosa è"
+  file: "cosae.md"
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: "Chi la può richiedere"
+  file: "chi.md"
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: "Come presentare la domanda"
+  file: "come.md"
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: "Obblighi dei gestori di monta pubblica"
+  file: "obblighi.md"
+  utenza:
+    - imprese
+    - cittadini
+
+
+- title: "Durata e costi"
+  file: "costi.md"
+  utenza:
+    - imprese
+    - cittadini

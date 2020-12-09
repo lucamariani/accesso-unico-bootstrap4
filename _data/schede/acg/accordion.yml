@@ -1,0 +1,31 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Cosa è"
+  file: "cosae_acg.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Modalità di adesione"
+  file: "modalita_adesione.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini
+
+- title: "Costi e durata"
+  file: "costi.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+    - cittadini

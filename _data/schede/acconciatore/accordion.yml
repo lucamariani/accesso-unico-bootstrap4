@@ -1,0 +1,55 @@
+# A list of accordions
+#
+# Title: the title of the accordion
+# File: the file name where the content of this accordion is stored
+# Utenza: onditional visibility for profile
+# - entries without "utenza" key are visible for all profiles
+# - entries with "utenza" key are visible only for that profiles
+
+- title: "Introduzione"
+  file: "introduzione.md"
+  utenza:
+    - cittadini
+    - imprese
+    - intermediari
+
+- title: "Requisiti soggettivi"
+  file: "requisitisogg.md"
+  utenza:
+    - intermediari
+
+- title: "Chi può esercitare"
+  file: "requisitisoggcittadino.md"
+  utenza:
+    - cittadini
+    - imprese
+
+- title: "Requisiti oggettivi"
+  file: "requisitiogg.md"
+  utenza:
+    - intermediari
+
+- title: "Dove e come esercitare"
+  file: "requisitiogg.md"
+  utenza:
+    - cittadini
+    - imprese
+
+- title: "Per aprire"
+  file: "regime_avviocittadino.md"
+  utenza:
+    - imprese
+    - cittadini
+
+- title: "Regime avvio"
+  file: "regime_avvio.md"
+  utenza:
+    - intermediari
+
+
+- title: "Controlli"
+  file: "controlli.md"
+  utenza:
+    - intermediari
+    - imprese
+    - cittadini
