@@ -3,23 +3,6 @@
 
 {% for box in include_file %}
 
-  <!-- show boxes conditionally -->
-  {% assign show_box = false %}
-
-  {% if box.utenza %}
-    <!-- show boxes only if utenza key mathces -->
-    {% for utenza_name in box.utenza %}
-      {% if utenza_name == theprofile %}
-        {% assign show_box = true %}
-      {% endif %}
-    {% endfor %}
-  <!-- boxes with not utenza key are visible for all -->
-  {% else %}
-    {% assign show_box = true %}
-  {% endif %}
-
-  {% if show_box %}
-
     {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
 
     <div class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-50 u-background-white u-margin-bottom-xl">
@@ -38,7 +21,5 @@
         </p>
       </div>
     </div>
-
-  {% endif %}
 
 {% endfor %}

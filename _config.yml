@@ -63,3 +63,5 @@ collections:
     permalink: /:path/
 #  schede:
 #    output: true
+
+iconsurl: "/assets/images/icons/"

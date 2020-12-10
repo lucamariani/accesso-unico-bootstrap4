@@ -1,61 +1,25 @@
 
-<div id="main-accordion" class="u-layout-wide u-layoutCenter u-padding-r-bottom u-margin-r-bottom">
+<div id="main-accordion" class="collapse-div collapse-background-active" role="tablist">
   <!-- accordions -->
-  <div class="Accordion Accordion--default fr-accordion js-fr-accordion" id="accordion-1">
-
     {% assign include_file = site.data.schede.[page.object].accordion %}
     {% capture theprofile %}{{ page.utenza }}{% endcapture %}
 
       {% for accordion in include_file %}
+            <!-- accordion header -->
+          <div class="collapse-header" id="accordion-header-{{ forloop.index }}">
+            <button class="h5" data-toggle="collapse" data-target="#accordion-panel-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-panel-{{ forloop.index }}">{{ accordion.title }}</button>
+          </div>
 
-        <!-- show accordion conditionally -->
-        {% assign show_accordion = false %}
+            <!-- accordion body -->
+          <div id="accordion-panel-{{ forloop.index }}" class="collapse" role="tabpanel" aria-labelledby="accordion-header-{{ forloop.index }}">
+            <div class="collapse-body" markdown="1">
 
-        {% if accordion.utenza %}
+              {% capture accordion-content %}{% include schede/{{page.object}}/accordion/{{ accordion.file }} %}{% endcapture %}
+              {{ accordion-content | markdownify }}
 
-          <!-- show boxes only if utenza key mathces -->
-          {% for utenza_name in accordion.utenza %}
-            {% if utenza_name == theprofile %}
-             {% assign show_accordion = true %}
-            {% endif %}
-          {% endfor %}
-
-        {% else %}
-          {% assign show_accordion = true %}
-        {% endif %}
-
-        {% if show_accordion %}
-              <h2 class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.index }}">
-                <span class="Accordion-link">{{ accordion.title }}</span>
-              </h2>
-
-              <div id="accordion-panel-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
-                <div class="Prose u-layout-prose u-color-grey-90 u-text-p u-padding-r-all" markdown="1">
-
-                  {% capture accordion-content %}{% include schede/{{page.object}}/accordion/{{ accordion.file }} %}{% endcapture %}
-                  {{ accordion-content | markdownify }}
-
-                </div>
-              </div>
-
-        {% endif %}
+            </div>
+          </div>
 
       {% endfor %}
-
-  </div>
 </div>
 
-<!-- force accordion opening -->
-<script>
-    var accorionOpen = function() {
-      console.log('opening accordion...');
-      $("h2[id*='accordion']").attr("aria-expanded","true")
-      $("div[id*='accordion-panel']").attr("aria-hidden","false")
-    }
-
-    {% if page.accordion_open %}
-      $(function() {
-        accorionOpen();
-      })
-    {% endif %}
-</script>

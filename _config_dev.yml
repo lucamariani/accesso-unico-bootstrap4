@@ -21,3 +21,5 @@ collections:
   schede:
     output: true
 
+iconsurl: "/assets/images/icons/"
+
