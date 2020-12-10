@@ -10,5 +10,4 @@ subtitle: caccia, fauna, riproduzione, autorizzazione
 status: Livello2
 statusLink: /onboard
 evidenza: no
-lang: it
 ---

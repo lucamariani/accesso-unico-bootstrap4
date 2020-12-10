@@ -10,5 +10,4 @@ subtitle: caccia, venatorio, cacciatore, cinghiale, battuta
 status: Livello3
 statusLink: /onboard
 evidenza: no
-lang: it
 ---

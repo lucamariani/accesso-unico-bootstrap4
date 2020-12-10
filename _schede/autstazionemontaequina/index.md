@@ -10,5 +10,4 @@ subtitle: stallone, pubblica, privata, equini, monta equina naturale, riproduzio
 status: Livello2
 statusLink: /onboard
 evidenza: no
-lang: it
 ---

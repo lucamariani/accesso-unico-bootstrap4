@@ -10,5 +10,4 @@ subtitle: caccia, fauna, immissioni, prelievi, territorio
 status: Livello2
 statusLink: /onboard
 evidenza: no
-lang: it
 ---

@@ -7,14 +7,14 @@ scripts:
 <div id="main">
 
   <!-- Page Title -->
-  <div class="container-fluid">
-    <div class="mx-auto pt-5 mb-5 px-4">
+  <div class="container">
+    <div class="mx-auto pt-5 mb-2 px-4">
       <section class="row">
         <div class="col-md-9">
           <h1 class="neutral-1-color-b5 h2">
           {{ page.title }}
             {% if page.status%}
-            <span class="scheda-title-label"><a href="{{site.baseurl}}{{page.statusLink}}">{{page.status}}</a></span>
+            <sup class="h6"><a href="{{site.baseurl}}{{page.statusLink}}">{{page.status}}</a></sup>
             {% endif %}
           </h1>
           {% if page.img %}
@@ -23,7 +23,7 @@ scripts:
           </div>
           {% endif %}
           {% if page.subtitle %}
-          <h6 class="u-text-h6 u-color-{% if site.main_color %}{{ site.main_color }}{% else %}black{% endif %}">{{ page.subtitle }}</h6>
+          <p class="">{{ page.subtitle }}</p>
           {% endif %}
         </div>
 
@@ -34,14 +34,14 @@ scripts:
           {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
           {% assign type_item = type_items[0] %}
 
-          <div class="row col-md-3 p-3 d-flex justify-content-center">
+          <div class="col-md-3 p-3 d-flex justify-content-center">
               <div id="scheda-icons-div" class="text-center d-none d-sm-inline">
                 <ul class="list-inline">
                   <li class="list-inline-item">
-                    <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_grigio_{{ page.utenza }}.png">
+                    <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_grigio_{{ page.utenza[0] }}.png">
                   </li>
                   <li class="list-inline-item">
-                  <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema }}.png">
+                  <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema[0] }}.png">
                   </li>
                   <li class="list-inline-item">
                     <img title="{{ type_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
@@ -52,13 +52,13 @@ scripts:
       </section>
   </div> <!-- /.u-sizeFull -->
 
-  <div class="mx-auto pt-5 mb-5 px-4">
+  <div class="mx-auto mb-5 px-4">
     <section class="row">
       <div class="col-md-8">
 
-        <article class="Prose u-layout-prose">
+        <article class="">
 
-          {{ page.description | markdownify }}
+          <h6 class="mb-5">{{ page.description }}</h6>
 
           {% include schede/accordion.html %}
 

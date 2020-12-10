@@ -10,5 +10,4 @@ subtitle: progetti, rischio sismico, costruzioni, edilizia
 status: Livello2,3
 statusLink: /onboard
 evidenza: si
-lang: it
 ---
