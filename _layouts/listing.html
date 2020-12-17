@@ -7,7 +7,7 @@ layout: default
 
 <main>
     <div class="container my-4">
-        {{ site.data.profiles | dump }}
+<!--        {{ site.data.profiles | dump }}-->
         <h1>{{ page.title }}</h1>
         {% if page.subtitle %}
         <h6>{{ page.subtitle }}</h6>
@@ -20,7 +20,7 @@ layout: default
         <div class="row">
             <div class="col-12 col-md-3">
                 <div>
-                    <h5>Profilo</h5>
+                    <h5 class="mb-3">Profilo</h5>
                     {% for profile in site.data.profiles %}
                         {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
 <!--                        {% capture profile_size = all_profiles[profile.metaname].size %}{% endcapture %}-->
@@ -32,7 +32,7 @@ layout: default
                     {% endfor %}
                 </div>
                 <div>
-                    <h5>Tema</h5>
+                    <h5 class="mb-3">Tema</h5>
                     <div class="form-check form-check-group">
                         <input id="te_checkbox9" type="checkbox" aria-labelledby="checkbox9-help" checked="checked">
                         <label for="te_checkbox9">Checkbox selezionato</label>
@@ -53,11 +53,11 @@ layout: default
                 <div class="row">
                     {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
                     {% for scheda in schede %}
-                        {% capture schedaTitle %}
-                            {{ scheda.title }}
-                        {% endcapture %}
+<!--                        {% capture schedaTitle %}-->
+<!--                            {{ scheda.title }}-->
+<!--                        {% endcapture %}-->
 
-                        <div class="col-12 col-lg-12">
+                        <div class="col-12 col-lg-6">
                             <!-- scheda card -->
                             {% include card_scheda.html scheda=scheda %}
                         </div>

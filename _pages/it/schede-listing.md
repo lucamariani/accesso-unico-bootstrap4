@@ -1,7 +1,7 @@
 ---
 layout: listing
 title: Schede
-subtitle: schede
+subtitle: schede servizi
 background:
 img:
 permalink: /it/schede
