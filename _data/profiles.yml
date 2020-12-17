@@ -1,0 +1,15 @@
+- name: Cittadino
+  image: /assets/images/icons/cittadini.png
+  metaname: cittadini
+
+- name: Impresa
+  image: /assets/images/icons/imprese.png
+  metaname: imprese
+
+- name: Intermediario-Professionista
+  image: /assets/images/icons/intermediari.png
+  metaname: intermediari
+
+- name: Pubblica Amministrazione
+  image: /assets/images/icons/pa.png
+  metaname: pa
