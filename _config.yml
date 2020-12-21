@@ -56,8 +56,8 @@ exclude:
   - CNAME
 
 collections:
-#  docs:
-#    output: true
+  docs:
+    output: true
   pages:
     output: true
     permalink: /:path/
