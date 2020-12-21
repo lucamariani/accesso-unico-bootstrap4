@@ -12,7 +12,8 @@
         {% include callout.html box=box additionalClasses="callout-more" %}
     {% else %}
         <!-- default component -->
-        {% include sidebar-card.html title=box.title content=box-content %}
+        {% comment %}{% include sidebar-card.html title=box.title content=box-content %}{% endcomment %}
+        {% include callout.html box=box additionalClasses="" %}
 
 {% endif %}
     </div>
