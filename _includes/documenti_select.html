@@ -1,7 +1,9 @@
 {% assign docs_by_category_array = "" | split: ',' %}
 {% assign docs_by_tag_array = "" | split: ',' %}
-  
-{% for doc in site.data.docs.docs %}      
+
+<h3>DOCS</h3>
+{% for doc in site.data.docs.docs %}
+<h4>DOC {{ doc|dump }}</h4>
   {% for tag in doc.tags %}
     {% assign downcasetag = tag | downcase %}
     {% if downcasetag == page.object %}        
@@ -46,3 +48,23 @@
     </ul>
   </div>
 </div>
+
+
+
+{% for doc in docs_by_tag_array %}
+<!-- accordion header -->
+<div class="collapse-header" id="accordion-header-{{ forloop.index }}">
+  <button class="h5" data-toggle="collapse" data-target="#accordion-panel-{{ forloop.index }}" aria-expanded="false" aria-controls="accordion-panel-{{ forloop.index }}">{{ page.title }}</button>
+</div>
+
+<!-- accordion body -->
+<div id="accordion-panel-{{ forloop.index }}" class="collapse" role="tabpanel" aria-labelledby="accordion-header-{{ forloop.index }}">
+  <div class="collapse-body" markdown="1">
+
+    {% capture accordion-content %}{% include schede/{{page.object}}/accordion/{{ accordion.file }} %}{% endcapture %}
+    {{ accordion-content | markdownify }}
+
+  </div>
+</div>
+
+{% endfor %}
