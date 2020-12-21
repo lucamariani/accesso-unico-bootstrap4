@@ -61,7 +61,7 @@ collections:
   pages:
     output: true
     permalink: /:path/
-#  schede:
-#    output: true
+  schede:
+    output: true
 
 iconsurl: "/assets/images/icons/"

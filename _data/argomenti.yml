@@ -1,0 +1,8 @@
+- name: Emissioni in atmosfera
+  tema: ambiente
+  color: green
+  metaname: emissioni_atmosfera
+- name: test
+  tema: agricoltura
+  color: green
+  metaname: test

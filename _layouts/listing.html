@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+{% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
+{% assign all_profiles =  schede | map: 'utenza' | join: ','  | split: ','  | group_by: utenza %}
+
+<main>
+    <div class="container my-4">
+<!--        {{ site.data.profiles | dump }}-->
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <h6>{{ page.subtitle }}</h6>
+        {% endif %}
+<!--        {{ all_profiles|dump }}-->
+    </div>
+
+    <div class="container mx-auto pt-3 mb-3 px-4">
+        <!-- filter column -->
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div>
+                    <h5 class="mb-3">Profilo</h5>
+                    {% for profile in site.data.profiles %}
+                        {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
+<!--                        {% capture profile_size = all_profiles[profile.metaname].size %}{% endcapture %}-->
+<!--                        DUMP: {{ schede_profile | dump }}-->
+                    <div class="form-check form-check-group">
+                        <input id="p_{{ profile.metaname }}" type="checkbox" checked="checked">
+                        <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div>
+                    <h5 class="mb-3">Tema</h5>
+                    <div class="form-check form-check-group">
+                        <input id="te_checkbox9" type="checkbox" aria-labelledby="checkbox9-help" checked="checked">
+                        <label for="te_checkbox9">Checkbox selezionato</label>
+                    </div>
+                    <div class="form-check form-check-group">
+                        <input id="te_checkbox10" type="checkbox" aria-labelledby="checkbox10-help">
+                        <label for="te_checkbox10">Checkbox non selezionato</label>
+                    </div>
+                    <div class="form-check form-check-group">
+                        <input id="te_checkbox11" type="checkbox" aria-labelledby="checkbox11-help" disabled="disabled">
+                        <label for="te_checkbox11" class="disabled">Checkbox disabilitato non selezionato</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- results column -->
+            <div class="col-12 col-md-9 mx-auto">
+                <div class="row">
+                    {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
+                    {% for scheda in schede %}
+<!--                        {% capture schedaTitle %}-->
+<!--                            {{ scheda.title }}-->
+<!--                        {% endcapture %}-->
+
+                        <div class="col-12 col-lg-6">
+                            <!-- scheda card -->
+                            {% include card_scheda.html scheda=scheda %}
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
