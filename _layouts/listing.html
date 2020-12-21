@@ -56,8 +56,8 @@ layout: default
 <!--                        {% capture schedaTitle %}-->
 <!--                            {{ scheda.title }}-->
 <!--                        {% endcapture %}-->
-
-                        <div class="col-12 col-lg-6">
+                    {% comment %} adds class to be used to filter out schede with JS: $('.cittadini').hide() {% endcomment %}
+                        <div class="col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.argomento | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
                             <!-- scheda card -->
                             {% include card_scheda.html scheda=scheda %}
                         </div>
