@@ -6,3 +6,13 @@
 
 <!-- Main JS -->
 <script src="{{ site.baseurl }}/assets/main.js"></script>
+
+{% for script in page.scripts %}
+{% capture scriptFullPath %}{{ script | relative_url }}{% endcapture %}
+<script src="{{ scriptFullPath }}"></script>
+{% endfor %}
+
+{% for script in layout.scripts %}
+{% capture scriptFullPath %}{{ script | relative_url }}{% endcapture %}
+<script src="{{ scriptFullPath }}"></script>
+{% endfor %}

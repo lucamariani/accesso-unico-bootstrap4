@@ -4,7 +4,8 @@
   {% include meta.html %}
   {% include styles.html %}
   {%- if jekyll.environment == 'production' -%}
-  {%- include analytics/google-analytics.html -%}
+    {%- include analytics/google-analytics.html -%}
+    {%- include analytics/matomo.html -%}
   {%- endif -%}
 </head>
 <body>

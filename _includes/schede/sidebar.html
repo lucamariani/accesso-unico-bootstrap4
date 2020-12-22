@@ -8,11 +8,10 @@
     <!-- differ component based on box type -->
     {% if box.type == 'calltoaction' %}
         {{box-content | markdownify}}
-    {% elsif box.type == 'callout' %}
-        {% include callout.html box=box additionalClasses="callout-more" %}
+    {% elsif box.type == 'CARD' %}
+        {% include sidebar-card.html title=box.title content=box-content %}
     {% else %}
         <!-- default component -->
-        {% comment %}{% include sidebar-card.html title=box.title content=box-content %}{% endcomment %}
         {% include callout.html box=box additionalClasses="" %}
 
 {% endif %}

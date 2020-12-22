@@ -1,43 +1,41 @@
 <!-- add contacts widget -->
 <div class="w-100 d-flex" style="overflow-wrap: anywhere">
-    <div class="callout callout-more">
-        <div class="callout-title">
-            {% if box.icon %}
-            <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-{{ box.icon }}"></use></svg>
-            {% endif %}
-            Riferimenti e contatti
+    <div class="callout">
+        <div class="callout-title text-sans-serif">
+            <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use></svg>
+            Contatti
         </div>
         {% assign riferimenti = site.data.schede.riferimenti[page.object] %}
-        <div>
-            <p class="">
+        <div class="">
+            <p class="text-sans-serif">
                 {{ riferimenti.descrizione_direzione }}
             </p>
-            <p class="u-margin-top-xs u-margin-bottom-xs">
+            <p class="u-margin-top-xs u-margin-bottom-xs text-sans-serif">
                 {{ riferimenti.nome_ufficio }}
             </p>
-            <p class="u-margin-bottom-xs">
+            <p class="u-margin-bottom-xs text-sans-serif">
                 {{ riferimenti.indirizzo }}
             </p>
-            <p class="u-margin-bottom-xs">
-                Tel: {{ riferimenti.telefono }}
+            <p class="u-margin-bottom-xs text-sans-serif">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-telephone"></use></svg><a href="tel:{{ riferimenti.telefono }}">{{ riferimenti.telefono }}</a>
             </p>
-            <p class="u-margin-bottom-xs">
-                E-mail: {{ riferimenti.email }}
+            <p class="u-margin-bottom-xs text-sans-serif">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-mail"></use></svg> <a href="mailto:{{ riferimenti.email }}">{{ riferimenti.email }}</a>
             </p>
-            <p class="u-margin-bottom-xs">
+            <p class="u-margin-bottom-xs text-sans-serif">
                 PEC: {{ riferimenti.pec }}
             </p>
-            <p class="u-textWeight-600 u-margin-top-xs">
+            <p class="u-textWeight-600 u-margin-top-xs text-sans-serif">
                 Responsabile
             </p>
-            <p class="u-margin-bottom-xs">
+            <p class="u-margin-bottom-xs text-sans-serif">
                 {{ riferimenti.nome_responsabile }}
             </p>
-            <p class="u-margin-bottom-xs">
-                Tel: {{ riferimenti.telefono_responsabile }}
+            <p class="u-margin-bottom-xs text-sans-serif">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-telephone"></use></svg><a href="tel:{{ riferimenti.telefono_responsabile }}">{{ riferimenti.telefono_responsabile }}</a>
             </p>
-            <p class="u-margin-bottom-xs">
-                E-mail: {{ riferimenti.email_responsabile }}
+            <p class="u-margin-bottom-xs text-sans-serif">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-mail"></use></svg><a href="mailto:{{ riferimenti.email_responsabile }}">{{ riferimenti.email_responsabile }}</a>
             </p>
         </div>
     </div>

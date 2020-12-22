@@ -1,34 +1,18 @@
-<div class="u-text-r-s u-layout-wide">
-  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
-
-    <form class="Form Form--spaced u-color-40 u-text-r-xs u-layout-prose">
-
-      <fieldset class="Form-fieldset">
-<!--
-        <legend class="Form-legend">Scegli il comune</legend>
--->
-        <div class="Form-field" style="padding-bottom:0 !important">
-          <select class="Form-input" id="comune" aria-required="true" required>
-            <option disabled selected>seleziona</option>
-            {% for comune in site.data.comuni %}
-              <option value="{{ comune.url }}">{{ comune.name }} </option>
-            {% endfor%}
-          </select>
+<div class="mt-3">
+    <form class="">
+        <div class="form-row">
+            <div class="form-group col-12 bootstrap-select-wrapper">
+                <label></label>
+                <select id="comune" title="seleziona comune" data-live-search="true" data-live-search-placeholder="Cerca comune">
+                    {% comment %}{{ include.options }}{% endcomment %}
+                    <option value="" title="seleziona comune" data-content="Annulla <span class='reset-label'></span>"></option>
+                    {% for comune in site.data.comuni %}
+                    <option value="{{ comune.url }}">{{ comune.name }} </option>
+                    {% endfor%}
+                </select>
+            </div>
         </div>
-
-      </fieldset>
-<!--
-        <div class="Form-field Grid-cell u-textLeft" style="padding-bottom: 0px !important;">
-          <a id="gobutton" type="button" href="#" target="_blank"
-            class="Button u-text-xs u-background-50 u-color-white u-sizeFull"
-            style="max-width:15em;">Vai al servizio</a>
-        </div>
-
--->
     </form>
-
-
-  </div>
 </div>
 
 <script>
