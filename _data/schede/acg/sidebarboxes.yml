@@ -1,32 +1,16 @@
 
 - title: Presenta la pratica
   file: presenta-pratica.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: pencil
 
 - title: Modulistica
   file: modulistica.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: download
 
 - title: Servizi collegati
   file: procedimenti.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: link
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: files
