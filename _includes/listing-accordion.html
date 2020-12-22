@@ -1,0 +1,10 @@
+<!-- accordion header -->
+<div class="collapse-header" id="accordion-header-{{include.name}}">
+    <button class="h5 text-capitalize" data-toggle="collapse" data-target="#accordion-panel-{{include.name}}" aria-expanded="false" aria-controls="accordion-panel-{{include.name}}">{{include.name}}</button>
+</div>
+<!-- accordion body -->
+<div id="accordion-panel-{{include.name}}" class="collapse" role="tabpanel" aria-labelledby="accordion-header-{{include.name}}">
+    <div class="collapse-body" markdown="1">
+        {{ include.content | raw }}
+    </div>
+</div>

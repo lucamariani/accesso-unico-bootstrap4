@@ -2,8 +2,10 @@
 layout: default
 ---
 
+{% comment %}
 {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
 {% assign all_profiles =  schede | map: 'utenza' | join: ','  | split: ','  | group_by: utenza %}
+{% endcomment %}
 
 <main>
     <div class="container my-4">
@@ -19,33 +21,28 @@ layout: default
         <!-- filter column -->
         <div class="row">
             <div class="col-12 col-md-3">
-                <div>
-                    <h5 class="mb-3">Profilo</h5>
-                    {% for profile in site.data.profiles %}
-                        {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
-<!--                        {% capture profile_size = all_profiles[profile.metaname].size %}{% endcapture %}-->
-<!--                        DUMP: {{ schede_profile | dump }}-->
+
+                {% capture profile-content %}
+                {% for profile in site.data.profiles %}
+                    {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
                     <div class="form-check form-check-group">
                         <input id="p_{{ profile.metaname }}" type="checkbox" checked="checked">
                         <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
                     </div>
+                {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="profilo" content=profile-content %}
+
+                {% capture tema-content %}
+                    {% for tema in site.data.themes %}
+                    <div class="form-check form-check-group">
+                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" checked="checked">
+                        <label for="t_{{tema.metaname}}">{{ tema.name }}</label>
+                    </div>
                     {% endfor %}
-                </div>
-                <div>
-                    <h5 class="mb-3">Tema</h5>
-                    <div class="form-check form-check-group">
-                        <input id="te_checkbox9" type="checkbox" aria-labelledby="checkbox9-help" checked="checked">
-                        <label for="te_checkbox9">Checkbox selezionato</label>
-                    </div>
-                    <div class="form-check form-check-group">
-                        <input id="te_checkbox10" type="checkbox" aria-labelledby="checkbox10-help">
-                        <label for="te_checkbox10">Checkbox non selezionato</label>
-                    </div>
-                    <div class="form-check form-check-group">
-                        <input id="te_checkbox11" type="checkbox" aria-labelledby="checkbox11-help" disabled="disabled">
-                        <label for="te_checkbox11" class="disabled">Checkbox disabilitato non selezionato</label>
-                    </div>
-                </div>
+                {% endcapture %}
+                {% include listing-accordion.html name="tema" content=tema-content %}
+
             </div>
 
             <!-- results column -->
