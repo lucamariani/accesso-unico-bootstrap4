@@ -11,6 +11,7 @@
 
 - title: Faq
   file: faq.md
+  type: callout
 
 - title: Servizi collegati
   file: servizicollegati.md

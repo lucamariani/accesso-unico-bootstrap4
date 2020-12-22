@@ -1,37 +1,14 @@
-<div class="u-text-r-s u-layout-wide">
-  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
+<div class="mt-3">
+    <form class="">
 
-    <form class="Form Form--spaced u-color-40 u-text-r-xs u-layout-prose">
-
-      <fieldset class="Form-fieldset">
-<!--
-        <legend class="Form-legend">Scegli il comune</legend>
--->
-        <div class="Form-field" style="padding-bottom:0 !important">
-          <select class="Form-input" id="modulistica" aria-required="true" required>
-            <option disabled selected>seleziona</option>
-            <option value="https://www.regione.umbria.it/documents/18/14519179/Domanda+DGR+974-2018+Manutentori+verde-1-2.doc/f5eeb778-939e-4923-9b4d-004c07af6d24">Domanda di rilascio dell'attestato d'idoneità del Responsabile tecnico per la costruzione e manutenzione del verde</option>
-            <option value="https://www.regione.umbria.it/documents/18/14519179/Dichiarazione+assolvimento+bollo-1.docx/64c9a3f8-ba74-4113-b465-cf5c096c43be">Dichiarazione sostitutiva per assolvimento imposta di bollo</option>
-          </select>
-        </div>
-
-      </fieldset>
-<!--
-        <div class="Form-field Grid-cell u-textLeft" style="padding-bottom: 0px !important;">
-          <a id="gobutton" type="button" href="#" target="_blank"
-            class="Button u-text-xs u-background-50 u-color-white u-sizeFull"
-            style="max-width:15em;">Vai al servizio</a>
-        </div>
-
--->
+          <div class="form-row">
+              <div class="form-group col-12 bootstrap-select-wrapper">
+                  <label></label>
+                  <select id="modulistica" title="Scarica il modello">
+                      <option value="https://www.regione.umbria.it/documents/18/14519179/Domanda+DGR+974-2018+Manutentori+verde-1-2.doc/f5eeb778-939e-4923-9b4d-004c07af6d24">Domanda di rilascio dell'attestato d'idoneità del Responsabile tecnico per la costruzione e manutenzione del verde</option>
+                      <option value="https://www.regione.umbria.it/documents/18/14519179/Dichiarazione+assolvimento+bollo-1.docx/64c9a3f8-ba74-4113-b465-cf5c096c43be">Dichiarazione sostitutiva per assolvimento imposta di bollo</option>
+                  </select>
+              </div>
+          </div>
     </form>
-  </div>
 </div>
-
-<script>
-  $('#modulistica').on('change', function(event) {
-    console.log( 'selected ' + $(this).val() );
-    //$('#gobutton').attr( 'href', $(this).val() );
-    window.location.href = $(this).val()
-  });
-</script>
