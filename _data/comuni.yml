@@ -2,64 +2,84 @@
   metaname: acquasparta
   url: "https://suape.regione.umbria.it/frontend/index/A045/SS"
   urlprg: ""
-  urlaua: ""
+  urlaua: "https://suape.regione.umbria.it/frontend/index/A045/SS"
 - name: Allerona
   metaname: allerona
   url: "http://www.comune.allerona.tr.it/c055002/zf/index.php/modulistica/index"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Alviano
   metaname: alviano
   url: "http://www.comune.alviano.tr.it/zf/index.php/modulistica/index"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Amelia
   metaname: amelia
   url: "http://www.comune.amelia.tr.it/index.php?option=com_content&view=article&id=538&Itemid=278"
+  urlprg: "http://www.comune.amelia.tr.it/index.php?option=com_content&view=article&id=925&Itemid=346"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Arrone
   metaname: arrone
   url: "https://suape.regione.umbria.it/frontend/index/A439/SS"
+  urlaua: "https://suape.regione.umbria.it/frontend/index/A439/SS"
 - name: Assisi
   metaname: assisi
   url: "https://suape.regione.umbria.it/frontend/index/A475/SS"
+  urlaua: "https://suape.regione.umbria.it/frontend/index/A475/SS"
 - name: Attigliano
   metaname: attigliano
   url: "http://www.comunediattigliano.gov.it/zf/index.php/suap"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Avigliano Umbro
   metaname: aviglianoumbro
   url: "http://www.comune.aviglianoumbro.tr.it/c055033/zf/index.php/suap"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Baschi
   metaname: baschi
   url: "http://www.comune.baschi.tr.it/c055007/zf/index.php/modulistica/index"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Bastia Umbra
   metaname: bastiaumbra
   url: "https://www.comune.bastia.pg.it/c054002/zf/index.php/suap/servizi-online/login"
+  urlprg: "http://archivio.comunebastiaumbra.gov.it/urbanistica/home_urbanistica.aspx?p=5&tipo=2"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Bettona
   metaname: bettona
   url: "http://www.comune.bettona.pg.it/c054003/zf/index.php/modulistica"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Bevagna
   metaname: bevagna
   url: "https://suape.regione.umbria.it/frontend/index/A835/SS"
+  urlaua: "https://suape.regione.umbria.it/frontend/index/A835/SS"
 - name: Calvi dell’Umbria
   metaname: calvidellumbria
   url: "https://suape.regione.umbria.it/frontend/index/B446/SS"
+  urlaua: "https://suape.regione.umbria.it/frontend/index/B446/SS"
 - name: Campello sul Clitunno
   metaname: campellosulclitunno
   url: "https://suape.regione.umbria.it/frontend/index/B504/SS"
+  urlaua: "https://suape.regione.umbria.it/frontend/index/B504/SS"
 - name: Cannara
   metaname: cannara
   url: "https://comune.cannara.pg.it/home"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Cascia
   metaname: cascia
   url: "http://www.comune.cascia.pg.it/?page_id=415"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Castel Giorgio
   metaname: castelgiorgio
   url: "http://www.comune.castelgiorgio.tr.it/zf/index.php/modulistica/index"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Castel Ritaldi
   metaname: castelritaldi
   url: "https://www.comune.castel-ritaldi.pg.it/articoli/suape-001"
+  urlaua: "https://suape.regione.umbria.it/sportelli"
 - name: Castel Viscardo
   metaname: castelviscardo
   url: "http://www.comune.castelviscardo.tr.it/zf/index.php/modulistica/index"
 - name: Castiglione del Lago
   metaname: castiglionedellago
   url: "https://suape.regione.umbria.it/frontend/index/C309/SS"
+  urlprg: "http://www.comune.castiglione-del-lago.pg.it/il-piano-regolatore"
 - name: Cerreto di Spoleto
   metaname: cerretodispoleto
   url: "https://comune.cerretodispoleto.pg.it/68-MODULISTICA-UNIFICATA-E-STANDARDIZZATA-COMMERCIO.html"
@@ -96,6 +116,7 @@
 - name: Foligno
   metaname: foligno
   url: "https://suape.regione.umbria.it/frontend/index/D653/SS"
+  urlprg: "http://www.comune.foligno.pg.it/pagine/piani-regolatori-generali-000"
 - name: Fossato di Vico
   metaname: fossatodivico
   url: "http://suap.pa.umbria.it/fossatodivico/Contenuti/default.aspx?alias=D745&software="
@@ -120,6 +141,7 @@
 - name: Gubbio
   metaname: gubbio
   url: "https://suape.regione.umbria.it/frontend/index/E256/SS"
+  urlprg: "http://www.comune.gubbio.pg.it/pagine/piano-regolatore"
 - name: Lisciano Niccone
   metaname: liscianoniccone
   url: "https://www.lisciano.org/comune/servizi-online/modulistica/s-u-a-p-e"
@@ -168,6 +190,7 @@
 - name: Narni
   metaname: narni
   url: "https://suape.regione.umbria.it/frontend/index/F844/SS"
+  urlprg: "https://f844.cloud.silverbrowser.it/prg/ui/kelydra/silverprg/SilverPrg.html"
 - name: Nocera Umbra
   metaname: noceraumbra
   url: "https://suape.regione.umbria.it/frontend/index/F911/SS"
@@ -198,6 +221,7 @@
 - name: Perugia
   metaname: perugia
   url: "https://www.comune.perugia.it/pagine/suape-sportello-unico-per-le-attivita-produttive-ed-edilizie"
+  urlprg: "http://www.comune.perugia.it/pagine/prg-vigente"
 - name: Piegaro
   metaname: piegaro
   url: "http://www.comune.piegaro.pg.it/zf/index.php/suap"
@@ -243,6 +267,7 @@
 - name: Spello
   metaname: spello
   url: "http://www.comune.spello.pg.it/pagine/modulistica-000"
+  urlprg: "http://www.comune.spello.pg.it/pagine/tavole-p-r-g"
 - name: Spoleto
   metaname: spoleto
   url: "https://suape.regione.umbria.it/frontend/index/I921/SS"
@@ -252,6 +277,7 @@
 - name: Terni
   metaname: terni
   url: "https://suape.regione.umbria.it/frontend/index/L117/SS"
+  urlprg: "http://www.comune.terni.it/piano-regolatore"
 - name: Todi
   metaname: todi
   url: "https://suape.regione.umbria.it/frontend/index/L188/SS"
