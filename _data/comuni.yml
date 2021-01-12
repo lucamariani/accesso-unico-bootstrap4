@@ -1,8 +1,7 @@
 - name: Acquasparta
   metaname: acquasparta
   url: "https://suape.regione.umbria.it/frontend/index/A045/SS"
-  urlprg: ""
-  urlaua: "https://suape.regione.umbria.it/frontend/index/A045/SS"
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/A045/SS"
 - name: Allerona
   metaname: allerona
   url: "http://www.comune.allerona.tr.it/c055002/zf/index.php/modulistica/index"
