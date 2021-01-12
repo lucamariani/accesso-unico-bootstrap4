@@ -1,10 +1,15 @@
+{% assign pageLang = 'it' %}
+{% if page.lang %}
+{% assign pageLang = page.lang %}
+{% endif %}
+
 <div class="Share">
   <div class="Share-reveal js-Share bg-100">
       <a href="#share-options" class="text-decoration-none" data-menu-trigger="share-options" data-menu-inline>
           <svg class="primary-bg-a6 icon icon-white icon-lg">
               <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-share"></use>
           </svg>
-    <span class="px-3 text-secondary">{{ site.data.t.share[page.lang] }}</span>
+    <span class="px-3 text-secondary">{{ site.data.t.share[pageLang] }}</span>
   </a>
   </div>
   <div id="share-options" class="it-grid-list-wrapper Dropdown-menu d-none" data-menu>

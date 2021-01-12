@@ -92,19 +92,23 @@ scripts:
 
         {% include novita_box.html %}
 
-        <div id="tue-scelte" role="note" class="Callout Callout--example u-textCenter u-text-r-s u-margin-bottom-xl">
-          <p title="" class="u-color-50 u-textWeight-700 u-text-xs" style="margin-bottom: 0px !important;">La tua scelta</p>
-          <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}grigio_{{ page.utenza }}.png">
-          <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}rosso_{{ page.tema }}.png">
-
-          <div class="Form-field" style="padding-bottom: 0px !important;">
-            <a id="research" type="button" href="{{ site.baseurl}}/schede_search" class="Button Button--default u-text-xs u-sizeFull" style="max-width:15em;">
+        <div id="tue-scelte" class="w-100">
+          <p>
+            <a class="btn btn-primary w-100" href="{{ site.baseurl}}/schede_search">
               Nuova ricerca
             </a>
-          </div>
+          </p>
         </div>
 
-        {% include partecipa.html %}
+        <!-- box partecipa -->
+        <div class="callout {{ include.additionalClasses }}">
+          <div class="callout-title">
+            <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-horn"></use></svg>
+            Partecipa
+          </div>
+          <p>Il tuo contributo è importante</p> <a href="mailto:{{site.accesso_unico_mail}}?subject=Accesso Unico - Partecipazione">Proponi suggerimenti ed idee: questa è la mail</a>
+        </div>
+        <!-- / box partecipa -->
 
         {% include share.html %}
 

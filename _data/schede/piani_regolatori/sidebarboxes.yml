@@ -1,4 +1,6 @@
 
 - title: Vai al servizio
-  file: vai.md
   type: calltoaction
+  linkurl: /map/piani_regolatori/
+  linktitle: vai al servizio
+  linkinterno: 1

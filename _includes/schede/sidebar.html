@@ -5,10 +5,15 @@
     <div class="w-100">
     <!-- differ component based on box type -->
     {% if box.type == 'calltoaction' %}
-        <a class="btn btn-primary w-100"
-           href="{{ box.linkurl}}">
-            {{ box.linktitle}}
-        </a>
+        <p>
+            <a class="btn btn-primary w-100" href="{{ box.linkurl}}">
+                {% if box.linkinterno %}
+                    {{ site.baseurl}}{{ box.linktitle }}
+                {% else %}
+                    {{ box.linktitle}}
+                {% endif %}
+            </a>
+        </p>
     {% else %}
         {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
         {% if box.type == 'CARD' %}
