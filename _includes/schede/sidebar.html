@@ -3,17 +3,20 @@
 
 {% for box in include_file %}
     <div class="w-100">
-    {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
-
     <!-- differ component based on box type -->
     {% if box.type == 'calltoaction' %}
-        {{box-content | markdownify}}
-    {% elsif box.type == 'CARD' %}
-        {% include sidebar-card.html title=box.title content=box-content %}
+        <a class="btn btn-primary w-100"
+           href="{{ box.linkurl}}">
+            {{ box.linktitle}}
+        </a>
     {% else %}
-        <!-- default component -->
-        {% include callout.html box=box additionalClasses="" %}
-
+        {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
+        {% if box.type == 'CARD' %}
+            {% include sidebar-card.html title=box.title content=box-content %}
+        {% else %}
+            <!-- default component -->
+            {% include callout.html box=box additionalClasses="" %}
+        {% endif %}
 {% endif %}
     </div>
 {% endfor %}

@@ -1,10 +1,14 @@
 - title: Vai al servizio
-  file: servizioonline1.md
   type: calltoaction
+  linktitle: registrazione/aggiornamento RUOP
+  linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=12&nome_famiglia=Servizio%20Fitosanitario%20Regionale&form_id=registrazione_ruop
 
 - title: Vai al servizio
   file: servizioonline2.md
   type: calltoaction
+  linktitle: autorizzazione al rilascio del passaporto delle piante
+  linkurl: href="https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=12&nome_famiglia=Servizio%20Fitosanitario%20Regionale&form_id=richiesta_passaporto_piante
+
 
 - title: Documenti
   file: documenti.md
