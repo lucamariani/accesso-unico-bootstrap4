@@ -81,23 +81,35 @@ footer-links:
       url: "/it/cookie-policy"
 
 # Footer data
-  en:
-    recapiti1: Regione Umbria
-    recapiti2: Via Mario Angeloni, 68
-    recapiti3: 06100 Perugia
-    recapiti4: Centralino (+39) 075.504.1
-    email: accessounico@regione.umbria.it
-    pec: regione.giunta@postacert.umbria.it
-    privacy_url: http://www.regione.umbria.it/privacy-policy
-    note_legali_url: http://www.regione.umbria.it/note-legali
-    contatti_url: "contatti"
-  it:
-    recapiti1: Regione Umbria
-    recapiti2: Via Mario Angeloni, 68
-    recapiti3: 06100 Perugia
-    recapiti4: Centralino (+39) 075.504.1
-    email: accessounico@regione.umbria.it
-    pec: regione.giunta@postacert.umbria.it
-    privacy_url: http://www.regione.umbria.it/privacy-policy
-    note_legali_url: http://www.regione.umbria.it/note-legali
-    contatti_url: "contatti"
+
+author:
+  en: "Regione Umbria"
+  it: "Regione Umbria"
+
+recapiti1:
+  en: "Regione Umbria"
+  it: "Regione Umbria"
+
+recapiti2:
+  en: "Via Mario Angeloni, 68"
+  it: "Via Mario Angeloni, 68"
+
+recapiti3:
+  en: "06100 Perugia"
+  it: "06100 Perugia"
+
+recapiti4:
+  en: "Centralino (+39) 075.504.1"
+  it: "Centralino (+39) 075.504.1"
+
+email:
+  en: "accessounico@regione.umbria.it"
+  it: "accessounico@regione.umbria.it"
+
+pec:
+  en: "regione.giunta@postacert.umbria.it"
+  it: "regione.giunta@postacert.umbria.it"
+
+privacy_url: 
+  en: "http://www.regione.umbria.it/privacy-policy"
+  it: "http://www.regione.umbria.it/privacy-policy"
