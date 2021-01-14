@@ -20,6 +20,7 @@ description:
 author:
   en: "Regione Umbria"
   it: "Regione Umbria"
+
 descriptionAuthor:
   en: "Giunta Regionale"
   it: "Giunta Regionale"
@@ -67,7 +68,7 @@ footer-links:
   en:
     privacy-policy:
       name: "Privacy policy"
-      url: "/en/privacy-policy"
+      url: "https://www.regione.umbria.it/privacy-policy"
     cookie-policy:
       name: "Cookie Policy"
       url: "/en/cookie-policy"
@@ -78,3 +79,25 @@ footer-links:
     cookie-policy:
       name: "Cookie Policy"
       url: "/it/cookie-policy"
+
+# Footer data
+  en:
+recapiti1:
+recapiti2: Via Mario Angeloni, 68
+recapiti3: 06100 Perugia
+recapiti4: Centralino (+39) 075.504.1
+email: accessounico@regione.umbria.it
+pec: regione.giunta@postacert.umbria.it
+privacy_url: http://www.regione.umbria.it/privacy-policy
+note_legali_url: http://www.regione.umbria.it/note-legali
+contatti_url: "contatti"
+  it:
+recapiti1: Regione Umbria
+recapiti2: Via Mario Angeloni, 68
+recapiti3: 06100 Perugia
+recapiti4: Centralino (+39) 075.504.1
+email: accessounico@regione.umbria.it
+pec: regione.giunta@postacert.umbria.it
+privacy_url: http://www.regione.umbria.it/privacy-policy
+note_legali_url: http://www.regione.umbria.it/note-legali
+contatti_url: "contatti"
