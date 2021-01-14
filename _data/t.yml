@@ -82,9 +82,8 @@ footer-links:
 
 # Footer data
 
-recapiti1:
-  en: "Regione Umbria"
-  it: "Regione Umbria"
+recapiti1: "Regione Umbria"
+
 
 recapiti2:
   en: "Via Mario Angeloni, 68"
