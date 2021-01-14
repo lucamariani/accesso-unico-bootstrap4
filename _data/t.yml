@@ -82,10 +82,6 @@ footer-links:
 
 # Footer data
 
-author:
-  en: "Regione Umbria"
-  it: "Regione Umbria"
-
 recapiti1:
   en: "Regione Umbria"
   it: "Regione Umbria"
@@ -110,6 +106,6 @@ pec:
   en: "regione.giunta@postacert.umbria.it"
   it: "regione.giunta@postacert.umbria.it"
 
-privacy_url: 
+privacy_url:
   en: "http://www.regione.umbria.it/privacy-policy"
   it: "http://www.regione.umbria.it/privacy-policy"
