@@ -18,8 +18,11 @@ description:
 
 ## Site author
 author:
-  en: "Regione Umbria Giunta Regionale"
-  it: "Regione Umbria Giunta Regionale"
+  en: "Regione Umbria"
+  it: "Regione Umbria"
+descriptionAuthor:
+  en: "Giunta Regionale"
+  it: "Giunta Regionale"
 
 ## Social
 social-links:
