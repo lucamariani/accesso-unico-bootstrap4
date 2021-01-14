@@ -1,6 +1,7 @@
 ---
 ## Main icon
 icon: "/assets/images/accesso_unico.png"
+iconAuthor: "/assets/images/LogoRegioneWhite.png"
 
 ## Social Card [1200x630]
 social-card: /assets/images/favicons/social-card.png
@@ -17,8 +18,8 @@ description:
 
 ## Site author
 author:
-  en: "Digital Transformation Team"
-  it: "Team per la Trasformazione Digitale"
+  en: "Regione Umbria Giunta Regionale"
+  it: "Regione Umbria Giunta Regionale"
 
 ## Social
 social-links:
@@ -74,5 +75,3 @@ footer-links:
     cookie-policy:
       name: "Cookie Policy"
       url: "/it/cookie-policy"
-
-
