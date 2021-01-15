@@ -1,24 +1,15 @@
 
 - title: Vai al servizio
-  file: piattaforma.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  type: calltoaction
+  linktitle: accedi all'area riservata
+  linkurl: http://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=7&nome_famiglia=Sismica
+
 
 - title: Modulistica
   file: modulistica.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: download
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+  icon: files

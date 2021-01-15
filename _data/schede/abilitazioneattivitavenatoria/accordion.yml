@@ -9,26 +9,20 @@
 
 - title: "Cosa è"
   file: "cosae.md"
-  utenza:
-    - cittadini
+
 
 - title: "Modalità di richiesta dell'abilitazione"
   file: "modalitarichiesta.md"
-  utenza:
-    - cittadini
+
 
 - title: "Modalità di svolgimento dell'esame"
   file: "svolgimentoesame.md"
-  utenza:
-    - cittadini
+
 
 - title: "Rilascio dell'attestato"
   file: "rilascioattestato.md"
-  utenza:
-    - cittadini
+
 
 
 - title: "Costi"
   file: "costi.md"
-  utenza:
-    - cittadini

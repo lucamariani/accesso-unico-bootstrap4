@@ -1,30 +1,26 @@
 
 - title: Vai al servizio
-  file: servizioonline.md
-  utenza:
-    - imprese
-    - cittadini
+  type: calltoaction
+  linktitle: richiesta ispezione
+  linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=12&nome_famiglia=Servizio%20Fitosanitario%20Regionale&form_id=richiesta_ispezione_semplificata
+
 
 - title: Modulistica
   file: modulistica.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: download
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: files
+
 
 - title: Faq
   file: faq.md
-  utenza:
-    - imprese
-    - cittadini
+  type: callout
+  icon: help
+
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: link

@@ -1,17 +1,18 @@
 - title: Vai al Servizio
-  file: vaialservizio.md
-  utenza:
-    - cittadini
-    - intermediari
+  type: calltoaction
+  linktitle: sei un capo-squadra? ENTRA IN IMMISSIONE VERBALI
+  linkurl: http://applicazioni.regione.umbria.it/caccia-battute
+
+- title: Vai al Servizio
+  type: calltoaction
+  linktitle: sei un ATC? ENTRA IN GESTIONE STAGIONI
+  linkurl: http://applicazioni.regione.umbria.it/caccia-admi
 
 - title: Servizi collegati
   file: servizicollegatibattutecinghiale.md
-  utenza:
-    - cittadini
-    - intermediari
+  icon: link
+
 
 - title: Manualistica
   file: manualistica.md
-  utenza:
-    - cittadini
-    - intermediari
+  icon: download
