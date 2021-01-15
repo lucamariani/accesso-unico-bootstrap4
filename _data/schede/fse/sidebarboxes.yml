@@ -1,2 +1,4 @@
 - title: Vai al servizio
-  file: vai.md
+  type: calltoaction
+  linktitle: apri il fascicolo
+  linkurl: https://salute.regione.umbria.it/fse
