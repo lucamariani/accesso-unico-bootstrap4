@@ -1,16 +1,16 @@
 
 - title: Vai al servizio
-  file: servizioonline.md
-  utenza:
-    - cittadini
+  type: calltoaction
+  linktitle: PagoUmbria/PagoPA
+  linkurl: https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco_evoluto/edit.jsf?cdTrbEnte=PESCA_BBE&idEnte=33ED3E1B55346CBB0001
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - cittadini
+  icon: files
+
 
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - cittadini
+  icon: link

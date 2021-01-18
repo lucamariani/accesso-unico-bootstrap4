@@ -1,24 +1,22 @@
 
 - title: Vai al servizio
-  file: servizioonline.md
-  utenza:
-    - imprese
-    - cittadini
+  type: calltoaction
+  linktitle: pagamento della tariffa fitosanitaria
+  linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=12&nome_famiglia=Servizio%20Fitosanitario%20Regionale&form_id=Conferma_iscrizione
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: files
+
 
 - title: Faq
   file: faq.md
-  utenza:
-    - imprese
-    - cittadini
+  type: callout
+  icon: help
+
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: link
+    

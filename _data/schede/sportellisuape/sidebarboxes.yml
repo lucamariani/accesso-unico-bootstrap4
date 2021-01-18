@@ -1,5 +1,10 @@
 
 - title: Vai al Servizio
-  file: vai.md
+  type: calltoaction
+  linkurl: /map/sportelli_suape/
+  linktitle: indirizzo web del servizio
+  linkinterno: 1
+
 - title: Servizi collegati
   file: servizicollegati.md
+  icon: link

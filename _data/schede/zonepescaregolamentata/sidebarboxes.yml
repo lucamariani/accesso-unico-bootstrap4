@@ -1,16 +1,20 @@
 
 - title: Vai al servizio
-  file: servizioonline.md
-  utenza:
-    - cittadini
+  type: calltoaction
+  linktitle: per permessi e prenotazioni nei Tratti No Kill della Valnerina
+  linkurl: https://www.neranokill.it/Permessi/index.php
+
+- title: Vai al servizio
+  type: calltoction
+  linktitle: per permessi e prenotazioni nei Tratti No Kill dell'Alto Tevere
+  linkurl: https://www.fcatu.com/regolamento  
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - cittadini
+  icon: files
 
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - cittadini
+  icon: link
