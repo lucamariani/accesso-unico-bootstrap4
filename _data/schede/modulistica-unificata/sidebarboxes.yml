@@ -1,12 +1,12 @@
 
 - title: Moduli unificati vigenti in Umbria
   type: calltoaction
-  linkurl: /pages/modulistica-unificata
+  linkurl: /it/modulistica-unificata
   linktitle: scarica i modelli
   linkinterno: 1
 
 
-- title: Atti regionali di adozione della Modulistica
+- title: Documenti
   file: normativa.md
   icon: files
 
