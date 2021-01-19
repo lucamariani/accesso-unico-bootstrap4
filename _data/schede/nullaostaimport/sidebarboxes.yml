@@ -1,18 +1,15 @@
 
 - title: Modulistica
   file: modulistica.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: download
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: files
+
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - imprese
-    - cittadini
+  icon: link
+    

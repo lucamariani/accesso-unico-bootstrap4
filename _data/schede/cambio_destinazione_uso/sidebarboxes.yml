@@ -1,9 +1,8 @@
 
 - title: Servizi collegati
   file: procedimenti.md
+  icon: link
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - intermediari
+  icon: files

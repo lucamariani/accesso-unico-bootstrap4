@@ -1,21 +1,18 @@
 - title: Presenta la Pratica
   file: presenta-pratica.md
-  utenza:
-    - intermediari
+  icon: pencil
+
+
 - title: Modulistica
   file: modulistica.md
-  utenza:
-    - imprese
-    - intermediari
+  icon: download
+
 
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - imprese
-    - intermediari
+  icon: link
+
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - intermediari
+  icon: files

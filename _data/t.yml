@@ -1,6 +1,7 @@
 ---
 ## Main icon
 icon: "/assets/images/accesso_unico.png"
+iconAuthor: "/assets/images/LogoRegioneWhite.png"
 
 ## Social Card [1200x630]
 social-card: /assets/images/favicons/social-card.png
@@ -17,8 +18,12 @@ description:
 
 ## Site author
 author:
-  en: "Digital Transformation Team"
-  it: "Team per la Trasformazione Digitale"
+  en: "Regione Umbria"
+  it: "Regione Umbria"
+
+descriptionAuthor:
+  en: "Giunta Regionale"
+  it: "Giunta Regionale"
 
 ## Social
 social-links:
@@ -63,7 +68,7 @@ footer-links:
   en:
     privacy-policy:
       name: "Privacy policy"
-      url: "/en/privacy-policy"
+      url: "https://www.regione.umbria.it/privacy-policy"
     cookie-policy:
       name: "Cookie Policy"
       url: "/en/cookie-policy"
@@ -75,4 +80,31 @@ footer-links:
       name: "Cookie Policy"
       url: "/it/cookie-policy"
 
+# Footer data
 
+recapiti1: "Regione Umbria"
+
+
+recapiti2:
+  en: "Via Mario Angeloni, 68"
+  it: "Via Mario Angeloni, 68"
+
+recapiti3:
+  en: "06100 Perugia"
+  it: "06100 Perugia"
+
+recapiti4:
+  en: "Centralino (+39) 075.504.1"
+  it: "Centralino (+39) 075.504.1"
+
+email:
+  en: "accessounico@regione.umbria.it"
+  it: "accessounico@regione.umbria.it"
+
+pec:
+  en: "regione.giunta@postacert.umbria.it"
+  it: "regione.giunta@postacert.umbria.it"
+
+privacy_url:
+  en: "http://www.regione.umbria.it/privacy-policy"
+  it: "http://www.regione.umbria.it/privacy-policy"

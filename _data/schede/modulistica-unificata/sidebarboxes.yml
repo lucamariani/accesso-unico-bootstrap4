@@ -1,23 +1,16 @@
 
 - title: Moduli unificati vigenti in Umbria
-  file: vaimodelli.md
-  utenza:
-    - pa
-    - cittadini
-    - imprese
-    - intermediari
+  type: calltoaction
+  linkurl: /it/modulistica-unificata
+  linktitle: scarica i modelli
+  linkinterno: 1
 
-- title: Atti regionali di adozione della Modulistica
+
+- title: Documenti
   file: normativa.md
-  utenza:
-    - pa
-    - cittadini
-    - imprese
-    - intermediari
+  icon: files
+
+
 - title: Servizi collegati
   file: servizicollegati.md
-  utenza:
-    - pa
-    - cittadini
-    - imprese
-    - intermediari
+  icon: link

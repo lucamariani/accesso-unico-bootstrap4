@@ -1,22 +1,16 @@
 
 - title: Vai al servizio
-  file: servizioonline.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+  type: calltoaction
+  linktitle: avvia la pratica
+  linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=20&nome_famiglia=Elenco%20Professionisti
 
 
 - title: Documenti
   file: documenti.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+  icon: files
+
 
 - title: Faq
   file: faq.md
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+  type: callout
+  icon: help

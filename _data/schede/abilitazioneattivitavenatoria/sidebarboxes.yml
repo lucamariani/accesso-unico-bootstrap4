@@ -1,9 +1,7 @@
 - title: Modulistica
   file: vaialservizioattivitavenatoria.md
-  utenza:
-    - cittadini
+  icon: download
 
 - title: Servizi collegati
   file: servizicollegatiabilitazionevenatoria.md
-  utenza:
-    - cittadini
+  icon: link

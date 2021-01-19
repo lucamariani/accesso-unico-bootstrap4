@@ -8,24 +8,11 @@
 
 - title: "Cosa è"
   file: "cosae_acg.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+
 
 - title: "Modalità di adesione"
   file: "modalita_adesione.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini
+
 
 - title: "Costi e durata"
   file: "costi.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
-    - cittadini

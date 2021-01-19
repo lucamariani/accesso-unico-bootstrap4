@@ -1,7 +1,27 @@
 - title: Vai al servizio
-  file: vaialservizio.md
-  utenza:
-    - cittadini
-    - intermediari
-    - imprese
-    - pa
+  type: calltoaction
+  linktitle: battute di caccia in svolgimento
+  linkurl: http://www.battutecinghiale.regione.umbria.it/ushahidi-dev/index.php/
+
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: battute di caccia
+  linkurl: http://www.regione.umbria.it/web/servizi/battute
+
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: squadre
+  linkurl: http://www.regione.umbria.it/web/servizi/squadre
+
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: esemplari
+  linkurl: http://applicazioni.regione.umbria.it/esemplari
+
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: analisi su mappa
+  linkurl: http://www.regione.umbria.it/web/servizi/analisi-su-mappa
+
+
+  

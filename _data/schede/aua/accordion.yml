@@ -8,28 +8,15 @@
 
 - title: "Cosa è"
   file: "cosae_aua.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+
 
 - title: "Chi la può richiedere"
   file: "requisiti.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+
 
 - title: "Come presentare la domanda"
   file: "comerichiederla.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa
+
 
 - title: "Costi, Durata e Tempi di rilascio"
   file: "costi.md"
-  utenza:
-    - imprese
-    - intermediari
-    - pa

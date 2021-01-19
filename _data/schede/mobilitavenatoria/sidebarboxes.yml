@@ -1,14 +1,18 @@
 - title: Vai al Servizio
-  file: vaialservizio.md
-  utenza:
-    - cittadini
+  type: calltoaction
+  linktitle: per prenotare
+  linkurl: http://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=4&nome_famiglia=Venatoria&form_id=1_caccia
+
+- title: Vai al Servizio
+  type: calltoaction
+  linktitle: per procedere al pagamento
+  linkurl: https://pagoumbria.regione.umbria.it/pagoumbria/addon/bollettino_bianco/edit.jsf?cdTrbEnte=MOBILITA_VENATORIA&idEnte=33ED3E1B55346CBB0001
 
 - title: Manualistica
   file: manualistica.md
-  utenza:
-    - cittadini
+  icon: link
+
 
 - title: Accordi interregionali
   file: accordiinterregionali.md
-  utenza:
-    - cittadini
+  icon: link

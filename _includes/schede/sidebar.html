@@ -6,13 +6,12 @@
     <!-- differ component based on box type -->
     {% if box.type == 'calltoaction' %}
         <p>
-            <a class="btn btn-primary w-100" href="{{ box.linkurl}}">
-                {% if box.linkinterno %}
-                    {{ site.baseurl}}{{ box.linktitle }}
-                {% else %}
-                    {{ box.linktitle}}
-                {% endif %}
-            </a>
+            {% if box.linkinterno %}
+                {% capture linkurl %} {{ site.baseurl }}{{ box.linkurl }} {% endcapture %}
+            {% else %}
+                {% capture linkurl %} {{box.linkurl}} {% endcapture %}
+            {% endif %}
+            <a class="btn btn-primary w-100" href="{{ linkurl}}">{{ box.linktitle }}</a>
         </p>
     {% else %}
         {% capture box-content %}{% include schede/{{page.object}}/sidebarbox/{{ box.file }} %}{% endcapture %}
