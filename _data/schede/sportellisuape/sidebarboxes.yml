@@ -1,8 +1,8 @@
 
 - title: Vai al Servizio
   type: calltoaction
-  linkurl: /map/sportelli_suape/
-  linktitle: indirizzo web del servizio
+  linkurl: /it/map-sportelli
+  linktitle: vai al servizio
   linkinterno: 1
 
 - title: Servizi collegati

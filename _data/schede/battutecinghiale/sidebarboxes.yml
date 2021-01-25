@@ -1,11 +1,11 @@
 - title: Vai al Servizio
   type: calltoaction
-  linktitle: sei un capo-squadra? ENTRA IN IMMISSIONE VERBALI
+  linktitle: sei un capo-squadra? </br> entra in immissione verbali
   linkurl: http://applicazioni.regione.umbria.it/caccia-battute
 
 - title: Vai al Servizio
   type: calltoaction
-  linktitle: sei un ATC? ENTRA IN GESTIONE STAGIONI
+  linktitle: sei un ATC? </br> entra in gestione stagioni
   linkurl: http://applicazioni.regione.umbria.it/caccia-admi
 
 - title: Servizi collegati
