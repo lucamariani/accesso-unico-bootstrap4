@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div id="main">
+
+  <!-- Page Title -->
+  {% if page.background %}
+  <div class="u-sizeFull" style="height: 350px; background-size: cover; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <div class="u-sizeFull">
+  {% endif %}
+
+    <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
+      <h1 class="u-text-h1 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.title }}</h1>
+        {% if page.img %}
+        <div class="page-img-div">
+          <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+        </div>
+        {% endif %}
+        {% if page.subtitle %}
+        <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.subtitle }}</h3>
+        {% endif %}
+        {% if page.author %}
+        <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.author }}</h3>
+        {% endif %}
+        {% if page.date %}
+        <br>
+        <span class="meta u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.date | date: '%B %d, %Y' }}</span>
+        <br>
+      {% endif %}
+
+      <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
+        <section class="Grid">
+          <div class="Grid-cell u-sizeFull u-md-size3of4 u-lg-size3of4">
+
+            {% if page.map_width == 'small' %}
+            <article class="Prose u-layout-prose">
+            {% endif %}
+
+              {% if page.content_files[0] %}
+              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
+                <p class="Prose u-padding-r-top u-padding-r-bottom">
+                  {% capture file-content-1 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[0]}} %}{% endcapture %}
+                  {{ file-content-1 | markdownify }}
+                </p>
+              </div>
+              {% endif %}
+
+            {% include arcgis.html %}
+
+            {% if page.content_files[1] %}
+              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
+                <p class="Prose u-padding-r-top u-padding-r-bottom">
+                  {% capture file-content-2 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[1]}} %}{% endcapture %}
+                  {{ file-content-2 | markdownify }}
+                </p>
+              </div>
+            {% endif %}
+
+            {{ content }}
+
+            {% if page.content_files[2] %}
+              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
+                <p class="Prose u-padding-r-top u-padding-r-bottom">
+                  {% capture file-content-3 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[2]}} %}{% endcapture %}
+                  {{ file-content-3 | markdownify }}
+                </p>
+              </div>
+            {% endif %}
+
+            {% if page.map_width == 'small' %}
+            </article>
+            {% endif %}
+
+          </div>
+
+          <!-- Sidebar -->
+          <div class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4 u-text-r-s u-padding-r-all">
+            {% include share.html %}
+            <!-- add separator -->
+            <div class="u-padding-r-all u-text-r-xxl"></div>
+            {% include pages/sidebar.html %}
+          </div>
+          <!-- / Sidebar -->
+
+        </section>
+      </div>
+
+
+
+  </div>
+</div>
