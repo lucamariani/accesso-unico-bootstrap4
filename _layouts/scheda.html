@@ -37,11 +37,20 @@ scripts:
           <div class="col-md-3 p-3 d-flex justify-content-center">
               <div id="scheda-icons-div" class="text-center d-none d-sm-inline">
                 <ul class="list-inline">
-<!--                  <li class="list-inline-item">-->
-<!--                    <img title="{{ user_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_grigio_{{ page.utenza[0] }}.png">-->
-<!--                  </li>-->
+
                   <li class="list-inline-item">
-                  <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema }}.png">
+                    {% if page.argomento %}
+                      {% assign argomento_items = site.data.argomenti | where_exp: "item", "item.metaname == page.argomento" %}
+                      {% assign argomento_item = argomento_items[0] %}
+                      {% assign tema_metaname = argomento_item.tema %}
+                    {% else %}
+                      {% assign tema = page.tema %}
+                      {% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == tema" %}
+                      {% assign tema_item = tema_items[0] %}
+                      {% assign tema_metaname = tema_item.metaname %}
+                    {% endif %}
+                    <img title="{{ tema_item.name }}" class="icon icon-lg" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ tema_metaname }}.png">
+                    <!--                  <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema }}.png">-->
                   </li>
                   <li class="list-inline-item">
                     <img title="{{ type_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">

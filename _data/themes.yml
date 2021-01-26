@@ -2,6 +2,7 @@
   color: yellow
   metaname: agricoltura
   image: /assets/images/icons/rosso_agricoltura.png
+  image_red_circle: /assets/images/icons/cerchio_rosso_agricoltura.png
 
 - name: Ambiente
   color: green

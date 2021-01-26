@@ -2,18 +2,10 @@
 <div class="card-wrapper card-space">
     <div class="card card-bg card-big no-after">
         <div class="card-body">
-            <!-- ricerca tema nel file argomenti.yml a partire dall'argomento -->
-            {% assign argomento_items = site.data.argomenti | where_exp: "item", "item.metaname == include.scheda.argomento" %}
-            {% assign argomento_item = argomento_items[0] %}
-            <!-- ricerca icona del tema nel file themes.yml a partire dal metaname del tema -->
-            {% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == argomento_item.tema" %}
-            {% assign tema_item = tema_items[0] %}
-<!--            tema item {{ tema_item | dump }}-->
             <div class="categoryicon-top">
                 <a href="#">
-                    <img title="{{ tema_item.name }}" class="icon icon-lg" src="{{ tema_item.image }}">
+                {% include tema_scheda_icona.html %}
                 </a>
-<!--                <span class="data">10/10/2018</span>-->
             </div>
             <h5 class="card-title">
                 {{ include.scheda.title }}

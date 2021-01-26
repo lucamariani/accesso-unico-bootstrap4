@@ -1,0 +1,18 @@
+{% if include.scheda.argomento %}
+
+<!-- ricerca tema nel file argomenti.yml a partire dall'argomento -->
+{% assign argomento_items = site.data.argomenti | where_exp: "item", "item.metaname == include.scheda.argomento" %}
+{% assign argomento_item = argomento_items[0] %}
+{% assign tema = argomento_item.tema %}
+
+{% else %}
+    {% assign tema = include.scheda.tema %}
+{% endif %}
+
+<!-- ricerca icona del tema nel file themes.yml a partire dal metaname del tema -->
+{% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == tema" %}
+{% assign tema_item = tema_items[0] %}
+
+
+<!--            tema item {{ tema_item | dump }}-->
+<img title="{{ tema_item.name }}" class="icon icon-lg" src="{{ tema_item.image }}">
