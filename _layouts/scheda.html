@@ -27,33 +27,30 @@ scripts:
           {% endif %}
         </div>
 
-          {% assign user_items = site.data.profiles | where_exp: "item", "item.metaname == page.utenza" %}
-          {% assign user_item = user_items[0] %}
-          {% assign theme_items = site.data.themes | where_exp: "item", "item.metaname == page.tema" %}
-          {% assign theme_item = theme_items[0] %}
-          {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
-          {% assign type_item = type_items[0] %}
+        {% assign user_items = site.data.profiles | where_exp: "item", "item.metaname == page.utenza" %}
+        {% assign user_item = user_items[0] %}
+        {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
+        {% assign type_item = type_items[0] %}
 
-          <div class="col-md-3 p-3 d-flex justify-content-center">
+        {% comment %} get tema from page.argomento if available else use page.tema {% endcomment %}
+        {% assign page_tema = page.tema %}
+        {% if page.argomento %}
+          {% assign argomento_items = site.data.argomenti | where_exp: "item", "item.metaname == page.argomento" %}
+          {% assign argomento_item = argomento_items[0] %}
+          {% assign page_tema = argomento_item.tema %}
+        {% endif %}
+        {% assign theme_items = site.data.themes | where_exp: "item", "item.metaname == page_tema" %}
+        {% assign theme_item = theme_items[0] %}
+
+
+        <div class="col-md-3 p-3 d-flex justify-content-center">
               <div id="scheda-icons-div" class="text-center d-none d-sm-inline">
                 <ul class="list-inline">
-
                   <li class="list-inline-item">
-                    {% if page.argomento %}
-                      {% assign argomento_items = site.data.argomenti | where_exp: "item", "item.metaname == page.argomento" %}
-                      {% assign argomento_item = argomento_items[0] %}
-                      {% assign tema_metaname = argomento_item.tema %}
-                    {% else %}
-                      {% assign tema = page.tema %}
-                      {% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == tema" %}
-                      {% assign tema_item = tema_items[0] %}
-                      {% assign tema_metaname = tema_item.metaname %}
-                    {% endif %}
-                    <img title="{{ tema_item.name }}" class="icon icon-lg" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ tema_metaname }}.png">
-                    <!--                  <img title="{{ theme_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tema }}.png">-->
+                    <img title="{{ theme_item.name | capitalize }}" class="icon icon-lg" src="{{ theme_item.image_red_circle }}">
                   </li>
                   <li class="list-inline-item">
-                    <img title="{{ type_item.name | capitalize }}" class="scheda-icona" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
+                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
                   </li>
                 </ul>
               </div>
