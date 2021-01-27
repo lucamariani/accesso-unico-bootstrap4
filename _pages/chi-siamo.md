@@ -3,7 +3,7 @@ layout: page
 title: Chi siamo
 lang: it
 ref: about-us
-permalink: /it/chi-siamo
+permalink: /chi-siamo
 order: 2
 ---
 

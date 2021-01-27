@@ -1,7 +1,6 @@
 {% comment %}
 Le pagine che vengono incluse in questo menù sono un sottoinsieme di
 tutte le pagine del sito che:
-- hanno la stessa lingua della pagina corrente
 - hanno l'attributo "order" valorizzato
 {% endcomment %}
 
@@ -9,7 +8,7 @@ tutte le pagine del sito che:
 {% if page.lang %}
   {% assign pageLang = page.lang %}
 {% endif %}
-{% assign current_lang_menu_pages = site.pages | where: "lang", pageLang | where_exp: "page", "page.order != nil" | sort: "order" %}
+{% assign current_menu_pages = site.pages | where_exp: "page", "page.order != nil" | sort: "order" %}
 <div class="it-nav-wrapper">
   <div class="it-header-center-wrapper">
     <div class="container">
@@ -20,8 +19,8 @@ tutte le pagine del sito che:
               <a href="{{ site.baseurl }}/">
                 <img class="icon" src="{{ site.baseurl }}{{ site.data.t.icon }}" alt="{{ site.name }} logo">
                 <div class="it-brand-text">
-                  <h2 class="no_toc">{{ site.data.t.name[pageLang] }}</h2>
-                  <h3 class="no_toc d-none d-md-block">{{ site.data.t.description[pageLang] }}</h3>
+                  <h2 class="no_toc">{{ site.data.t.name }}</h2>
+                  <h3 class="no_toc d-none d-md-block">{{ site.data.t.description }}</h3>
                 </div>
               </a>
             </div>
@@ -29,7 +28,7 @@ tutte le pagine del sito che:
               <div class="it-socials d-none d-md-flex">
                 <span>Seguici su</span>
                 <ul>
-                  {% for social-link in site.data.t.social-links[pageLang] %}
+                  {% for social-link in site.data.t.social-links %}
                   <li class="list-inline-item">
                     <a href="{{ social-link[1].url }}" title="{{ social-link[1].name }}" target="_blank">
                       <svg class="icon">
@@ -75,7 +74,7 @@ tutte le pagine del sito che:
               </div>
               <div class="menu-wrapper">
                 <ul class="navbar-nav">
-                  {% for menu_page in current_lang_menu_pages %}
+                  {% for menu_page in current_menu_pages %}
                   <li class="nav-item">
                     <a class="nav-link" href="{{ site.baseurl }}{{menu_page.permalink}}"><span>{{menu_page.title}}</span></a>
                   </li>

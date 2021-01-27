@@ -7,104 +7,47 @@ iconAuthor: "/assets/images/LogoRegioneWhite.png"
 social-card: /assets/images/favicons/social-card.png
 
 ## Site name
-name:
-  en: "Easy Umbria"
-  it: "Umbria Facile"
+name: "Umbria Facile"
 
 ## Site description
-description:
-  en: "A website with a Jekyll theme"
-  it: "Portale dell'Accesso Unico ai servizi delle PA dell'Umbria"
+description: "Portale dell'Accesso Unico ai servizi delle PA dell'Umbria"
 
 ## Site author
-author:
-  en: "Regione Umbria"
-  it: "Regione Umbria"
+author: "Regione Umbria"
 
-descriptionAuthor:
-  en: "Giunta Regionale"
-  it: "Giunta Regionale"
+descriptionAuthor: "Giunta Regionale"
 
 ## Social
 social-links:
-  en:
-    twitter:
-      name: "twitter"
-      url: "https://twitter.com/RegioneUmbria/"
-    facebook:
-      name: "facebook"
-      url: "https://www.facebook.com/Regione.Umbria.official/"
-    github:
-      name: "GitHub"
-      url: "https://github.com/Regione-Umbria/"
-  it:
-    twitter:
-      name: "twitter"
-      url: "https://twitter.com/RegioneUmbria"
-    facebook:
-      name: "facebook"
-      url: "https://www.facebook.com/Regione.Umbria.official/"
-    github:
-      name: "github"
-      url: "https://github.com/Regione-Umbria/"
+  twitter:
+    name: "twitter"
+    url: "https://twitter.com/RegioneUmbria"
+  facebook:
+    name: "facebook"
+    url: "https://www.facebook.com/Regione.Umbria.official/"
+  github:
+    name: "github"
+    url: "https://github.com/Regione-Umbria/"
 
 ## Labels
-share:
-  en: "Share"
-  it: "Condividi"
-italian-version:
-  en: "Italian version"
-  it: "Versione italiana"
-english-version:
-  en: "English version"
-  it: "Versione inglese"
-cookie-policy-info:
-  en: "This site uses technical, analytics and third-party cookies <br>By continuing to browse, you accept the use of cookies."
-  it: "Questo sito utilizza cookie tecnici, analytics e di terze parti.<br>Proseguendo nella navigazione accetti l’utilizzo dei cookie."
-cookie-policy-accept-btn:
-  en: "Ok"
-  it: "Accetto"
+share: "Condividi"
+italian-version: "Versione italiana"
+english-version: "Versione inglese"
+cookie-policy-info: "Questo sito utilizza cookie tecnici, analytics e di terze parti.<br>Proseguendo nella navigazione accetti l’utilizzo dei cookie."
+cookie-policy-accept-btn: "Accetto"
 footer-links:
-  en:
-    privacy-policy:
-      name: "Privacy policy"
-      url: "https://www.regione.umbria.it/privacy-policy"
-    cookie-policy:
-      name: "Cookie Policy"
-      url: "/en/cookie-policy"
-  it:
-    privacy-policy:
-      name: "Privacy policy"
-      url: "/it/privacy-policy"
-    cookie-policy:
-      name: "Cookie Policy"
-      url: "/it/cookie-policy"
+  privacy-policy:
+    name: "Privacy policy"
+    url: "/privacy-policy"
+  cookie-policy:
+    name: "Cookie Policy"
+    url: "/cookie-policy"
 
 # Footer data
-
 recapiti1: "Regione Umbria"
-
-
-recapiti2:
-  en: "Via Mario Angeloni, 68"
-  it: "Via Mario Angeloni, 68"
-
-recapiti3:
-  en: "06100 Perugia"
-  it: "06100 Perugia"
-
-recapiti4:
-  en: "Centralino (+39) 075.504.1"
-  it: "Centralino (+39) 075.504.1"
-
-email:
-  en: "accessounico@regione.umbria.it"
-  it: "accessounico@regione.umbria.it"
-
-pec:
-  en: "regione.giunta@postacert.umbria.it"
-  it: "regione.giunta@postacert.umbria.it"
-
-privacy_url:
-  en: "http://www.regione.umbria.it/privacy-policy"
-  it: "http://www.regione.umbria.it/privacy-policy"
+recapiti2: "Via Mario Angeloni, 68"
+recapiti3: "06100 Perugia"
+recapiti4: "Centralino (+39) 075.504.1"
+email: "accessounico@regione.umbria.it"
+pec: "regione.giunta@postacert.umbria.it"
+privacy_url: "http://www.regione.umbria.it/privacy-policy"
