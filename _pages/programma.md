@@ -5,7 +5,7 @@ metatitle: programma
 subtitle: cosa è, come si articola, presidio organizzativo, interoperabilità, portale
 background:
 img:
-permalink: /it/programma
+permalink: /programma
 lang: it
 order: 5
 ---

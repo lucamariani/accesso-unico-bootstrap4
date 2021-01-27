@@ -4,7 +4,7 @@ title: Schede
 subtitle: schede servizi
 background:
 img:
-permalink: /it/schede
+permalink: /schede
 lang: it
 order: 3
 ---
