@@ -2,16 +2,69 @@
 layout: default
 ---
 
-<article class="container my-4">
-  <h1>{{ page.title }}</h1>
+<div id="main">
 
-  <div class="entry">
-    {{ content }}
+  <!-- Post Title -->
+  {% if page.background %}
+  <div class="container my-4" style="height: 350px; background-size: cover; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <div class="container my-4">
+  {% endif %}
+    <div class="container mx-auto pt-3 mb-3 px-4">
+      <section class="row">
+        <div class="w-100 col-md-9 col-lg-9">
+          <div class="pr-5 mr-5">
+            <h1>{{ page.title }}</h1>
+            {% if page.img %}
+            <div class="page-img-div">
+              <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+            </div>
+            {% endif %}
+            {% if page.subtitle %}
+            <h6>{{ page.subtitle }}</h6>
+            {% endif %}
+            {% if page.author %}
+            <h6>{{ page.author }}</h6>
+            {% endif %}
+            {% if page.date %}
+            <small class="text-muted">{{ page.date | date: '%B %d, %Y' }}</small>
+            <br>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="col-md-3 col-lg-3 p-3">
+          {% include share.html %}
+        </div>
+
+        <section>
   </div>
 
-  <div class="date">
-    Scritto il {{ page.date | date: "%d/%m/%Y" }}
-  </div>
+  <div class="container mx-auto my-5 px-4">
+    <section class="row">
+      <div class="w-100 col-md-9 col-lg-9">
 
-  {% include disqus.html %}
-</article>
+        <article class="pr-5 mr-5">
+
+          {{ content }}
+
+        </article>
+
+      </div>
+
+      <div class="Grid-cell u-sizeFull">
+        <br>
+
+        {% if page.previous.url %}
+        <a class="btn btn-primary" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Pagina precedente</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="btn btn-primary" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Pagina successiva</span> &rarr;</a>
+        {% endif %}
+
+        <br>
+      </div>
+
+    </section>
+  </div>
+</div>

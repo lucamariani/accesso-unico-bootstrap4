@@ -6,41 +6,42 @@ layout: default
 
   <!-- Page Title -->
   {% if page.background %}
-  <div class="u-sizeFull" style="height: 350px; background-size: cover; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  <div class="container my-4" style="height: 350px; background-size: cover; background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
-  <div class="u-sizeFull">
+  <div class="container my-4">
   {% endif %}
 
-    <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
-      <h1 class="u-text-h1 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.title }}</h1>
-        {% if page.img %}
-        <div class="page-img-div">
-          <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+    <div class="container mx-auto pt-3 mb-3 px-4">
+      <section class="row">
+        <div class="w-100">
+          <h1>{{ page.title }}</h1>
+          {% if page.img %}
+          <div class="page-img-div">
+            <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
+          </div>
+          {% endif %}
+          {% if page.subtitle %}
+          <h6>{{ page.subtitle }}</h6>
+          {% endif %}
+          {% if page.author %}
+          <h6>{{ page.author }}</h6>
+          {% endif %}
         </div>
-        {% endif %}
-        {% if page.subtitle %}
-        <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.subtitle }}</h3>
-        {% endif %}
-        {% if page.author %}
-        <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.author }}</h3>
-        {% endif %}
-        {% if page.date %}
-        <br>
-        <span class="meta u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.date | date: '%B %d, %Y' }}</span>
-        <br>
-      {% endif %}
+      </section>
+    </div>
+  </div>
 
-      <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
-        <section class="Grid">
-          <div class="Grid-cell u-sizeFull u-md-size3of4 u-lg-size3of4">
+    <div class="container mx-auto mb-3 px-4">
+        <section class="row">
+          <div class="w-100 col-12">
 
             {% if page.map_width == 'small' %}
-            <article class="Prose u-layout-prose">
+            <article class="">
             {% endif %}
 
               {% if page.content_files[0] %}
-              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
-                <p class="Prose u-padding-r-top u-padding-r-bottom">
+              <div class="pb-3">
+                <p class="py-3">
                   {% capture file-content-1 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[0]}} %}{% endcapture %}
                   {{ file-content-1 | markdownify }}
                 </p>
@@ -50,8 +51,8 @@ layout: default
             {% include arcgis.html %}
 
             {% if page.content_files[1] %}
-              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
-                <p class="Prose u-padding-r-top u-padding-r-bottom">
+              <div class="pb-3">
+                <p class="py-3">
                   {% capture file-content-2 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[1]}} %}{% endcapture %}
                   {{ file-content-2 | markdownify }}
                 </p>
@@ -61,8 +62,8 @@ layout: default
             {{ content }}
 
             {% if page.content_files[2] %}
-              <div class="u-text-r-s u-layout-wide u-padding-r-bottom">
-                <p class="Prose u-padding-r-top u-padding-r-bottom">
+              <div class="pb-3">
+                <p class="py-3">
                   {% capture file-content-3 %}{% include pages/{{ page.metatitle | downcase }}/content/{{page.content_files[2]}} %}{% endcapture %}
                   {{ file-content-3 | markdownify }}
                 </p>
@@ -73,21 +74,10 @@ layout: default
             </article>
             {% endif %}
 
+            <div class="col-6 col-lg-3">{% include share.html %}</div>
           </div>
-
-          <!-- Sidebar -->
-          <div class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4 u-text-r-s u-padding-r-all">
-            {% include share.html %}
-            <!-- add separator -->
-            <div class="u-padding-r-all u-text-r-xxl"></div>
-            {% include pages/sidebar.html %}
-          </div>
-          <!-- / Sidebar -->
 
         </section>
       </div>
-
-
-
   </div>
 </div>
