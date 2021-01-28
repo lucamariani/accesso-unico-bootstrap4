@@ -3,7 +3,7 @@
 
 {% for content in include_file %}
 
-  {% capture file-content %}{% include pages/{{ page.lang }}/{{ page.metatitle | downcase }}/content/{{ content.file }} %}{% endcapture %}
+  {% capture file-content %}{% include pages/{{ page.metatitle | downcase }}/content/{{ content.file }} %}{% endcapture %}
 
   {{ file-content | markdownify }}
 

@@ -10,4 +10,4 @@ content_files:
   - content2.md
 ---
 
-{% include comuni_select.html %}
+{% include comuni_select.html url='urlsuape' %}
