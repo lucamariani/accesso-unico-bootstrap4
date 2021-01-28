@@ -7,7 +7,7 @@
                     {% comment %}{{ include.options }}{% endcomment %}
                     <option value="" title="seleziona comune" data-content="Annulla <span class='reset-label'></span>"></option>
                     {% for comune in site.data.comuni %}
-                    <option value="{{ comune.url }}">{{ comune.name }} </option>
+                    <option value="{{ comune[include.url] }}">{{ comune.name }} </option>
                     {% endfor%}
                 </select>
             </div>
