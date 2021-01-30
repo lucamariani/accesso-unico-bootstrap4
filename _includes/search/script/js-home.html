@@ -1,0 +1,69 @@
+<!-- add schede for searching purpose -->
+<script>
+    window.searchschede = {
+    {% assign all_schede = site.schede | group_by: 'object' %}
+
+    {% for scheda in all_schede %}
+    "{{ scheda.items[0].object | slugify }}": {
+        "title": "{{ scheda.items[0].title | xml_escape }}",
+            "subtitle": "{{ scheda.items[0].subtitle | xml_escape }}",
+            "description": "{{ scheda.items[0].description | xml_escape }}",
+            "url": "{{ scheda.items[0].url | xml_escape }}",
+            "type": "scheda"
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    };
+
+    window.docs = {
+    {% for doc in site.data.docs.docs %}
+    "{{ doc.metaname | slugify }}": {
+        "title": "{{ doc.title | xml_escape }}",
+            "tema": "{{ doc.tema | xml_escape }}",
+            "subject": "{{ doc.oggetto | xml_escape }}",
+            "category": "{{ doc.categoria | xml_escape }}",
+            "year": {{ doc.anno }},
+        "ente": "{{ doc.ente | xml_escape }}",
+            "number": {{ doc.numero }},
+        "url": "{{ doc.url | xml_escape }}",
+            "type": "document",
+            "tags": [
+            {% for tag in doc.tags %}
+        "{{ tag  | xml_escape }}"
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    }
+
+    window.news = {
+    {% for news in site.posts %}
+    "news{{ forloop.index }}": {
+        "title": "{{ news.title | xml_escape }}",
+            "subtitle": "{{ news.subtitle | xml_escape }}",
+            "category": [
+            {% for category in news.categories %}
+        {% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == category" %}
+        {% assign tema_item = tema_items[0] %}
+        "{{ tema_item.metaname }}"
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ],
+        "year": "{{ news.date | date: '%Y' }}",
+            "date": "{{ news.date | date: '%d %B %Y' }}",
+            "url": "{{ news.url }}",
+            "serpImage": "{{ news.search_image }}",
+            "summary": "{{ news.summary }}",
+            "tags": [
+            {% for tag in news.tags %}
+        "{{ tag  | xml_escape }}"
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    };
+</script>

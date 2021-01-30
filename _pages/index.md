@@ -7,6 +7,8 @@ lang: it
 ref: homepage
 permalink: /
 order: 1
+scripts:
+    - /assets/scripts/home_search.js
 ---
 
 {% include hero.html %}
@@ -17,3 +19,4 @@ order: 1
 
 </main>
 
+{% include search/script/js-home.html %}
