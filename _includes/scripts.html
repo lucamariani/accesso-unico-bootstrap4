@@ -7,6 +7,9 @@
 <!-- Main JS -->
 <script src="{{ site.baseurl }}/assets/main.js"></script>
 
+<!-- Lunr JS -->
+<script src="{{ site.baseurl }}/assets/scripts/lunr.js"></script>
+
 {% for script in page.scripts %}
 {% capture scriptFullPath %}{{ script | relative_url }}{% endcapture %}
 <script src="{{ scriptFullPath }}"></script>

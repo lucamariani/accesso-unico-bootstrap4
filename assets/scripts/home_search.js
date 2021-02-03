@@ -1,5 +1,6 @@
 /** Create lunr index **/
 var idx = lunr(function () {
+  console.log('creating index...', window.searchschede);
   // disable stemmer as it is the english stemmer
   this.pipeline.remove(lunr.stemmer)
 
@@ -16,7 +17,10 @@ var idx = lunr(function () {
   this.field('number');
   this.field('tags');
 
+  console.log('window.searchschede', window.searchschede);
+
   for (let key in window.searchschede) { // Add the data to lunr
+    console.log('adding key', key);
     let entry = {
       'metaname': key,
       'title': window.searchschede[key].title,
@@ -58,7 +62,9 @@ var idx = lunr(function () {
 let search_for = '';
 
 const formSubmit = function() {
+  console.log('index:', idx.tokenSet.toArray())
   search_for = $('#home-cerca').val();
+  console.log('searching for', search_for)
 
   const results = idx.search('*' + search_for + '*');
   // const results = idx.search('tema:*' + search_for + '*^100 *' + search_for + '*');

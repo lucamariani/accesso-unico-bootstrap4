@@ -5,7 +5,7 @@
 
     {% for scheda in all_schede %}
     "{{ scheda.items[0].object | slugify }}": {
-        "title": "{{ scheda.items[0].title | xml_escape }}",
+            "title": "{{ scheda.items[0].title | xml_escape }}",
             "subtitle": "{{ scheda.items[0].subtitle | xml_escape }}",
             "description": "{{ scheda.items[0].description | xml_escape }}",
             "url": "{{ scheda.items[0].url | xml_escape }}",
@@ -16,26 +16,26 @@
     };
 
     window.docs = {
-    {% for doc in site.data.docs.docs %}
-    "{{ doc.metaname | slugify }}": {
-        "title": "{{ doc.title | xml_escape }}",
+        {% for doc in site.data.docs.docs %}
+        "{{ doc.metaname | slugify }}": {
+            "title": "{{ doc.title | xml_escape }}",
             "tema": "{{ doc.tema | xml_escape }}",
             "subject": "{{ doc.oggetto | xml_escape }}",
             "category": "{{ doc.categoria | xml_escape }}",
             "year": {{ doc.anno }},
-        "ente": "{{ doc.ente | xml_escape }}",
+            "ente": "{{ doc.ente | xml_escape }}",
             "number": {{ doc.numero }},
-        "url": "{{ doc.url | xml_escape }}",
+            "url": "{{ doc.url | xml_escape }}",
             "type": "document",
             "tags": [
-            {% for tag in doc.tags %}
-        "{{ tag  | xml_escape }}"
+                {% for tag in doc.tags %}
+                    "{{ tag  | xml_escape }}"
+                    {% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }
         {% unless forloop.last %},{% endunless %}
         {% endfor %}
-    ]
-    }
-    {% unless forloop.last %},{% endunless %}
-    {% endfor %}
     }
 
     window.news = {
@@ -67,3 +67,4 @@
     {% endfor %}
     };
 </script>
+<script src="{{site.baseurl}}/assets/scripts/home_search.js"></script>
