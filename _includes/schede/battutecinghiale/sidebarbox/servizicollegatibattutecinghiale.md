@@ -1,2 +1,2 @@
 
-[Caccia al cinghiale - Statistiche]({{site.baseurl}}/schede/cacciacinghialedati/cittadini/index.html)
+[Caccia al cinghiale - Statistiche]({{site.baseurl}}/schede/cacciacinghialedati/index.html)

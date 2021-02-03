@@ -1,4 +1,4 @@
-[Licenza di pesca]({{site.baseurl}}/schede/licenzapescasportiva/cittadini/index.html)
+[Licenza di pesca]({{site.baseurl}}/schede/licenzapescasportiva/index.html)
 
 
-[Tesserino di pesca]({{site.baseurl}}/schede/tesserinopesca/cittadini/index.html)
+[Tesserino di pesca]({{site.baseurl}}/schede/tesserinopesca/index.html)
