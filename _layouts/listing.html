@@ -22,17 +22,6 @@ layout: default
         <div class="row">
             <div class="col-12 col-md-3">
 
-                {% capture profile-content %}
-                {% for profile in site.data.profiles %}
-                    {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
-                    <div class="form-check form-check-group">
-                        <input id="p_{{ profile.metaname }}" type="checkbox" checked="checked">
-                        <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
-                    </div>
-                {% endfor %}
-                {% endcapture %}
-                {% include listing-accordion.html name="profilo" content=profile-content %}
-
                 {% capture tema-content %}
                     {% for tema in site.data.themes %}
                     <div class="form-check form-check-group">
@@ -41,8 +30,20 @@ layout: default
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="tema" content=tema-content %}
+                {% include listing-accordion.html name="argomento" content=tema-content %}
 
+                <h5>tipologia</h5>
+
+                {% capture profile-content %}
+                {% for profile in site.data.profiles %}
+                {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
+                <div class="form-check form-check-group">
+                    <input id="p_{{ profile.metaname }}" type="checkbox" checked="checked">
+                    <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
+                </div>
+                {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="profilo" content=profile-content %}
             </div>
 
             <!-- results column -->
