@@ -7,4 +7,4 @@ ref: cookie-policy
 permalink: /cookie-policy
 ---
 
-Questo è un esempio di pagina per una "cookie policy".
+Questo è un esempio di pagina per una "cookie policy" in mancanza di una propria.
