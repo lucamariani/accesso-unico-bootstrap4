@@ -89,7 +89,7 @@ const addResultItems = function(label, itemArray, _baseurl) {
   // console.log('home_search.js: adding result list to #', appendTo)
   if ( itemArray.length > 0 ) {
     $.each(itemArray, function(key,item) {
-      appendString += '<li class="u-textLeft u-text-xs"><a href="' + _baseurl + item.url + '">' + item.title + '</a></li>';
+      appendString += '<li class="list-item py-2"><a href="' + _baseurl + item.url + '">' + item.title + '</a></li><li><span class="divider"></span></li>';
     });
   }
 
