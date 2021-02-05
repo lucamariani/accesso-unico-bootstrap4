@@ -17,3 +17,6 @@ ul.list-inline img {max-width: 45px}
 #no-results-div {display:none}
 .home-column-serp {max-height: 400px; overflow-y: auto}
 #results-div .link-list-wrapper ul li a {line-height: 1.3em}
+
+/* utils */
+.remove-mb {margin-bottom: 0 !important;}
