@@ -16,18 +16,12 @@
     - intermediari
 
 - title: "La pratica"
-  file: "pratica_cittadini.md"
+  file: "pratica.md"
   utenza:
     - cittadini
 
-- title: "Requisiti"
-  file: "requisiti.md"
-  utenza:
-    - imprese
-    - intermediari
-
 - title: "Chi può fare richiesta"
-  file: "requisiti_cittadini.md"
+  file: "requisiti.md"
   utenza:
     - cittadini
 
@@ -43,18 +37,8 @@
     - imprese
     - intermediari
 
-- title: "Controlli"
-  file: "controlli_cittadini.md"
-  utenza:
-    - cittadini
-
 - title: "Costi"
   file: "costi.md"
   utenza:
     - imprese
     - intermediari
-
-- title: "Costi"
-  file: "costi_cittadini.md"
-  utenza:
-    - cittadini

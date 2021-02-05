@@ -16,20 +16,10 @@
   utenza:
     - imprese
     - intermediari
-- title: "Tipologie di interventi"
-  file: "tipologie.md"
-  utenza:
-    - cittadini
-- title: "Requisiti"
+- title: "Chi può presentare la SCIA"
   file: "requisiti.md"
   utenza:
-    - imprese
-    - intermediari
-- title: "Chi può presentare la SCIA"
-  file: "requisiti_cittadini.md"
-  utenza:
     - cittadini
-
 - title: "Controlli"
   file: "controlli.md"
   utenza:
@@ -40,21 +30,11 @@
   utenza:
     - imprese
     - intermediari
-- title: "Costi"
-  file: "costi_cittadini.md"
-  utenza:
-    - cittadini
-
-- title: "Adempimenti di tecnici professionisti"
+- title: "Adempimenti dei tecnici professionisti"
   file: "adempimenti.md"
   utenza:
     - imprese
     - intermediari
-- title: "Compiti dei tecnici professionisti"
-  file: "compiti.md"
-  utenza:
-    - cittadini
-
 - title: "Istruttoria preliminare"
   file: "istruttoria.md"
   utenza:
