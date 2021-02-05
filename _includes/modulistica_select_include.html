@@ -13,3 +13,9 @@ scarica i modelli che ti interessano:
         </div>
     </form>
 </div>
+<script>
+$('#modulistica').on('change', function(event) {
+    console.log( 'selected ' + $(this).val() );
+    window.location.href = $(this).val()
+});
+</script>
