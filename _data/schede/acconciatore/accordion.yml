@@ -13,10 +13,6 @@
 - title: "Requisiti soggettivi"
   file: "requisitisogg.md"
 
-- title: "Chi può esercitare"
-  file: "requisitisoggcittadino.md"
-
-
 - title: "Requisiti oggettivi"
   file: "requisitiogg.md"
 
@@ -24,12 +20,7 @@
 - title: "Dove e come esercitare"
   file: "requisitiogg.md"
 
-
-- title: "Per aprire"
-  file: "regime_avviocittadino.md"
-
-
-- title: "Regime avvio"
+- title: "Avvio dell'attività"
   file: "regime_avvio.md"
 
 
