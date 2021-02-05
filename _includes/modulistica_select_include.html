@@ -2,7 +2,7 @@ scarica i modelli che ti interessano:
 <div class="mt-3">
     <form class="">
         <div class="form-row">
-            <div class="form-group col-12 bootstrap-select-wrapper">
+            <div class="form-group col-12 bootstrap-select-wrapper remove-mb">
                 <label></label>
                 <select id="modulistica" title="{{ include.title }}">
                     <option disabled selected>seleziona modello</option>
@@ -13,3 +13,9 @@ scarica i modelli che ti interessano:
         </div>
     </form>
 </div>
+<script>
+$('#modulistica').on('change', function(event) {
+    console.log( 'selected ' + $(this).val() );
+    window.location.href = $(this).val()
+});
+</script>
