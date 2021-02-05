@@ -328,142 +328,142 @@
   metaname: pennainteverina
   urlsuape: "http://www.comune.pennainteverina.tr.it/zf/index.php/suap"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.pennainteverina.tr.it/zf/index.php/suap"
 - name: Perugia
   metaname: perugia
   urlsuape: "https://www.comune.perugia.it/pagine/suape-sportello-unico-per-le-attivita-produttive-ed-edilizie"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://www.comune.perugia.it/pagine/suape-sportello-unico-per-le-attivita-produttive-ed-edilizie"
   urlprg: "http://www.comune.perugia.it/pagine/prg-vigente"
 - name: Piegaro
   metaname: piegaro
   urlsuape: "http://www.comune.piegaro.pg.it/zf/index.php/suap"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.piegaro.pg.it/zf/index.php/suap"
 - name: Pietralunga
   metaname: pietralunga
   urlsuape: "http://www.pietralunga.it/comune/servizi-online/modulistica.html"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.pietralunga.it/comune/servizi-online/modulistica.html"
 - name: Poggiodomo
   metaname: poggiodomo
   urlsuape: "http://www.comune.poggiodomo.pg.it/hh/index.php"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=19&nome_famiglia=Autorizzazioni%20Paesaggistiche"
 - name: Polino
   metaname: polino
   urlsuape: "http://www.comune.polino.tr.it/portale_istituzionale/home.php?id=0"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.polino.tr.it/portale_istituzionale/home.php?id=0"
 - name: Porano
   metaname: porano
   urlsuape: "https://comune.porano.tr.it/il-comune-informa/1010-modulistica/"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://comune.porano.tr.it/il-comune-informa/1010-modulistica/"
 - name: Preci
   metaname: preci
   urlsuape: "http://www.comune.preci.pg.it/default.asp"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.preci.pg.it/default.asp"
 - name: San Gemini
   metaname: sangemini
   urlsuape: "http://halleyweb.com/c055029/zf/index.php/suap"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://halleyweb.com/c055029/zf/index.php/suap"
 - name: San Giustino
   metaname: sangiustino
   urlsuape: "https://www.halleyweb.com/c054044/zf/index.php/suap"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://www.halleyweb.com/c054044/zf/index.php/suap"
 - name: San Venanzo
   metaname: sanvenanzo
   urlsuape: "https://suape.regione.umbria.it/frontend/index/I381/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/I381/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/I381/SS"
 - name: Santa Anatolia di Narco
   metaname: santaanatoliadinarco
   urlsuape: "https://comune.santanatoliadinarco.pg.it/modulistica"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://comune.santanatoliadinarco.pg.it/modulistica"
 - name: Scheggia e Pascelupo
   metaname: scheggiaepascelupo
   urlsuape: "https://www.comunescheggiaepascelupo.it/comune/servizi-online/modulistica"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://www.comunescheggiaepascelupo.it/comune/servizi-online/modulistica"
 - name: Scheggino
   metaname: scheggino
   urlsuape: "https://www.halleyweb.com/c054047/hh/index.php"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://www.halleyweb.com/c054047/hh/index.php"
 - name: Sellano
   metaname: sellano
   urlsuape: "http://www.comune.sellano.pg.it/c054048/zf/index.php/modulistica/index/dettaglio-area/area/10?sat=1576153594&nodo=nodo8"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.sellano.pg.it/c054048/zf/index.php/modulistica/index/dettaglio-area/area/10?sat=1576153594&nodo=nodo8"
 - name: Sigillo
   metaname: sigillo
   urlsuape: "http://pratiche.pa.umbria.it/sigillo/AreaRiservata/Contenuti/default.aspx?alias=I727&software=SS"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://pratiche.pa.umbria.it/sigillo/AreaRiservata/Contenuti/default.aspx?alias=I727&software=SS"
 - name: Spello
   metaname: spello
   urlsuape: "http://www.comune.spello.pg.it/pagine/modulistica-000"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.spello.pg.it/pagine/modulistica-000"
   urlprg: "http://www.comune.spello.pg.it/pagine/tavole-p-r-g"
 - name: Spoleto
   metaname: spoleto
   urlsuape: "https://suape.regione.umbria.it/frontend/index/I921/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/I921/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/I921/SS"
 - name: Stroncone
   metaname: stroncone
   urlsuape: "https://www.comune.stroncone.tr.it/zf/index.php/suap"
   urlaua: "https://suape.regione.umbria.it/frontend/index/I921/SS"
-  urlautpaes:
+  urlautpaes: "https://www.comune.stroncone.tr.it/zf/index.php/suap"
 - name: Terni
   metaname: terni
   urlsuape: "https://suape.regione.umbria.it/frontend/index/L117/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/L117/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/L117/SS"
   urlprg: "http://www.comune.terni.it/piano-regolatore"
 - name: Todi
   metaname: todi
   urlsuape: "https://suape.regione.umbria.it/frontend/index/L188/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/L188/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/L188/SS"
 - name: Torgiano
   metaname: torgiano
   urlsuape: "http://www.comune.torgiano.pg.it/pagine/area-governo-del-territorio-lavori-pubblici"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.torgiano.pg.it/pagine/area-governo-del-territorio-lavori-pubblici"
 - name: Trevi
   metaname: trevi
   urlsuape: "https://suape.regione.umbria.it/frontend/index/L397/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/L397/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/L397/SS"
 - name: Tuoro sul Trasimeno
   metaname: tuorosultrasimeno
   urlsuape: "https://suape.regione.umbria.it/frontend/index/L466/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/L466/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/L466/SS"
 - name: Umbertide
   metaname: umbertide
   urlsuape: "https://suape.regione.umbria.it/frontend/index/D786/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/D786/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/D786/SS"
 - name: Valfabbrica
   metaname: valfabbrica
   urlsuape: "http://www.comune.valfabbrica.pg.it/modulistica-e-regolamenti/"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "http://www.comune.valfabbrica.pg.it/modulistica-e-regolamenti/"
 - name: Vallo di Nera
   metaname: vallodinera
   urlsuape: "https://www.halleyweb.com/c054058/hh/index.php"
   urlaua: "https://suape.regione.umbria.it/sportelli"
-  urlautpaes:
+  urlautpaes: "https://www.halleyweb.com/c054058/hh/index.php"
 - name: Valtopina
   metaname: valtopina
   urlsuape: "https://suape.regione.umbria.it/frontend/index/L653/SS"
   urlaua: "https://suape.regione.umbria.it/frontend/index/L653/SS"
-  urlautpaes:
+  urlautpaes: "https://suape.regione.umbria.it/frontend/index/L653/SS"
