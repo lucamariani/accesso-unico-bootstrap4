@@ -1,10 +1,12 @@
 ---
 layout: listing
-title: Schede
-subtitle: schede servizi
+title: Servizi
+subtitle: motore di ricerca del catalogo dei servizi
 background:
 img:
-permalink: /schede
+permalink: /servizi
 lang: it
-order: 3
+order: 3 
 ---
+
+<script src="{{site.baseurl}}/assets/scripts/schede-listing.js"></script>

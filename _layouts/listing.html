@@ -18,6 +18,10 @@ layout: default
     </div>
 
     <div class="container mx-auto pt-3 mb-3 px-4">
+        <!-- count results -->
+        <div class="alert alert-info" role="alert">
+            <span id="counts"></span> servizi trovati
+        </div>
         <!-- filter column -->
         <div class="row">
             <div class="col-12 col-md-3">
@@ -25,20 +29,28 @@ layout: default
                 {% capture tema-content %}
                     {% for tema in site.data.themes %}
                     <div class="form-check form-check-group">
-                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" checked="checked">
+                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{tema.metaname}}">
                         <label for="t_{{tema.metaname}}">{{ tema.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
                 {% include listing-accordion.html name="argomento" content=tema-content %}
 
-                <h5>tipologia</h5>
+                {% capture type-content %}
+                    {% for type in site.data.schede_types %}
+                    <div class="form-check form-check-group">
+                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="t_{{type.metaname}}-help" value="{{type.metaname}}">
+                        <label for="type_{{type.metaname}}">{{ type.name }}</label>
+                    </div>
+                    {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="tipologia" content=type-content %}
 
                 {% capture profile-content %}
                 {% for profile in site.data.profiles %}
                 {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
                 <div class="form-check form-check-group">
-                    <input id="p_{{ profile.metaname }}" type="checkbox" checked="checked">
+                    <input id="p_{{ profile.metaname }}" type="checkbox" value="{{profile.metaname}}">
                     <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
                 </div>
                 {% endfor %}
@@ -51,11 +63,7 @@ layout: default
                 <div class="row">
                     {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
                     {% for scheda in schede %}
-<!--                        {% capture schedaTitle %}-->
-<!--                            {{ scheda.title }}-->
-<!--                        {% endcapture %}-->
-                    {% comment %} adds class to be used to filter out schede with JS: $('.cittadini').hide() {% endcomment %}
-                        <div class="col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.argomento | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
+                        <div class="scheda-item col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.tema | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
                             <!-- scheda card -->
                             {% include card_scheda.html scheda=scheda %}
                         </div>
@@ -66,3 +74,5 @@ layout: default
         </div>
     </div>
 </main>
+
+{{ content }}
