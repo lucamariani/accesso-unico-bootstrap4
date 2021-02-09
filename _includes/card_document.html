@@ -1,0 +1,33 @@
+{% assign doc = include.scheda %}
+
+{% assign category_items = site.data.docs.category | where_exp: "item", "item.metaname == doc.categoria" %}
+{% assign category_item = category_items[0] %}
+{% assign category = category_item.name %}
+
+{% assign tema_items = site.data.docs.tema | where_exp: "item", "item.metaname == doc.tema" %}
+{% assign tema_item = tema_items[0] %}
+{% assign doctema = tema_item.name %}
+
+<!--start card-->
+<div class="card-wrapper card-space">
+    <div class="card card-bg card-big no-after">
+        <div class="card-body">
+            <h5 class="card-title">{{ doc.title }}</h5>
+            <p class="card-text">
+                <strong>{{ doc.oggetto }}</strong>
+            </p>
+            <p class="card-text"><strong>Categoria: </strong>{{ category }}</p>
+            <p class="card-text"><strong>Argomento: </strong>{{ doctema }}</p>
+            <p class="card-text"><strong>Anno: </strong>{{ doc.anno }}</p>
+            <p class="card-text"><strong>Ente: </strong>{{ doc.ente }}</p>
+            <p class="card-text"><strong>Tags: </strong>{{ doc.tags|join: ", " }}</p>
+
+            <div class="it-card-footer">
+                <a href="{{ doc.url }}">
+                    <button class="btn btn-outline-primary btn-sm">Vai al documento</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end card-->
