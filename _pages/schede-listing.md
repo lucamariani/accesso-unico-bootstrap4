@@ -6,5 +6,7 @@ background:
 img:
 permalink: /schede
 lang: it
-order: 3
+order: 3 
 ---
+
+<script src="{{site.baseurl}}/assets/scripts/schede-listing.js"></script>
