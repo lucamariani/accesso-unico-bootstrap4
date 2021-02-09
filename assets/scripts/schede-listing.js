@@ -14,6 +14,11 @@ const argsClasses = []
 const typeClasses = []
 const profileClasses = []
 
+const setSchedeCount = function(count) {
+    $countDOM = $('#counts')
+    $countDOM.text(count)
+}
+
 const filterSchede = function() {
     console.log('hiding all schede')
     $schede.addClass('d-none')
@@ -32,6 +37,7 @@ const filterSchede = function() {
     if(profileClasses.length > 0) $schede2show = $schede2show.filter(profileClasses2show)
 
     $schede2show.removeClass('d-none')
+    setSchedeCount($schede2show.length)
 }
 
 const getFilteredClasses = function($filter, classesArray) {
@@ -97,6 +103,7 @@ const addProfileChangeHandler = function () {
     });
 }
 
-$( document ).ready(
+$( document ).ready(function () {
     addChangeHandlers()
-);
+    setSchedeCount($schede.length)
+});

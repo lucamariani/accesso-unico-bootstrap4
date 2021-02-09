@@ -18,6 +18,10 @@ layout: default
     </div>
 
     <div class="container mx-auto pt-3 mb-3 px-4">
+        <!-- count results -->
+        <div class="alert alert-info" role="alert">
+            <span id="counts"></span> servizi trovati
+        </div>
         <!-- filter column -->
         <div class="row">
             <div class="col-12 col-md-3">
@@ -59,10 +63,6 @@ layout: default
                 <div class="row">
                     {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
                     {% for scheda in schede %}
-<!--                        {% capture schedaTitle %}-->
-<!--                            {{ scheda.title }}-->
-<!--                        {% endcapture %}-->
-                        {% comment %} adds class to be used to filter out schede with JS: $('.cittadini').hide() {% endcomment %}
                         <div class="scheda-item col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.tema | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
                             <!-- scheda card -->
                             {% include card_scheda.html scheda=scheda %}
