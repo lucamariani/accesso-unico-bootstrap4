@@ -32,7 +32,15 @@ layout: default
                 {% endcapture %}
                 {% include listing-accordion.html name="argomento" content=tema-content %}
 
-                <h5>tipologia</h5>
+                {% capture type-content %}
+                    {% for type in site.data.schede_types %}
+                    <div class="form-check form-check-group">
+                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="t_{{type.metaname}}-help" checked="checked">
+                        <label for="type_{{type.metaname}}">{{ type.name }}</label>
+                    </div>
+                    {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="tipologia" content=type-content %}
 
                 {% capture profile-content %}
                 {% for profile in site.data.profiles %}
