@@ -1,0 +1,36 @@
+<!--start card-->
+<div class="card-wrapper card-space">
+    <div class="card card-bg card-big no-after">
+        <div class="card-body">
+
+            <div class="categoryicon-top">
+                {% for category_metaname in include.scheda.categories %}
+                    <!-- get category name -->
+                    {% for item in site.data.themes %}
+                        {% if item.metaname == category_metaname %}
+                            {% assign category_name = item.name %}
+                            {% assign category_icon = item.image_red_circle %}
+                        {% endif %}
+                    {% endfor %}
+                    <img class="icon" src="{{ site.baseurl }}{{ category_icon }}">
+                    <span class="text" href="#">{{category_name}}</span>
+                    {% unless forloop.last %}<br>{% endunless %}
+                {% endfor %}
+            </div>
+
+            <!--<div class="head-tags">
+                <span class="data">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
+            </div>-->
+
+            <h5 class="card-title">{{ include.scheda.title }}</h5>
+            <p class="card-text">{{ include.scheda.subtitle }}</p>
+            <div class="it-card-footer">
+                <span class="card-signature">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
+                <a href="{{ site.baseurl }}{{ include.scheda.url }}">
+                    <button class="btn btn-primary btn-sm">Leggi</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end card-->
