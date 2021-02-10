@@ -1,0 +1,23 @@
+<div class="it-single-slide-wrapper">
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-body">
+                <div class="category-top">
+                    <!-- category heading-->
+                    <a class="category" href="#">{{ include.scheda.tema }}</a>
+                    <!-- category data-->
+                    <a class="data" href="{{ site.baseurl }}{{ include.scheda.statusLink }}">{{ include.scheda.status }}</a>
+                </div>
+                <h5 class="card-title big-heading">{{ include.scheda.title }}</h5>
+                <p class="card-text">{{ include.scheda.description }}</p>
+<!--                <span class="card-signature">di Federico De Paolis</span>-->
+                <a class="read-more" href="{{ include.scheda.url }}">
+                    <span class="text">Leggi di più</span>
+                    <svg class="icon">
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

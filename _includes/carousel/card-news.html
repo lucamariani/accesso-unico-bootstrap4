@@ -1,0 +1,36 @@
+<div class="it-single-slide-wrapper">
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-body">
+                <div class="category-top">
+                    <!-- category heading-->
+                    {% for category_metaname in include.scheda.categories %}
+                        <!-- get category name -->
+                        {% for item in site.data.themes %}
+                            {% if item.metaname == category_metaname %}
+                                {% assign category_name = item.name %}
+                                {% assign category_icon = item.image_red_circle %}
+                            {% endif %}
+                        {% endfor %}
+                        <a class="category" href="#">
+<!--                            <img title="{{ category_name | capitalize }}" class="home-news-category-icon" src="{{ site.baseurl}}{{ category_icon }}">-->
+                            {{category_name}}
+                        </a>
+                        {% unless forloop.last %}<br>{% endunless %}
+                    {% endfor %}
+                    <!-- category data-->
+                    <span class="data">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
+                </div>
+                <h5 class="card-title big-heading">{{ include.scheda.title }}</h5>
+                <p class="card-text">{{ include.scheda.description }}</p>
+                <!--                <span class="card-signature">di Federico De Paolis</span>-->
+                <a class="read-more" href="{{ include.scheda.url }}">
+                    <span class="text">Leggi di più</span>
+                    <svg class="icon">
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

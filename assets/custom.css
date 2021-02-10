@@ -23,3 +23,5 @@ ul.list-inline img {max-width: 45px}
 
 /* listing */
 .listing-accordion-panel {max-height: 350px;overflow-y: auto;}
+
+.home-news-category-icon {width:20px !important}

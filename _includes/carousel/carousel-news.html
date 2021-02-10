@@ -1,0 +1,8 @@
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+    <div class="it-carousel-all owl-carousel">
+        {% assign posts = site.posts | sort: 'date' | reverse %}
+        {% for post in site.posts limit:12  %}
+            {% include carousel/card-news.html scheda=post %}
+        {% endfor %}
+    </div>
+</div>
