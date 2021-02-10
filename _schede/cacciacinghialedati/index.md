@@ -3,7 +3,7 @@ layout: scheda
 object: cacciacinghialedati
 utenza: cittadini
 tema: cacciapesca
-tipo: servizio
+tipo: informazioni
 title: Caccia al cinghiale - Statistiche
 description: Informazioni on-line sull’andamento della caccia al cinghiale in battuta in Umbria
 subtitle: caccia, venatorio, cacciatore, cinghiale, battuta

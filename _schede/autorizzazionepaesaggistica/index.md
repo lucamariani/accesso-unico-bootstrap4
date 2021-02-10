@@ -3,7 +3,7 @@ layout: scheda
 object: autorizzazionepaesaggistica
 utenza: cittadini
 tema: territorio
-tipo: pratica
+tipo: autorizzazioni concessioni
 title: Autorizzazione Paesaggistica
 description: In aree sottoposte a tutela paesaggistica il progetto di interventi di modifica del paesaggio necessita di apposita autorizzazione, fatte salve alcune eccezioni
 subtitle: tutela paesaggistica, beni paesaggistici, vincoli, paesaggio

@@ -3,7 +3,7 @@ layout: scheda
 object: sportellisuape
 utenza: cittadini
 tema: semplificazione
-tipo: servizio
+tipo: informazioni
 title: Sportelli Suape Comunali
 description: Punto di accesso (link) ai siti web dove sono pubblicate informazioni riguardanti gli Sportelli SUAPE dei Comuni dell'Umbria
 subtitle: sportello, edilizia, commercio, pratiche, comunale, attività produttive

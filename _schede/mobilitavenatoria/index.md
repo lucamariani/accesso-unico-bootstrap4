@@ -3,7 +3,7 @@ layout: scheda
 object: mobilitavenatoria
 utenza: cittadini
 tema: cacciapesca
-tipo: pratica
+tipo: licenze permessi nulla osta
 title: Mobilità venatoria
 description: Prenotazioni on-line per esercitare la caccia in mobilità alla selvaggina migratoria
 subtitle: caccia, selvaggina, migratoria, cacciatore, mobilità

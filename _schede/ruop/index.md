@@ -3,7 +3,7 @@ layout: scheda
 object: ruop
 utenza: cittadini
 tema: agricoltura
-tipo: pratica
+tipo: albi elenchi registri
 title: Registro Ufficiale degli Operatori Professionali - RUOP
 description: Alcuni operatori professionali che svolgono attività vivaistica o sementiera devono iscriversi al RUOP tenuto dai Servizi Fitosanitari Regionali
 subtitle: servizi fitosanitari, passaporto delle piante, fitosanitario, certificato fitosanitario
