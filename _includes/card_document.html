@@ -8,25 +8,36 @@
 {% assign tema_item = tema_items[0] %}
 {% assign doctema = tema_item.name %}
 
+<!-- TAGS -->
+{% assign doc_tag_names = '' %}
+{% assign separator = ', ' %}
+
+{% for doctag in doc.tags %}
+    {% assign tags_items = site.data.docs.tags | where_exp: "item", "item.metaname == doctag" %}
+    {% assign tag_item = tags_items[0] %}
+    {% if forloop.last == true %}
+        {% assign separator = '' %}
+    {% endif %}
+    {% assign doc_tag_names = doc_tag_names | append: tag_item.name | append: separator %}
+{% endfor %}
+<!-- / TAGS -->
+
 <!--start card-->
 <div class="card-wrapper card-space">
-    <div class="card card-bg card-big no-after">
+    <div class="card card-bg no-after">
         <div class="card-body">
-            <h5 class="card-title">{{ doc.title }}</h5>
+            <h5 class="card-title">
+                <a href="{{ doc.url }}">{{ doc.title }}</a>
+            </h5>
             <p class="card-text">
                 <strong>{{ doc.oggetto }}</strong>
             </p>
-            <p class="card-text"><strong>Categoria: </strong>{{ category }}</p>
-            <p class="card-text"><strong>Argomento: </strong>{{ doctema }}</p>
-            <p class="card-text"><strong>Anno: </strong>{{ doc.anno }}</p>
-            <p class="card-text"><strong>Ente: </strong>{{ doc.ente }}</p>
-            <p class="card-text"><strong>Tags: </strong>{{ doc.tags|join: ", " }}</p>
-
-            <div class="it-card-footer">
-                <a href="{{ doc.url }}">
-                    <button class="btn btn-outline-primary btn-sm">Vai al documento</button>
-                </a>
-            </div>
+            <hr>
+            <div class="card-text"><strong>Categoria: </strong>{{ category }}</div>
+            <div class="card-text"><strong>Argomento: </strong>{{ doctema }}</div>
+            <div class="card-text"><strong>Anno: </strong>{{ doc.anno }}</div>
+            <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
+            <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
         </div>
     </div>
 </div>

@@ -25,38 +25,34 @@ tema:
     metaname: territorio
 
 tags:
+  - name: Acconciatore
+    metaname: acconciatore
+  - name: ACG
+    metaname: acg
+  - name: Albo Tutori
+    metaname: albotutori
+  - name: AUA
+    metaname: AUA
   - name: Autorizzazione Aziende Venatorie
     metaname: autaziendevenatorie
   - name: Autorizzazione Centri Privati
     metaname: autcentriprivati
   - name: Autorizzazione Paesaggistica
-    metaname: autpaesaggistica
+    metaname: autorizzazionepaesaggisticaXXXX
   - name: Autorizzazione Stazione Monta Equina
     metaname: autstazionemontaequina
-  - name: ACG
-    metaname: acg
-  - name: Albo Tutori
-    metaname: albotutori
   - name: Cambio Destinazione Uso
     metaname: cambio_destinazione_uso
   - name: Certificazione Fito Sanitaria
     metaname: certificazionefitosanitaria
-  - name: Direttiva Scarichi
-    metaname: direttivascarichi
-  - name: SCIA
-    metaname: scia
-  - name: SUAPE
-    metaname: suape
   - name: Cambio Destinazione Uso
     metaname: cambio_destinazione_uso
-  - name: Acconciatore
-    metaname: acconciatore
+  - name: Direttiva Scarichi
+    metaname: direttivascarichi
   - name: Elenco Esperti
     metaname: elencoesperti
   - name: Elenco Professionisti
     metaname: elencoprofessionisti
-  - name: Modulistica Unificata
-    metaname: ModulisticaUnificata
   - name: Elenco Coord docenti
     metaname: elencocoorddocenti
   - name: Elenco Imprese
@@ -67,10 +63,16 @@ tags:
     metaname: licenzapescasportiva
   - name: Manutenzione Verde
     metaname: manutenzioneverde
+  - name: Modulistica Unificata
+    metaname: ModulisticaUnificata
   - name: Nullaosta Import
     metaname: nullaostaimport
   - name: RUOP
     metaname: ruop
+  - name: SCIA
+    metaname: SCIA
+  - name: SUAPE
+    metaname: SUAPE
   - name: Tariffa Fitosanitaria
     metaname: tariffafitosanitaria
   - name: Tesserino Pesca
