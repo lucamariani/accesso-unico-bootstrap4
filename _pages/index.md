@@ -13,6 +13,6 @@ scripts:
 {% include hero.html %}
 
 <main class="container my-4" markdown="1">
-
+  {% include carousel/carousel-servizi.html %}
 </main>
 {% include search/script/js-home.html %}
