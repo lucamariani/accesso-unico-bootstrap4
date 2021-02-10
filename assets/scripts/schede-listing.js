@@ -27,6 +27,7 @@ const filterSchede = function() {
     typeClasses2show = typeClasses.join()
     profileClasses2show = profileClasses.join()
 
+    // if no filters, show all the schede
     $schede2show = $schede;
 
     // filter arguments
