@@ -1,0 +1,88 @@
+---
+layout: default
+title: Documenti
+subtitle: Normativa, regolamenti, pareri e circolari
+background:
+img:
+permalink: /documenti
+order: 4
+---
+<main>
+    <div class="container my-4">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+            <h6>{{ page.subtitle }}</h6>
+        {% endif %}
+    </div>
+
+    <div class="container mx-auto pt-3 mb-3 px-4">
+        <!-- count results -->
+        <div class="alert alert-info" role="alert">
+            <span id="counts"></span> documenti trovati
+        </div>
+        <!-- filter column -->
+        <div class="row">
+            <div class="col-12 col-md-3">
+
+                <!-- categoria filter -->
+                {% capture category-content %}
+                    {% assign docs_category = site.data.docs.category %}
+                    {% for category in docs_category %}
+                    <div class="form-check form-check-group">
+                        <input id="c_{{category.metaname}}" type="checkbox" aria-labelledby="c_{{category.metaname}}-help" value="{{category.metaname}}">
+                        <label for="c_{{category.metaname}}">{{ category.name }}</label>
+                    </div>
+                    {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="categoria" content=category-content %}
+
+                <!-- tipologia filter -->
+                {% capture tema-content %}
+                    {% for tema in site.data.docs.tema %}
+                    <div class="form-check form-check-group">
+                        <input id="tema_{{tema.metaname}}" type="checkbox" aria-labelledby="tema_{{tema.metaname}}-help" value="{{tema.metaname}}">
+                        <label for="tema_{{tema.metaname}}">{{ tema.name }}</label>
+                    </div>
+                    {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="argomento" content=tema-content %}
+
+                <!-- year filter -->
+                {% capture year-content %}
+                    {% for year in (1990..2021) %}
+                    <div class="form-check form-check-group">
+                        <input id="y_{{ year }}" type="checkbox" value="{{ year }}">
+                        <label for="y_{{ year }}">{{ year }}</label>
+                    </div>
+                    {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="anno" content=year-content %}
+
+                <!-- tags filter -->
+                {% capture tags-content %}
+                {% for tag in site.data.docs.tags %}
+                <div class="form-check form-check-group">
+                    <input id="tag_{{tag.metaname}}" type="checkbox" aria-labelledby="tag_{{tag.metaname}}-help" value="{{tag.metaname}}">
+                    <label for="tag_{{tag.metaname}}">{{ tag.name }}</label>
+                </div>
+                {% endfor %}
+                {% endcapture %}
+                {% include listing-accordion.html name="tag" content=tags-content %}
+            </div>
+
+            <!-- results column -->
+            <div class="col-12 col-md-9 mx-auto">
+                <div class="row">
+                    {% for doc in site.data.docs.docs %}
+                        <div class="scheda-item col-12 col-lg-6 {{ doc.tags | join: ' ' }} {{ doc.tema | join: ' ' }} {{ doc.categoria | join: ' ' }} {{ doc.anno }}">
+                            <!-- scheda card -->
+                            {% include card_document.html scheda=doc %}
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script src="{{site.baseurl}}/assets/scripts/schede-listing.js"></script>

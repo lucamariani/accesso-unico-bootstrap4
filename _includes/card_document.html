@@ -1,0 +1,44 @@
+{% assign doc = include.scheda %}
+
+{% assign category_items = site.data.docs.category | where_exp: "item", "item.metaname == doc.categoria" %}
+{% assign category_item = category_items[0] %}
+{% assign category = category_item.name %}
+
+{% assign tema_items = site.data.docs.tema | where_exp: "item", "item.metaname == doc.tema" %}
+{% assign tema_item = tema_items[0] %}
+{% assign doctema = tema_item.name %}
+
+<!-- TAGS -->
+{% assign doc_tag_names = '' %}
+{% assign separator = ', ' %}
+
+{% for doctag in doc.tags %}
+    {% assign tags_items = site.data.docs.tags | where_exp: "item", "item.metaname == doctag" %}
+    {% assign tag_item = tags_items[0] %}
+    {% if forloop.last == true %}
+        {% assign separator = '' %}
+    {% endif %}
+    {% assign doc_tag_names = doc_tag_names | append: tag_item.name | append: separator %}
+{% endfor %}
+<!-- / TAGS -->
+
+<!--start card-->
+<div class="card-wrapper card-space">
+    <div class="card card-bg no-after">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href="{{ doc.url }}">{{ doc.title }}</a>
+            </h5>
+            <p class="card-text">
+                <strong>{{ doc.oggetto }}</strong>
+            </p>
+            <hr>
+            <div class="card-text"><strong>Categoria: </strong>{{ category }}</div>
+            <div class="card-text"><strong>Argomento: </strong>{{ doctema }}</div>
+            <div class="card-text"><strong>Anno: </strong>{{ doc.anno }}</div>
+            <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
+            <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
+        </div>
+    </div>
+</div>
+<!--end card-->

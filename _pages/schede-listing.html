@@ -1,20 +1,20 @@
 ---
 layout: default
+title: Servizi
+subtitle: motore di ricerca del catalogo dei servizi
+background:
+img:
+permalink: /servizi
+lang: it
+order: 3 
 ---
-
-{% comment %}
-{% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
-{% assign all_profiles =  schede | map: 'utenza' | join: ','  | split: ','  | group_by: utenza %}
-{% endcomment %}
 
 <main>
     <div class="container my-4">
-<!--        {{ site.data.profiles | dump }}-->
         <h1>{{ page.title }}</h1>
         {% if page.subtitle %}
-        <h6>{{ page.subtitle }}</h6>
+            <h6>{{ page.subtitle }}</h6>
         {% endif %}
-<!--        {{ all_profiles|dump }}-->
     </div>
 
     <div class="container mx-auto pt-3 mb-3 px-4">
@@ -25,7 +25,8 @@ layout: default
         <!-- filter column -->
         <div class="row">
             <div class="col-12 col-md-3">
-
+                
+                <!-- argomento filter -->
                 {% capture tema-content %}
                     {% for tema in site.data.themes %}
                     <div class="form-check form-check-group">
@@ -36,16 +37,18 @@ layout: default
                 {% endcapture %}
                 {% include listing-accordion.html name="argomento" content=tema-content %}
 
+                <!-- tipologia filter -->
                 {% capture type-content %}
                     {% for type in site.data.schede_types %}
                     <div class="form-check form-check-group">
-                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="t_{{type.metaname}}-help" value="{{type.metaname}}">
+                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="type_{{type.metaname}}-help" value="{{type.metaname}}">
                         <label for="type_{{type.metaname}}">{{ type.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
                 {% include listing-accordion.html name="tipologia" content=type-content %}
 
+                <!-- profilo filter -->
                 {% capture profile-content %}
                 {% for profile in site.data.profiles %}
                 {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
@@ -74,5 +77,4 @@ layout: default
         </div>
     </div>
 </main>
-
-{{ content }}
+<script src="{{site.baseurl}}/assets/scripts/schede-listing.js"></script>
