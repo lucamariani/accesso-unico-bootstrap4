@@ -1,8 +1,17 @@
-<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-    <div class="it-carousel-all owl-carousel">
-        {% assign schede = site.schede | sort: 'evidenza' | uniq: 'title' | reverse %}
-        {% for scheda in schede limit: 12 %}
-            {% include carousel/card-servizio.html scheda=scheda %}
-        {% endfor %}
+<h3 class="mt-5">Servizi in Evidenza</h3>
+<div class="mb-5">
+    <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+        <div class="it-carousel-all owl-carousel">
+            {% assign schede = site.schede | sort: 'evidenza' | uniq: 'title' | reverse %}
+            {% for scheda in schede limit: 12 %}
+                {% include carousel/card-servizio.html scheda=scheda %}
+            {% endfor %}
+        </div>
     </div>
+    <a class="read-more float-right" href="#">
+        <span class="h6 text">tutti i servizi</span>
+        <svg class="icon">
+            <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+        </svg>
+    </a>
 </div>
