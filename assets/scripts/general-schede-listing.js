@@ -20,9 +20,9 @@ const listing = function() {
         console.log('filterArray', filterArray)
     }
 
-    const setSchedeCount = function () {
+    const setSchedeCount = function (count) {
         const $countDOM = $('#counts')
-        $countDOM.text($schede.length)
+        $countDOM.text(count)
     }
 
     const filterSchede = function () {

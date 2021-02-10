@@ -74,7 +74,7 @@ order: 4
             <div class="col-12 col-md-9 mx-auto">
                 <div class="row">
                     {% for doc in site.data.docs.docs %}
-                        <div class="scheda-item col-12 col-lg-6 {{ doc.tags | join: ' ' }} {{ doc.tema | join: ' ' }} {{ doc.categoria | join: ' ' }}">
+                        <div class="scheda-item col-12 col-lg-6 {{ doc.tags | join: ' ' }} {{ doc.tema | join: ' ' }} {{ doc.categoria | join: ' ' }} {{ doc.anno }}">
                             <!-- scheda card -->
                             {% include card_document.html scheda=doc %}
                         </div>
