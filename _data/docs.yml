@@ -25,60 +25,10 @@ tema:
     metaname: territorio
 
 tags:
-  - name: Acconciatore
-    metaname: acconciatore
-  - name: ACG
-    metaname: acg
-  - name: Albo Tutori
-    metaname: albotutori
-  - name: AUA
-    metaname: AUA
-  - name: Autorizzazione Aziende Venatorie
-    metaname: autaziendevenatorie
-  - name: Autorizzazione Centri Privati
-    metaname: autcentriprivati
-  - name: Autorizzazione Paesaggistica
-    metaname: autorizzazionepaesaggistica
-  - name: Autorizzazione Stazione Monta Equina
-    metaname: autstazionemontaequina
-  - name: Cambio Destinazione Uso
-    metaname: cambio_destinazione_uso
-  - name: Certificazione Fito Sanitaria
-    metaname: certificazionefitosanitaria
-  - name: Cambio Destinazione Uso
-    metaname: cambio_destinazione_uso
   - name: Direttiva Scarichi
     metaname: direttivascarichi
-  - name: Elenco Esperti
-    metaname: elencoesperti
-  - name: Elenco Professionisti
-    metaname: elencoprofessionisti
-  - name: Elenco Coord docenti
-    metaname: elencocoorddocenti
-  - name: Elenco Imprese
-    metaname: elencoimprese
-  - name: Elenco Stalloni
-    metaname: elencostalloni
-  - name: Licenza Pesca Sportiva
-    metaname: licenzapescasportiva
-  - name: Manutenzione Verde
-    metaname: manutenzioneverde
-  - name: Modulistica Unificata
-    metaname: ModulisticaUnificata
-  - name: Nullaosta Import
-    metaname: nullaostaimport
-  - name: RUOP
-    metaname: ruop
-  - name: SCIA
-    metaname: SCIA
   - name: SUAPE
     metaname: SUAPE
-  - name: Tariffa Fitosanitaria
-    metaname: tariffafitosanitaria
-  - name: Tesserino Pesca
-    metaname: tesserinopesca
-  - name: Zone Pesca Regolamentata
-    metaname: zonepescaregolamentata
 
 docs:
   - title: D.P.R. 6 giugno 2001, n. 380
@@ -90,10 +40,11 @@ docs:
     anno: 2001
     ente:
     numero: 380
+    schede:
+      - cambio_destinazione_uso
+      - scia
     tags:
       - SUAPE
-      - cambio_destinazione_uso
-      - SCIA
 
   - title: D.P.R. 7 settembre 2010, n. 160
     metaname: doc2
@@ -117,7 +68,7 @@ docs:
     ente: Regione Umbria
     numero: 8
     tags:
-        - SUAPE
+      - SUAPE
 
   - title: Legge regionale 29 aprile 2014, n. 9
     metaname: doc4
@@ -140,7 +91,7 @@ docs:
     anno: 2013
     ente: Regione Umbria
     numero: 4
-    tags:
+    schede:
       - acconciatore
 
 
@@ -166,7 +117,8 @@ docs:
     ente: Regione Umbria
     numero: 12
     tags:
-        - SUAPE
+      - SUAPE
+
   - title: Legge regionale 21 gennaio 2015, n. 1
     metaname: doc9
     oggetto: Testo unico governo del territorio e materie correlate
@@ -176,9 +128,10 @@ docs:
     anno: 2015
     ente: Regione Umbria
     numero: 1
-    tags:
-        - SUAPE
+    schede:
         - elencoesperti
+    tags:
+      - SUAPE
 
   - title: Regolamento regionale 18 febbraio 2015, n. 2
     metaname: doc10
@@ -189,7 +142,7 @@ docs:
     anno: 2015
     ente: Regione Umbria
     numero: 2
-    tags:
+    schede:
         - elencoesperti
 
   - title: Regolamento regionale 5 dicembre 2014, n. 5
@@ -211,7 +164,7 @@ docs:
     anno: 2005
     ente:
     numero: 174
-    tags:
+    schede:
       - acconciatore
 
   - title: D.Lgs 6 settembre 2011, n. 159
@@ -223,7 +176,7 @@ docs:
     anno: 2011
     ente:
     numero: 159
-    tags:
+    schede:
       - acconciatore
 
   - title: D.P.R. 3 giugno 1998, n. 252
@@ -235,7 +188,7 @@ docs:
     anno: 1998
     ente:
     numero: 252
-    tags:
+    schede:
         - acconciatore
 
   - title: Deliberazione della Giunta Regionale 20 giugno 2017, n. 700
@@ -247,9 +200,10 @@ docs:
     anno: 2017
     ente: Regione Umbria
     numero: 700
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
   - title: Deliberazione della Giunta Regionale 28 settembre 2017, n. 1088
     metaname: doc16
@@ -260,9 +214,10 @@ docs:
     anno: 2017
     ente: Regione Umbria
     numero: 1088
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
   - title: Deliberazione della Giunta Regionale 16 ottobre 2017, n. 1188
     metaname: doc17
@@ -273,9 +228,10 @@ docs:
     anno: 2017
     ente: Regione Umbria
     numero: 1188
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
   - title: Deliberazione della Giunta Regionale 26 marzo 2018, n. 274
     metaname: doc18
@@ -286,9 +242,10 @@ docs:
     anno: 2017
     ente: Regione Umbria
     numero: 274
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
   - title: Decreto del Presidente della Repubblica 13 marzo 2013, n. 59
     metaname: doc19
@@ -299,8 +256,8 @@ docs:
     anno: 2013
     ente:
     numero: 59
-    tags:
-        - AUA
+    schede:
+        - aua
 
   - title: Decreto legislativo 3 aprile 2006, n. 152
     metaname: doc20
@@ -311,8 +268,8 @@ docs:
     anno: 2006
     ente:
     numero: 152
-    tags:
-        - AUA
+    schede:
+        - aua
 
   - title: Legge 26 ottobre 1995, n. 447
     metaname: doc21
@@ -323,8 +280,8 @@ docs:
     anno: 1995
     ente:
     numero: 447
-    tags:
-        - AUA
+    schede:
+        - aua
 
   - title: Decreto legislativo 27 gennaio 1992, n. 99
     metaname: doc22
@@ -335,20 +292,20 @@ docs:
     anno: 1992
     ente:
     numero: 99
-    tags:
-        - AUA
+    schede:
+        - aua
 
   - title: Deliberazione della Giunta Regionale 29 dicembre 2015, n. 1656
     metaname: doc23
-    oggetto: L.R. 10/2015. Articolo 2. Allegato A, paragrafo 1 lettera a) secondo alinea. Funzioni riallocate in regione in tema di Ambiente. Valutazioni ambientali AUA, AIA e VAS. Disposizioni attuative.
+    oggetto: L.R. 10/2015. Articolo 2. Allegato A, paragrafo 1 lettera a) secondo alinea. Funzioni riallocate in regione in tema di Ambiente. Valutazioni ambientali aua, AIA e VAS. Disposizioni attuative.
     categoria: atti
     tema: ambiente
     url: "/docs/modulistica/DGR_1656_29_12_2015.pdf"
     anno: 2015
     ente: Regione Umbria
     numero: 1656
-    tags:
-        - AUA
+    schede:
+        - aua
 
 
   - title: Deliberazione della Giunta Regionale 19 settembre 2018, n. 1024
@@ -360,9 +317,9 @@ docs:
     anno: 2018
     ente: Regione Umbria
     numero: 1024
-    tags:
+    schede:
         - direttivascarichi
-        - AUA
+        - aua
 
   - title: Legge 13 agosto 2010, n. 136
     metaname: doc29
@@ -373,7 +330,7 @@ docs:
     anno: 2010
     ente:
     numero: 136
-    tags:
+    schede:
       - acconciatore
 
   - title: D.Lgs 9 novembre 2007, n. 206
@@ -385,7 +342,7 @@ docs:
     anno: 2007
     ente:
     numero: 206
-    tags:
+    schede:
       - acconciatore
 
   - title: Determinazione dirigenziale 30 aprile 2019, n. 3971
@@ -397,9 +354,10 @@ docs:
     anno: 2019
     ente: Regione Umbria
     numero: 3971
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
   - title: Deliberazione della Giunta Regionale 29 novembre 2017, n. 12724
     metaname: doc32
@@ -410,7 +368,7 @@ docs:
     anno: 2017
     ente: Regione Umbria
     numero: 12724
-    tags:
+    schede:
         - acg
 
   - title: Deliberazione della Giunta Regionale 11 ottobre 2010, n. 1399
@@ -422,7 +380,7 @@ docs:
     anno: 2010
     ente: Regione Umbria
     numero: 1399
-    tags:
+    schede:
         - elencoprofessionisti
 
   - title: Deliberazione della Giunta Regionale 23 marzo 2015, n. 341
@@ -434,7 +392,7 @@ docs:
     anno: 2015
     ente: Regione Umbria
     numero: 341
-    tags:
+    schede:
         - elencoprofessionisti
 
   - title: Deliberazione della Giunta Regionale 19 luglio 2019, n. 894
@@ -446,9 +404,10 @@ docs:
     anno: 2019
     ente: Regione Umbria
     numero: 894
-    tags:
+    schede:
         - ModulisticaUnificata
-        - SUAPE
+    tags:
+      - SUAPE
 
 
   - title: Deliberazione della Giunta Regionale 27 settembre 2019, n. 1086
@@ -460,9 +419,10 @@ docs:
     anno: 2019
     ente: Regione Umbria
     numero: 1086
-    tags:
+    schede:
        - ModulisticaUnificata
-       - SUAPE
+    tags:
+      - SUAPE
 
   - title: Deliberazione della Giunta Regionale 26 febbraio 2020, n. 121
     metaname: doc37
@@ -473,7 +433,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 121
-    tags:
+    schede:
        - elencoprofessionisti
 
   - title: Legge Regionale 21 gennaio 2010, n. 3
@@ -485,7 +445,7 @@ docs:
     anno: 2010
     ente: Regione Umbria
     numero: 3
-    tags:
+    schede:
        - elencoimprese
 
   - title: Regolamento Regionale 5 dicembre 2014, n. 6
@@ -497,7 +457,7 @@ docs:
     anno: 2014
     ente: Regione Umbria
     numero: 6
-    tags:
+    schede:
        - elencoimprese
 
   - title: Decreto Legislativo 22 gennaio 2004, n. 42
@@ -509,7 +469,7 @@ docs:
     anno: 2004
     ente:
     numero: 42
-    tags:
+    schede:
        - autorizzazionepaesaggistica
 
   - title: Deliberazione della Giunta Regionale 8 febbraio 2010, n. 203
@@ -521,7 +481,7 @@ docs:
     anno: 2010
     ente: Regione Umbria
     numero: 203
-    tags:
+    schede:
         - autorizzazionepaesaggistica
 
   - title: Decreto del Presidente della Repubblica 13 febbraio 2017, n. 31
@@ -533,7 +493,7 @@ docs:
     anno: 2017
     ente:
     numero: 31
-    tags:
+    schede:
         - autorizzazionepaesaggistica
 
   - title: Regolamento (UE) 2016/2031 del Parlamento europeo e del Consiglio del 26 ottobre 2016
@@ -545,7 +505,7 @@ docs:
     anno: 2016
     ente:
     numero: 2031
-    tags:
+    schede:
         - certificazionefitosanitaria
         - nullaostaimport
         - ruop
@@ -560,7 +520,7 @@ docs:
     anno: 2014
     ente:
     numero: 214
-    tags:
+    schede:
         - certificazionefitosanitaria
         - nullaostaimport
         - ruop
@@ -575,7 +535,7 @@ docs:
     anno: 1997
     ente:
     numero: 99
-    tags:
+    schede:
         - certificazionefitosanitaria
         - nullaostaimport
 
@@ -588,7 +548,7 @@ docs:
     anno: 1997
     ente:
     numero: 99
-    tags:
+    schede:
         - certificazionefitosanitaria
 
   - title: Decreto 14 aprile 1997
@@ -600,7 +560,7 @@ docs:
     anno: 1997
     ente:
     numero: 126
-    tags:
+    schede:
         - certificazionefitosanitaria
 
   - title: Legge 28 luglio 2016, n. 154
@@ -612,7 +572,7 @@ docs:
     anno: 2016
     ente:
     numero: 154
-    tags:
+    schede:
         - manutenzioneverde
 
   - title: Accordo Stato-Regioni del 22 febbraio 2018
@@ -624,7 +584,7 @@ docs:
     anno: 2018
     ente:
     numero: 50
-    tags:
+    schede:
         - manutenzioneverde
 
   - title: Deliberazione della Giunta Regionale 16 aprile 2020, n. 270
@@ -636,7 +596,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 270
-    tags:
+    schede:
         - manutenzioneverde
 
   - title: Deliberazione della Giunta Regionale 10 settembre 2018, n. 974
@@ -648,7 +608,7 @@ docs:
     anno: 2018
     ente: Regione Umbria
     numero: 974
-    tags:
+    schede:
         - manutenzioneverde
 
 
@@ -661,7 +621,7 @@ docs:
     anno: 2019
     ente: Regione Umbria
     numero: 12846
-    tags:
+    schede:
         - ruop
         - tariffafitosanitaria
 
@@ -674,7 +634,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 38
-    tags:
+    schede:
         - ruop
         - tariffafitosanitaria
 
@@ -687,7 +647,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 99
-    tags:
+    schede:
         - ruop
         - tariffafitosanitaria
 
@@ -700,7 +660,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 999
-    tags:
+    schede:
         - certificazionefitosanitaria
 
   - title: Legge 15 gennaio 1991, n. 30
@@ -712,7 +672,7 @@ docs:
     anno: 1991
     ente:
     numero: 30
-    tags:
+    schede:
         - elencostalloni
         - autstazionemontaequina
 
@@ -725,7 +685,7 @@ docs:
     anno: 1999
     ente:
     numero: 280
-    tags:
+    schede:
         - elencostalloni
         - autstazionemontaequina
 
@@ -738,7 +698,7 @@ docs:
     anno: 2003
     ente:
     numero: 3
-    tags:
+    schede:
         - elencostalloni
         - autstazionemontaequina
 
@@ -752,7 +712,7 @@ docs:
     anno: 2008
     ente: Regione Umbria
     numero: 15
-    tags:
+    schede:
         - zonepescaregolamentata
         - licenzapescasportiva
         - tesserinopesca
@@ -766,7 +726,7 @@ docs:
     anno: 2011
     ente: Regione Umbria
     numero: 2
-    tags:
+    schede:
         - zonepescaregolamentata
         - licenzapescasportiva
         - tesserinopesca
@@ -780,7 +740,7 @@ docs:
     anno: 2019
     ente: Regione Umbria
     numero: 356
-    tags:
+    schede:
         - zonepescaregolamentata
 
 
@@ -793,7 +753,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 342
-    tags:
+    schede:
         - zonepescaregolamentata
 
   - title: Determinazione Dirigenziale 6 ottobre 2020, n. 8824
@@ -805,7 +765,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 8824
-    tags:
+    schede:
         - ModulisticaUnificata
 
   - title: Deliberazione della Giunta Regionale 9 settembre 2020, n. 805
@@ -817,7 +777,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 805
-    tags:
+    schede:
         - zonepescaregolamentata
 
   - title: Determinazione Dirigenziale 24 ottobre 2020, n. 9503
@@ -829,7 +789,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 9503
-    tags:
+    schede:
         - ModulisticaUnificata
 
   - title: Legge regionale 17 maggio 1994, n. 14
@@ -841,7 +801,7 @@ docs:
     anno: 1994
     ente: Regione Umbria
     numero: 14
-    tags:
+    schede:
         - autcentriprivati
         - autaziendevenatorie
 
@@ -855,7 +815,7 @@ docs:
     anno: 1995
     ente: Regione Umbria
     numero: 34
-    tags:
+    schede:
         - autcentriprivati
 
   - title: Regolamento regionale 9 agosto 1995, n. 35
@@ -867,7 +827,7 @@ docs:
     anno: 1995
     ente: Regione Umbria
     numero: 35
-    tags:
+    schede:
         - autaziendevenatorie
 
   - title: D.Lgs 17 agosto 1999, n. 368
@@ -879,7 +839,7 @@ docs:
     anno: 1999
     ente:
     numero: 368
-    tags:
+    schede:
       - elencocoorddocenti
       - albotutori
 
@@ -892,7 +852,7 @@ docs:
     anno: 2008
     ente: Regione Umbria
     numero: 167
-    tags:
+    schede:
         - elencocoorddocenti
 
   - title: Deliberazione della Giunta Regionale 3 giugno 2009, n. 780
@@ -904,7 +864,7 @@ docs:
     anno: 2009
     ente: Regione Umbria
     numero: 780
-    tags:
+    schede:
         - elencocoorddocenti
         - albotutori
 
@@ -917,7 +877,7 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 8419
-    tags:
+    schede:
         - elencocoorddocenti
 
   - title: Determinazione Dirigenziale 18 febbraio 2020, n. 1357
@@ -929,5 +889,5 @@ docs:
     anno: 2020
     ente: Regione Umbria
     numero: 1357
-    tags:
+    schede:
         - albotutori

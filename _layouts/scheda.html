@@ -73,9 +73,7 @@ layout: default
       <!-- Sidebar -->
       <aside class="col-md-4 p-3">
 
-        {% capture theprofile %}{{ page.utenza }}{% endcapture %}
-        {% capture theme %}{{ page.tema }}{% endcapture %}
-        {% include schede/sidebar.html utenza=theprofile tema=theme %}
+        {% include schede/sidebar.html %}
       <!-- si nasconde perchè non attivo ma solo dimostrativo
         <div id="handle-favorite" class="u-margin-bottom-l" scheda_title="{{ page.object }}-{{ page.utenza }}" scheda_url="{{ page.url }}">
           <button id="add-scheda-to-favorites-btn" class="Button Button--default u-text-xs u-sizeFull">

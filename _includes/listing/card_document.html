@@ -8,6 +8,20 @@
 {% assign tema_item = tema_items[0] %}
 {% assign doctema = tema_item.name %}
 
+<!-- schede -->
+{% assign doc_scheda_names = '' %}
+{% assign separator = ', ' %}
+
+{% for docscheda in doc.schede %}
+    {% assign schede_items = site.schede | where: "object", docscheda %}
+    {% assign scheda_item = schede_items[0] %}
+    {% if forloop.last == true %}
+        {% assign separator = '' %}
+    {% endif %}
+    {% assign doc_scheda_names = doc_scheda_names | append: scheda_item.title | append: separator %}
+{% endfor %}
+<!-- / schede -->
+
 <!-- TAGS -->
 {% assign doc_tag_names = '' %}
 {% assign separator = ', ' %}
@@ -37,7 +51,8 @@
             <div class="card-text"><strong>Argomento: </strong>{{ doctema }}</div>
             <div class="card-text"><strong>Anno: </strong>{{ doc.anno }}</div>
             <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
-            <div class="card-text"><strong>Servizi: </strong>{{ doc_tag_names }}</div>
+            <div class="card-text"><strong>Servizi: </strong>{{ doc_scheda_names }}</div>
+            <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
         </div>
     </div>
 </div>
