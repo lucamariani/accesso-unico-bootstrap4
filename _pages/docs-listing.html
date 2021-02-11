@@ -34,7 +34,7 @@ order: 4
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="categoria" content=category-content %}
+                {% include listing/listing-accordion.html name="categoria" content=category-content %}
 
                 <!-- tipologia filter -->
                 {% capture tema-content %}
@@ -45,7 +45,7 @@ order: 4
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
 
                 <!-- year filter -->
                 {% capture year-content %}
@@ -56,7 +56,7 @@ order: 4
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="anno" content=year-content %}
+                {% include listing/listing-accordion.html name="anno" content=year-content %}
 
                 <!-- tags filter -->
                 {% capture tags-content %}
@@ -67,7 +67,7 @@ order: 4
                 </div>
                 {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="servizio" content=tags-content %}
+                {% include listing/listing-accordion.html name="servizio" content=tags-content %}
             </div>
 
             <!-- results column -->
@@ -76,7 +76,7 @@ order: 4
                     {% for doc in site.data.docs.docs %}
                         <div class="scheda-item col-12 col-lg-6 {{ doc.tags | join: ' ' }} {{ doc.tema | join: ' ' }} {{ doc.categoria | join: ' ' }} {{ doc.anno }}">
                             <!-- scheda card -->
-                            {% include card_document.html scheda=doc %}
+                            {% include listing/card_document.html scheda=doc %}
                         </div>
                     {% endfor %}
                 </div>

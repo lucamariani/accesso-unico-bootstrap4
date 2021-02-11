@@ -35,7 +35,7 @@ order: 5
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
 
             </div>
 
@@ -46,7 +46,7 @@ order: 5
                     {% for scheda in schede %}
                         <div class="scheda-item col-12 col-lg-6 {{ scheda.tag | join: ' ' }} {{ scheda.categories | join: ' ' }}">
                             <!-- scheda card -->
-                            {% include card_news.html scheda=scheda %}
+                            {% include listing/card_news.html scheda=scheda %}
                         </div>
                     {% endfor %}
                 </div>

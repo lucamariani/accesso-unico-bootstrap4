@@ -33,7 +33,7 @@ order: 3
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
 
                 <!-- tipologia filter -->
                 {% capture type-content %}
@@ -44,7 +44,7 @@ order: 3
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="tipologia" content=type-content %}
+                {% include listing/listing-accordion.html name="tipologia" content=type-content %}
 
                 <!-- profilo filter -->
                 {% capture profile-content %}
@@ -56,7 +56,7 @@ order: 3
                 </div>
                 {% endfor %}
                 {% endcapture %}
-                {% include listing-accordion.html name="profilo" content=profile-content %}
+                {% include listing/listing-accordion.html name="profilo" content=profile-content %}
             </div>
 
             <!-- results column -->
@@ -66,7 +66,7 @@ order: 3
                     {% for scheda in schede %}
                         <div class="scheda-item col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.tema | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
                             <!-- scheda card -->
-                            {% include card_scheda.html scheda=scheda %}
+                            {% include listing/card_scheda.html scheda=scheda %}
                         </div>
                     {% endfor %}
                 </div>
