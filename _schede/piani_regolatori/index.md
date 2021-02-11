@@ -10,6 +10,6 @@ subtitle: PRG, regolamento edilizio, comunale, territorio, urbanistica
 accordion_open: true
 status: BETA
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

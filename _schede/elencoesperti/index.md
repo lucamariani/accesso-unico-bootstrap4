@@ -9,6 +9,6 @@ description: Elenco da cui attinge obbligatoriamente il Comune per la nomina di 
 subtitle: commissione comunale, qualità architettonica, paesaggio
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

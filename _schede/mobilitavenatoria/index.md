@@ -9,6 +9,6 @@ description: Prenotazioni on-line per esercitare la caccia in mobilità alla sel
 subtitle: caccia, selvaggina, migratoria, cacciatore, mobilità
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

@@ -9,5 +9,5 @@ description: Incorpora in un unico atto diverse autorizzazioni ambientali previs
 subtitle: scarichi, emissioni in atmosfera, utilizzazione agronomica, acustica, rumore, rifiuti, autorizzazione, AUA
 status: Livello2,3
 statusLink: /onboard
-evidenza: si
+evidenza: 15
 ---

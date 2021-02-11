@@ -9,5 +9,5 @@ description: Elenco da cui si attinge per la nomina di coordinatori e docenti pe
 subtitle: elenco, coordinatori, docenti, corsi formazione, medicina generale, servizio sanitario
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

@@ -9,6 +9,6 @@ description: L'esercizio della pesca sportiva e agonistica è subordinato al pos
 subtitle: pesca, ittico, pescatore, tassa, pagamento
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

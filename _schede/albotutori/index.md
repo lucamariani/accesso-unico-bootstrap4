@@ -9,5 +9,5 @@ description: Elenco da cui si attinge per la nomina di medici tutori per i corsi
 subtitle: albo, medici tutori, corsi formazione, medicina generale, servizio sanitario
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

@@ -9,6 +9,6 @@ description: È fatto obbligo ai gestori di stazioni di monta naturale equina di
 subtitle: stallone, equini, asini, stazione di monta naturale
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

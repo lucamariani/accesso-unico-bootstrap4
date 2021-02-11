@@ -9,5 +9,5 @@ description: Applicazione on-line per gestire le attività di caccia e di abbatt
 subtitle: caccia, venatorio, cacciatore, cinghiale, battuta
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

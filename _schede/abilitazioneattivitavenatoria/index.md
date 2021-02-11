@@ -10,5 +10,5 @@ description: L’abilitazione venatoria è un requisito necessario per il rilasc
 subtitle: caccia, venatorio, licenza, cacciatore, esame
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---
