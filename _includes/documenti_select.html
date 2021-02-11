@@ -1,18 +1,18 @@
 {% assign docs_by_category_array = "" | split: ',' %}
-{% assign docs_by_tag_array = "" | split: ',' %}
+{% assign docs_by_scheda_array = "" | split: ',' %}
   
 {% for doc in site.data.docs.docs %}      
-  {% for tag in doc.tags %}
-    {% assign downcasetag = tag | downcase %}
-    {% if downcasetag == page.object %}        
-      {% assign docs_by_tag_array = docs_by_tag_array | push: doc %}
+  {% for scheda in doc.schede %}
+    {% assign downcasescheda = scheda | downcase %}
+    {% if downcasescheda == page.object %}
+      {% assign docs_by_scheda_array = docs_by_scheda_array | push: doc %}
       {%- break -%}
     {% endif %}
   {% endfor %}
 {% endfor %}
 
 {% comment %} create metatitles array to filter duplicated docs in next cycle {% endcomment %}
-{% assign doc_metatitles = docs_by_tag_array | map: 'metaname' %}
+{% assign doc_metatitles = docs_by_scheda_array | map: 'metaname' %}
 
 {% for doc in site.data.docs.docs %}
   {% if doc.tema == page.tema %}
@@ -28,7 +28,7 @@
     <ul class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
       <li><a target="_blank" href="#">{{ page.title }}</a>
         <ul>
-          {% for doc in docs_by_tag_array %}      
+          {% for doc in docs_by_scheda_array %}
             <li><a target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></li>
           {% endfor %}
         </ul>

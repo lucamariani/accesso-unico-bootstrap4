@@ -13,14 +13,28 @@
 {% assign separator = ', ' %}
 
 {% for docscheda in doc.schede %}
-    {% assign schede_items = site.schede | where_exp: "item", "item.metaname == docscheda" %}
+    {% assign schede_items = site.schede | where: "object", docscheda %}
     {% assign scheda_item = schede_items[0] %}
     {% if forloop.last == true %}
         {% assign separator = '' %}
     {% endif %}
-    {% assign doc_scheda_names = doc_scheda_names | append: scheda_item.name | append: separator %}
+    {% assign doc_scheda_names = doc_scheda_names | append: scheda_item.title | append: separator %}
 {% endfor %}
 <!-- / schede -->
+
+<!-- TAGS -->
+{% assign doc_tag_names = '' %}
+{% assign separator = ', ' %}
+
+{% for doctag in doc.tags %}
+    {% assign tags_items = site.data.docs.tags | where_exp: "item", "item.metaname == doctag" %}
+    {% assign tag_item = tags_items[0] %}
+    {% if forloop.last == true %}
+        {% assign separator = '' %}
+    {% endif %}
+    {% assign doc_tag_names = doc_tag_names | append: tag_item.name | append: separator %}
+{% endfor %}
+<!-- / TAGS -->
 
 <!--start card-->
 <div class="card-wrapper card-space">
@@ -38,6 +52,7 @@
             <div class="card-text"><strong>Anno: </strong>{{ doc.anno }}</div>
             <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
             <div class="card-text"><strong>Servizi: </strong>{{ doc_scheda_names }}</div>
+            <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
         </div>
     </div>
 </div>
