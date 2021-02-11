@@ -26,3 +26,8 @@ ul.list-inline img {max-width: 45px}
 .listing-accordion-panel .form-check.form-check-group label {margin-bottom: 0}
 
 .home-news-category-icon {width:20px !important}
+
+/* CAROUSEL */
+.carousel-icon {max-width:50px;display:inline !important}
+.home-carousel-category {font-weight: bold;}
+.home-carousel-data {font-size: 0.8em}

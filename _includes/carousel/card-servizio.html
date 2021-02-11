@@ -4,17 +4,25 @@
             <div class="card-body">
                 <div class="category-top">
                     <!-- category heading-->
-                    <a class="category" href="#">{{ include.scheda.tema }}</a>
+                    <!-- get category name -->
+                    {% for item in site.data.themes %}
+                        {% if item.metaname == include.scheda.tema %}
+                            {% assign category_name = item.name %}
+                            {% assign category_icon = item.image %}
+                        {% endif %}
+                    {% endfor %}
+                    <a class="home-carousel-category primary-color" href="">
+                        {% include tema_scheda_icona.html additional_classes="carousel-icon" scheda=include.scheda %}
+                        {{ category_name }}
+                    </a>
                     <!-- category data-->
-                    <a class="data" href="{{ site.baseurl }}{{ include.scheda.statusLink }}"><small>{{ include.scheda.status }}</small></a>
+                    <a class="data home-carousel-data" href="{{ site.baseurl }}{{ include.scheda.statusLink }}">{{ include.scheda.status }}</a>
                 </div>
                 <h5 class="card-title big-heading">{{ include.scheda.title }}</h5>
                 <p class="card-text">{{ include.scheda.description }}</p>
-<!--                <span class="card-signature">di Federico De Paolis</span>-->
-                <a class="read-more" href="{{ include.scheda.url }}">
-                    <span class="text">Leggi di più</span>
+                <a href="{{ include.scheda.url }}">
                     <svg class="icon">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
                     </svg>
                 </a>
             </div>
