@@ -9,11 +9,11 @@
                         {% for item in site.data.themes %}
                             {% if item.metaname == category_metaname %}
                                 {% assign category_name = item.name %}
-                                {% assign category_icon = item.image_red_circle %}
+                                {% assign category_icon = item.image %}
                             {% endif %}
                         {% endfor %}
-                        <a class="category" href="#">
-<!--                            <img title="{{ category_name | capitalize }}" class="home-news-category-icon" src="{{ site.baseurl}}{{ category_icon }}">-->
+                        <a class="home-carousel-category primary-color" href="">
+                            <img title="{{ category_name | capitalize }}" class="icon icon-lg carousel-icon" src="{{ site.baseurl}}{{ category_icon }}">
                             {{category_name}}
                         </a>
                         {% unless forloop.last %}<br>{% endunless %}
@@ -23,10 +23,9 @@
                 </div>
                 <h5 class="card-title big-heading">{{ include.scheda.title }}</h5>
                 <p class="card-text">{{ include.scheda.subtitle }}</p>
-                <a class="read-more" href="{{ include.scheda.url }}">
-                    <span class="text">Leggi di più</span>
+                <a href="{{ include.scheda.url }}">
                     <svg class="icon">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
                     </svg>
                 </a>
             </div>
