@@ -3,8 +3,7 @@ layout: scheda
 object: acconciatore
 utenza:
     - cittadini
-tema:
-    - artigianato
+tema: artigianato
 tipo: segnalazioni
 title: Esercizio dell’attività di acconciatore
 description: Requisiti e titoli per avviare l’attività di acconciatore

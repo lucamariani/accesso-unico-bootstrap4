@@ -3,8 +3,7 @@ layout: scheda
 object: fse
 utenza:
     - cittadini
-tema:
-    - salute
+tema: salute
 tipo: informazioni
 title: Fascicolo Sanitario Elettronico
 description: Strumento online che raccoglie la storia clinica e sanitaria di una persona. Occorre autenticarsi e dare il consenso
