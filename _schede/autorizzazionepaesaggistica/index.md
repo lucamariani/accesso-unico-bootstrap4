@@ -9,5 +9,5 @@ description: In aree sottoposte a tutela paesaggistica il progetto di interventi
 subtitle: tutela paesaggistica, beni paesaggistici, vincoli, paesaggio
 status: Livello2,3
 statusLink: /onboard
-evidenza: si
+evidenza: 20
 ---

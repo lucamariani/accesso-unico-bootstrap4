@@ -9,6 +9,6 @@ description: Moduli standardizzati ed adottati in Umbria con riferimento all’e
 subtitle: conferenza unificata, moduli, suape, edilizia, attività commerciali e assimilate
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

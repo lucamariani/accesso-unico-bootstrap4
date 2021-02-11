@@ -9,6 +9,6 @@ description: Alcuni operatori professionali che svolgono attività vivaistica o 
 subtitle: servizi fitosanitari, passaporto delle piante, fitosanitario, certificato fitosanitario
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

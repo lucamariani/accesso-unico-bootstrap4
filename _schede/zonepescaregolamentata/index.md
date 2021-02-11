@@ -9,6 +9,6 @@ description: Nelle acque No Kill dell’Umbria è obbligatorio rilasciare in acq
 subtitle: tesserino no kill, pesca, ittico, permesso, tratti, giornaliero, prenotazione
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

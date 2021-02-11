@@ -10,5 +10,5 @@ description: L’abilitazione certifica il possesso delle competenze che costitu
 subtitle: barbiere, parrucchiere, esame finale, corso di formazione, qualifica, attestato
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

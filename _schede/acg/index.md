@@ -11,5 +11,5 @@ description: L’ACG è riservata a stabilimenti con impianti ed attività in de
 subtitle: emissioni in atmosfera, ridotto inquinamento, procedura semplificata
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

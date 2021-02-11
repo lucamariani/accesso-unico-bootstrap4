@@ -9,6 +9,6 @@ description: E’ obbligatorio per esercitare la pesca per le acque di cat. "A" 
 subtitle: segnacatture, trota, diario, pagamento, licenza
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

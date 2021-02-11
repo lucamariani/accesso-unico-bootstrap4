@@ -9,6 +9,6 @@ description: Documentazione necessaria per l’esportazione di vegetali e prodot
 subtitle: servizi fitosanitari, certificato fitosanitario, richiesta ispezione, RUOP, piante, esportazione, extra Ue, servizio fitosanitario
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

@@ -9,6 +9,6 @@ description: Il servizio Fitosanitario Regionale rilascia l'attestato d'idoneit√
 subtitle: servizi fitosanitari, costruzione del verde, attestato, idoneit√†, responsabile, servizio fitosanitario
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

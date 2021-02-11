@@ -9,6 +9,6 @@ description: Documentazione necessaria per l’importazione da Paesi terzi di al
 subtitle: servizi fitosanitari, RUOP, sementi, importazione, extra Ue, servizio fitosanitario
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

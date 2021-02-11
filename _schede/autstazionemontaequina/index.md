@@ -9,5 +9,5 @@ description: Le stazioni di monta naturale pubblica e privata per la specie equi
 subtitle: stallone, pubblica, privata, equini, monta equina naturale, riproduzione animale
 status: Livello2
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 ---

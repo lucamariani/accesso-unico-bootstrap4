@@ -9,6 +9,6 @@ description: Informazioni on-line sull’andamento della caccia al cinghiale in 
 subtitle: caccia, venatorio, cacciatore, cinghiale, battuta
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

@@ -9,6 +9,6 @@ description: Elenco delle imprese per l’affidamento di lavori pubblici di impo
 subtitle: opere pubbliche, affidamento lavori pubblici, elenco, imprese
 status: Livello3
 statusLink: /onboard
-evidenza: no
+evidenza: 0
 lang: it
 ---

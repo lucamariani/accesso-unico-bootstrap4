@@ -9,5 +9,5 @@ description: Consultazione e richiesta copie di progetti strutturali di costruzi
 subtitle: progetti, rischio sismico, costruzioni, edilizia
 status: Livello2,3
 statusLink: /onboard
-evidenza: si
+evidenza: 10
 ---

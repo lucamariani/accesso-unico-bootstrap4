@@ -2,7 +2,8 @@
 <div class="mb-5">
     <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
         <div class="it-carousel-all owl-carousel">
-            {% for scheda in site.schede limit: 12 %}
+            {% assign evidenza-schede = site.schede | sort: "evidenza" | reverse %}
+            {% for scheda in evidenza-schede %}
                 {% include carousel/card-servizio.html scheda=scheda %}
             {% endfor %}
         </div>

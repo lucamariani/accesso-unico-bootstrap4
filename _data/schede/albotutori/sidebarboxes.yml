@@ -1,0 +1,13 @@
+
+- title: Modulistica
+  file: modulistica.md
+  icon: download
+
+- title: Servizi collegati
+  file: servizicollegati.md
+  icon: link
+
+- title: Documenti
+  file: documenti.md
+  icon: files
+    

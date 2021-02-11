@@ -9,6 +9,6 @@ description: Il rilascio ed il rinnovo annuale della abilitazione è requisito n
 subtitle: licenza di caccia, anagrafica cacciatori, attività venatoria, pagamento, tesserino
 status: Livello3
 statusLink: /onboard
-evidenza: si
+evidenza: 30
 lang: it
 ---
