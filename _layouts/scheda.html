@@ -6,7 +6,7 @@ layout: default
 
   <!-- Page Title -->
   <div class="container">
-    <div class="mx-auto pt-5 mb-2 px-4">
+    <div class="mx-auto pt-3 pt-lg-5 mb-2 px-4">
       <section class="row">
         <div class="col-md-9">
           <h1 class="neutral-1-color-b5 h2">
@@ -41,7 +41,7 @@ layout: default
         {% assign theme_item = theme_items[0] %}
 
 
-        <div class="col-md-3 p-3 d-flex justify-content-center">
+        <div class="col-md-3 d-flex justify-content-center">
               <div id="scheda-icons-div" class="text-center d-none d-sm-inline">
                 <ul class="list-inline">
                   <li class="list-inline-item">
@@ -62,7 +62,7 @@ layout: default
 
         <article class="">
 
-          <h6 class="mb-5">{{ page.description }}</h6>
+          <h6 class="mb-md-2 mb-lg-5">{{ page.description }}</h6>
 
           {% include schede/accordion.html %}
 
@@ -95,14 +95,6 @@ layout: default
         <!-- qui c'è originariamente il sidebar.tml spostato all'inizio dell'aside-->
 
         {% include novita_box.html %}
-
-        <div id="tue-scelte" class="w-100">
-          <p>
-            <a class="btn btn-primary w-100" href="{{ site.baseurl}}/schede_search">
-              Nuova ricerca
-            </a>
-          </p>
-        </div>
 
         <!-- box partecipa -->
         <div class="callout {{ include.additionalClasses }}">
