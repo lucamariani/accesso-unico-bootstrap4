@@ -1,4 +1,3 @@
-{% assign docs_by_category_array = "" | split: ',' %}
 {% assign docs_by_scheda_array = "" | split: ',' %}
   
 {% for doc in site.data.docs.docs %}      
@@ -11,38 +10,10 @@
   {% endfor %}
 {% endfor %}
 
-{% comment %} create metatitles array to filter duplicated docs in next cycle {% endcomment %}
-{% assign doc_metatitles = docs_by_scheda_array | map: 'metaname' %}
-
-{% for doc in site.data.docs.docs %}
-  {% if doc.tema == page.tema %}
-  {% comment %} add docs only if not yet present {% endcomment %}
-    {% unless doc_metatitles contains doc.metaname %}
-      {% assign docs_by_category_array = docs_by_category_array | push: doc %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-
-<div class="u-text-r-s u-layout-wide">
-  <div class="u-color-white u-border-top-xxs u-border-bottom-xxs">
-    <ul class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
-      <li><a target="_blank" href="#">{{ page.title }}</a>
-        <ul>
-          {% for doc in docs_by_scheda_array %}
-            <li><a target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
-      {% comment %} get the theme's full name {% endcomment %}
-      {% assign tema_items = site.data.themes | where_exp: "item", "item.metaname == page.tema" %}
-      {% assign tema_item = tema_items[0] %}
-      <li><a target="_blank" href="#">{{ tema_item.name }}</a>
-        <ul>
-          {% for doc in docs_by_category_array %}      
-            <li><a target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
-    </ul>
-  </div>
+<div class="link-list-wrapper">
+  <ul class="link-list">
+    {% for doc in docs_by_scheda_array %}
+    <li><a class="list-item" target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
