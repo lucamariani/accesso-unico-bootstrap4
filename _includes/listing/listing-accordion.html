@@ -1,10 +1,14 @@
+{% capture filter-template %}
+<div class="form-check form-check-group">
+    <input id="__FILTER_ID__" type="checkbox" aria-labelledby="__FILTER_METANAME__-help" value="{{include.name}}___FILTER_METANAME__">
+    <label for="__FILTER_ID__">__FILTER_NAME__</label>
+</div>
+{% endcapture %}
 <!-- accordion header -->
 <div class="collapse-header" id="accordion-header-{{include.name}}">
     <button class="h5 text-capitalize" data-toggle="collapse" data-target="#accordion-panel-{{include.name}}" aria-expanded="false" aria-controls="accordion-panel-{{include.name}}">{{include.name}}</button>
 </div>
 <!-- accordion body -->
-<div id="accordion-panel-{{include.name}}" class="collapse listing-accordion-panel" role="tabpanel" aria-labelledby="accordion-header-{{include.name}}">
-    <div class="collapse-body" markdown="1">
-        {{ include.content | raw }}
-    </div>
+<div id="accordion-panel-{{include.name}}" class="collapse listing-accordion-panel" role="tabpanel" aria-labelledby="accordion-header-{{include.name}}" data-filtername="{{include.name}}" data-filtertemplate='{{ filter-template | raw }}'>
+    <div class="collapse-body" markdown="1"></div>
 </div>

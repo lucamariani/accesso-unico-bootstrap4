@@ -8,7 +8,7 @@ permalink: /servizi
 lang: it
 order: 3 
 ---
-
+<script>const filters = {}</script>
 <main>
     <div class="container my-4">
         <h1>{{ page.title }}</h1>
@@ -25,38 +25,37 @@ order: 3
             <div class="col-12 col-md-3">
                 
                 <!-- argomento filter -->
-                {% capture tema-content %}
-                    {% for tema in site.data.themes %}
-                    <div class="form-check form-check-group">
-                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{tema.metaname}}">
-                        <label for="t_{{tema.metaname}}">{{ tema.name }}</label>
-                    </div>
-                    {% endfor %}
-                {% endcapture %}
-                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
+                <script>
+                    filters.argomento = {
+                        {% for tema in site.data.themes %}
+                            'argomento_{{tema.metaname}}' : {'metaname': '{{tema.metaname}}', 'name': '{{tema.name}}'}
+                            {% unless forloop.last %} , {% endunless %}
+                        {% endfor %}
+                    }
+                </script>
+                {% include listing/listing-accordion.html name="argomento" %}
 
                 <!-- tipologia filter -->
-                {% capture type-content %}
+                <script>
+                    filters.tipologia = {
                     {% for type in site.data.schede_types %}
-                    <div class="form-check form-check-group">
-                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="type_{{type.metaname}}-help" value="{{type.metaname}}">
-                        <label for="type_{{type.metaname}}">{{ type.name }}</label>
-                    </div>
+                        'tipologia_{{type.metaname}}' : {'metaname': '{{type.metaname}}', 'name': '{{type.name}}'}
+                        {% unless forloop.last %} , {% endunless %}
                     {% endfor %}
-                {% endcapture %}
-                {% include listing/listing-accordion.html name="tipologia" content=type-content %}
+                    }
+                </script>
+                {% include listing/listing-accordion.html name="tipologia" %}
 
                 <!-- profilo filter -->
-                {% capture profile-content %}
-                {% for profile in site.data.profiles %}
-                {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
-                <div class="form-check form-check-group">
-                    <input id="p_{{ profile.metaname }}" type="checkbox" value="{{profile.metaname}}">
-                    <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
-                </div>
-                {% endfor %}
-                {% endcapture %}
-                {% include listing/listing-accordion.html name="profilo" content=profile-content %}
+                <script>
+                    filters.profilo = {
+                    {% for profile in site.data.profiles %}
+                        'profilo_{{profile.metaname}}' : {'metaname': '{{profile.metaname}}', 'name': '{{profile.name}}'}
+                        {% unless forloop.last %} , {% endunless %}
+                    {% endfor %}
+                    }
+                </script>
+                {% include listing/listing-accordion.html name="profilo" %}
             </div>
 
             <!-- results column -->
@@ -64,7 +63,7 @@ order: 3
                 <div class="row">
                     {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
                     {% for scheda in schede %}
-                        <div class="scheda-item col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.tema | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
+                        <div class="scheda-item col-12 col-lg-6 profilo_{{ scheda.utenza | join: ' profilo_' }} argomento_{{ scheda.tema | join: ' argomento_' }} tipologia_{{ scheda.tipo | join: ' tipologia_' }}">
                             <!-- scheda card -->
                             {% include listing/card_scheda.html scheda=scheda %}
                         </div>
