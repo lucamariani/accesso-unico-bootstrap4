@@ -68,13 +68,6 @@ const listing = function() {
         })
     }
 
-    const patchTemplate = function(template, option) {
-        let patched = template.replaceAll('__FILTER_ID__', option.metaname)
-        patched = patched.replaceAll('__FILTER_METANAME__', option.metaname)
-        patched = patched.replaceAll('__FILTER_NAME__', option.name)
-        return patched
-    }
-
     const addCheckboxInArray = function (filterName, value) {
         if(checkboxes[filterName]) {
             if ( ! checkboxes[filterName].items.includes(value)) {
