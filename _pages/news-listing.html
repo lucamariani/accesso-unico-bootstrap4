@@ -27,15 +27,16 @@ order: 5
             <div class="col-12 col-md-3">
                 
                 <!-- tema filter -->
+                {% assign filtername = "argomento" %}
                 {% capture tema-content %}
                     {% for tema in site.data.themes %}
                     <div class="form-check form-check-group">
-                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{tema.metaname}}">
-                        <label for="t_{{tema.metaname}}">{{ tema.name }}</label>
+                        <input id="{{ filtername }}_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{ filtername }}_{{tema.metaname}}">
+                        <label for="{{ filtername }}_{{tema.metaname}}">{{ tema.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name=filtername content=tema-content %}
 
             </div>
 
@@ -44,7 +45,7 @@ order: 5
                 <div class="row">
                     {% assign schede = site.posts | sort: 'date' %}
                     {% for scheda in schede %}
-                        <div class="scheda-item col-12 col-lg-6 {{ scheda.tag | join: ' ' }} {{ scheda.categories | join: ' ' }}">
+                        <div class="scheda-item col-12 col-lg-6 {{ scheda.tag | join: ' ' }} argomento_{{ scheda.categories | join: ' ' }}">
                             <!-- scheda card -->
                             {% include listing/card_news.html scheda=scheda %}
                         </div>

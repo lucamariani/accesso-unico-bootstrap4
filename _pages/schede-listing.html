@@ -25,38 +25,42 @@ order: 3
             <div class="col-12 col-md-3">
                 
                 <!-- argomento filter -->
+                {% assign filtername = "argomento" %}
+                {% assign sorted_themes = site.data.themes | sort: 'name' %}
                 {% capture tema-content %}
-                    {% for tema in site.data.themes %}
+                    {% for tema in sorted_themes %}
                     <div class="form-check form-check-group">
-                        <input id="t_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{tema.metaname}}">
-                        <label for="t_{{tema.metaname}}">{{ tema.name }}</label>
+                        <input id="{{ filtername }}_{{tema.metaname}}" type="checkbox" aria-labelledby="t_{{tema.metaname}}-help" value="{{ filtername }}_{{tema.metaname}}">
+                        <label for="{{ filtername }}_{{tema.metaname}}">{{ tema.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name=filtername content=tema-content %}
 
                 <!-- tipologia filter -->
+                {% assign filtername = "tipologia" %}
                 {% capture type-content %}
                     {% for type in site.data.schede_types %}
                     <div class="form-check form-check-group">
-                        <input id="type_{{type.metaname}}" type="checkbox" aria-labelledby="type_{{type.metaname}}-help" value="{{type.metaname}}">
-                        <label for="type_{{type.metaname}}">{{ type.name }}</label>
+                        <input id="{{ filtername }}_{{type.metaname}}" type="checkbox" aria-labelledby="type_{{type.metaname}}-help" value="{{ filtername }}_{{type.metaname}}">
+                        <label for="{{ filtername }}_{{type.metaname}}">{{ type.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="tipologia" content=type-content %}
+                {% include listing/listing-accordion.html name=filtername content=type-content %}
 
                 <!-- profilo filter -->
+                {% assign filtername = "profilo" %}
                 {% capture profile-content %}
-                {% for profile in site.data.profiles %}
-                {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
-                <div class="form-check form-check-group">
-                    <input id="p_{{ profile.metaname }}" type="checkbox" value="{{profile.metaname}}">
-                    <label for="p_{{ profile.metaname }}">{{ profile.name }}</label>
-                </div>
-                {% endfor %}
+                    {% for profile in site.data.profiles %}
+                        {% assign schede_profile =  schede | where_exp: "item", "item.utenza == profile.metaname" %}
+                        <div class="form-check form-check-group">
+                            <input id="{{ filtername }}_{{profile.metaname}}" type="checkbox" value="{{ filtername }}_{{profile.metaname}}">
+                            <label for="{{ filtername }}_{{profile.metaname}}">{{ profile.name }}</label>
+                        </div>
+                    {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="profilo" content=profile-content %}
+                {% include listing/listing-accordion.html name=filtername content=profile-content %}
             </div>
 
             <!-- results column -->
@@ -64,7 +68,7 @@ order: 3
                 <div class="row">
                     {% assign schede = site.schede | sort: 'title' | uniq: 'title' %}
                     {% for scheda in schede %}
-                        <div class="scheda-item col-12 col-lg-6 {{ scheda.utenza | join: ' ' }} {{ scheda.tema | join: ' ' }} {{ scheda.tipo | join: ' ' }}">
+                        <div class="scheda-item col-12 col-lg-6 profilo_{{ scheda.utenza | join: ' profilo_' }} argomento_{{ scheda.tema | join: ' argomento_' }} tipologia_{{ scheda.tipo | join: ' tipologia_' }}">
                             <!-- scheda card -->
                             {% include listing/card_scheda.html scheda=scheda %}
                         </div>
