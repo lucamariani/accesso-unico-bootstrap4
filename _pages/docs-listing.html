@@ -25,56 +25,60 @@ order: 4
             <div class="col-12 col-md-3">
 
                 <!-- categoria filter -->
+                {% assign filtername = "categoria" %}
                 {% capture category-content %}
                     {% assign docs_category = site.data.docs.category %}
-                    {% for category in docs_category %}
+                    {% for item in docs_category %}
                     <div class="form-check form-check-group">
-                        <input id="c_{{category.metaname}}" type="checkbox" aria-labelledby="c_{{category.metaname}}-help" value="{{category.metaname}}">
-                        <label for="c_{{category.metaname}}">{{ category.name }}</label>
+                        <input id="{{ filtername }}_{{item.metaname}}" type="checkbox" aria-labelledby="c_{{item.metaname}}-help" value="{{ filtername }}_{{item.metaname}}">
+                        <label for="{{ filtername }}_{{item.metaname}}">{{ item.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="categoria" content=category-content %}
+                {% include listing/listing-accordion.html name=filtername content=category-content %}
 
                 <!-- tipologia filter -->
+                {% assign filtername = "argomento" %}
                 {% capture tema-content %}
-                    {% for tema in site.data.docs.tema %}
+                    {% for item in site.data.docs.tema %}
                     <div class="form-check form-check-group">
-                        <input id="tema_{{tema.metaname}}" type="checkbox" aria-labelledby="tema_{{tema.metaname}}-help" value="{{tema.metaname}}">
-                        <label for="tema_{{tema.metaname}}">{{ tema.name }}</label>
+                        <input id="{{ filtername }}_{{item.metaname}}" type="checkbox" aria-labelledby="{{item.metaname}}-help" value="{{ filtername }}_{{item.metaname}}">
+                        <label for="{{ filtername }}_{{item.metaname}}">{{ item.name }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="argomento" content=tema-content %}
+                {% include listing/listing-accordion.html name=filtername content=tema-content %}
 
                 <!-- year filter -->
+                {% assign filtername = "anno" %}
                 {% capture year-content %}
                     {% for year in (1990..2021) %}
                     <div class="form-check form-check-group">
-                        <input id="y_{{ year }}" type="checkbox" value="{{ year }}">
-                        <label for="y_{{ year }}">{{ year }}</label>
+                        <input id="{{ filtername }}_{{ year }}" type="checkbox" value="{{ filtername }}_{{ year }}">
+                        <label for="{{ filtername }}_{{ year }}">{{ year }}</label>
                     </div>
                     {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="anno" content=year-content %}
+                {% include listing/listing-accordion.html name=filtername content=year-content %}
 
                 <!-- tags filter -->
                 {% capture tags-content %}
-                {% for tag in site.data.docs.tags %}
+                {% assign filtername = "servizio" %}
+                {% for item in site.data.docs.tags %}
                 <div class="form-check form-check-group">
-                    <input id="tag_{{tag.metaname}}" type="checkbox" aria-labelledby="tag_{{tag.metaname}}-help" value="{{tag.metaname}}">
-                    <label for="tag_{{tag.metaname}}">{{ tag.name }}</label>
+                    <input id="{{ filtername }}_{{item.metaname}}" type="checkbox" aria-labelledby="{{ filtername }}_{{item.metaname}}-help" value="{{ filtername }}_{{item.metaname}}">
+                    <label for="{{ filtername }}_{{item.metaname}}">{{ item.name }}</label>
                 </div>
                 {% endfor %}
                 {% endcapture %}
-                {% include listing/listing-accordion.html name="servizio" content=tags-content %}
+                {% include listing/listing-accordion.html name=filtername content=tags-content %}
             </div>
 
             <!-- results column -->
             <div class="col-12 col-md-9 mx-auto">
                 <div class="row">
                     {% for doc in site.data.docs.docs %}
-                        <div class="scheda-item col-12 col-lg-6 {{ doc.tags | join: ' ' }} {{ doc.tema | join: ' ' }} {{ doc.categoria | join: ' ' }} {{ doc.anno }}">
+                        <div class="scheda-item col-12 col-lg-6 servizio_{{ doc.tags | join: ' ' }} argomento_{{ doc.tema | join: ' ' }} categoria_{{ doc.categoria | join: ' ' }} anno_{{ doc.anno }}">
                             <!-- scheda card -->
                             {% include listing/card_document.html scheda=doc %}
                         </div>

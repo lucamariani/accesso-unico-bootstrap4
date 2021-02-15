@@ -8,7 +8,7 @@ const $filterDivArrays = $('.listing-accordion-panel')
  * @returns {*}
  */
 const getClassesStartingWithString = function (item, prefixClassName) {
-    // console.log('getClassesStartingWithString', prefixClassName)
+    // console.log('getClassesStartingWithString', prefixClassName, item)
     const regExp = new RegExp(prefixClassName,'g')
     // console.log('classes:', item.className.match(regExp))
     return item.className.match(regExp)
@@ -61,14 +61,8 @@ const listing = function() {
         // now cycle on checkboxes arrays to add them in dom
         Object.keys(checkboxes).forEach(function (checkboxName) {
             const checkbox = checkboxes[checkboxName]
-            const filterDiv = getFilterDivByName(checkboxName)
             console.log(checkbox)
             checkbox.items.forEach(function(item) {
-                // const patchedTemplate = patchTemplate(checkboxes[checkboxName].template, filters[checkboxName][item])
-                // const $checkboxesContainer = $(filterDiv).find('.collapse-body')
-                // // console.log('filterdiv', $checkboxesContainer)
-                // $checkboxesContainer.append(patchedTemplate)
-                // console.log('showing', item, $("#" + item))
                 $("#" + item).parent().removeClass('d-none')
             })
         })
@@ -101,12 +95,12 @@ const listing = function() {
      * @param filter
      */
     const addFilterCheckboxes = function (item, filter) {
-        const prefixClassName = filter.name + '_[a-z]*'
+        const prefixClassName = filter.name + '_[a-zA-Z0-9]*'
         const cssclasses = getClassesStartingWithString(item, prefixClassName)
-        // console.log('adding checkboxes for filter', filter.name, ': ', filters[filter.name])
+        // console.log('adding checkboxes for filter', filter.name)
 
         // fill checkboxes arrays
-        fillCheckboxesArrays(filter, cssclasses)
+        if(cssclasses) fillCheckboxesArrays(filter, cssclasses)
     }
 
     const initCheckboxes = function(filterName) {
@@ -118,7 +112,7 @@ const listing = function() {
         // hide checkboxes
         Object.keys(checkboxes).forEach(function (checkboxName) {
             const filterDiv = getFilterDivByName(checkboxName)
-            console.log('filterDiv',filterDiv)
+            // console.log('filterDiv',filterDiv)
             $(filterDiv).find('.form-check-group').addClass('d-none')
             // $checkboxesContainer.html('')
         })
