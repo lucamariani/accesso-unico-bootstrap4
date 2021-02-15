@@ -53,6 +53,18 @@
             <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
             <div class="card-text"><strong>Servizi: </strong>{{ doc_scheda_names }}</div>
             <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
+            {% if doc.interno %}
+                {% assign documentUrl = site.baseurl|append: doc.url %}
+            {% else %}
+                {% assign documentUrl = doc.url %}
+            {% endif %}
+            <div class="it-card-footer">
+                <a href="{{ documentUrl }}">
+                    <svg class="icon">
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
 </div>

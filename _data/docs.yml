@@ -197,6 +197,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/BUR_DGR700_2017.pdf"
+    interno: si
     anno: 2017
     ente: Regione Umbria
     numero: 700
@@ -211,6 +212,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/BUR-DGR1088_2017.pdf"
+    interno: si
     anno: 2017
     ente: Regione Umbria
     numero: 1088
@@ -225,6 +227,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/BUR_DGR1188-2017.pdf"
+    interno: si
     anno: 2017
     ente: Regione Umbria
     numero: 1188
@@ -239,6 +242,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/DGR-274_26-03-2018.zip"
+    interno: si
     anno: 2017
     ente: Regione Umbria
     numero: 274
@@ -301,6 +305,7 @@ docs:
     categoria: atti
     tema: ambiente
     url: "/docs/modulistica/DGR_1656_29_12_2015.pdf"
+    interno: si
     anno: 2015
     ente: Regione Umbria
     numero: 1656
@@ -314,6 +319,7 @@ docs:
     categoria: atti
     tema: ambiente
     url: "/docs/modulistica/DGR_1024_19_09_2018_Bur.pdf"
+    interno: si
     anno: 2018
     ente: Regione Umbria
     numero: 1024
@@ -351,6 +357,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/BUR_DD3971_2019.pdf"
+    interno: si
     anno: 2019
     ente: Regione Umbria
     numero: 3971
@@ -365,6 +372,7 @@ docs:
     categoria: atti
     tema: ambiente
     url: "/docs/modulistica/DD12724_2017.pdf"
+    interno: si
     anno: 2017
     ente: Regione Umbria
     numero: 12724
@@ -377,6 +385,7 @@ docs:
     categoria: atti
     tema: operepubbliche
     url: "/docs/modulistica/DGR1399_2010.pdf"
+    interno: si
     anno: 2010
     ente: Regione Umbria
     numero: 1399
@@ -389,6 +398,7 @@ docs:
     categoria: atti
     tema: operepubbliche
     url: "/docs/modulistica/DGR341_2015.pdf"
+    interno: si
     anno: 2015
     ente: Regione Umbria
     numero: 341
@@ -401,6 +411,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/BUR_DGR894_2019.pdf"
+    interno: si
     anno: 2019
     ente: Regione Umbria
     numero: 894
@@ -430,6 +441,7 @@ docs:
     categoria: atti
     tema: operepubbliche
     url: "/docs/modulistica/DGR121_2020.pdf"
+    interno: si
     anno: 2020
     ente: Regione Umbria
     numero: 121
@@ -478,6 +490,7 @@ docs:
     categoria: atti
     tema: territorio
     url: "/docs/modulistica/DGR 203_2010.pdf"
+    interno: si
     anno: 2010
     ente: Regione Umbria
     numero: 203
@@ -593,6 +606,7 @@ docs:
     categoria: atti
     tema: agricoltura
     url: "/docs/modulistica/DGR_270_2020.pdf"
+    interno: si
     anno: 2020
     ente: Regione Umbria
     numero: 270
@@ -605,6 +619,7 @@ docs:
     categoria: atti
     tema: agricoltura
     url: "/docs/modulistica/DGR_974_2018.pdf"
+    interno: si
     anno: 2018
     ente: Regione Umbria
     numero: 974
@@ -762,6 +777,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/DD8824_2020"
+    interno: si
     anno: 2020
     ente: Regione Umbria
     numero: 8824
@@ -774,6 +790,7 @@ docs:
     categoria: atti
     tema: cacciapesca
     url: "/docs/modulistica/DD805_2020"
+    interno: si
     anno: 2020
     ente: Regione Umbria
     numero: 805
@@ -786,6 +803,7 @@ docs:
     categoria: atti
     tema: semplificazione
     url: "/docs/modulistica/DD9503_2020"
+    interno: si
     anno: 2020
     ente: Regione Umbria
     numero: 9503
