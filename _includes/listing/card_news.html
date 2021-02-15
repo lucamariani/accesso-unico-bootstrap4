@@ -18,16 +18,17 @@
                 {% endfor %}
             </div>
 
-            <!--<div class="head-tags">
-                <span class="data">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
-            </div>-->
+            <div class="head-tags">
+                <span class="card-signature data">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
+            </div>
 
             <h5 class="card-title">{{ include.scheda.title }}</h5>
             <p class="card-text">{{ include.scheda.subtitle }}</p>
             <div class="it-card-footer">
-                <span class="card-signature">{{ include.scheda.date | date: "%d-%m-%Y"}}</span>
                 <a href="{{ site.baseurl }}{{ include.scheda.url }}">
-                    <button class="btn btn-primary btn-sm">Leggi</button>
+                    <svg class="icon">
+                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
+                    </svg>
                 </a>
             </div>
         </div>
