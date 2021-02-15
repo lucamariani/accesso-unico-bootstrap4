@@ -1,5 +1,17 @@
 - name: Informazioni
-  metaname: servizio
+  metaname: informazioni
 
 - name: Pratica
   metaname: pratica
+
+- name: Licenze
+  metaname: licenze
+
+- name: Segnalazioni
+  metaname: segnalazioni
+
+- name: Certificazioni
+  metaname: certificazioni
+
+- name: Albi
+  metaname: albi

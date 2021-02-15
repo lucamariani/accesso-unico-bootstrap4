@@ -8,7 +8,7 @@ const $filterDivArrays = $('.listing-accordion-panel')
  * @returns {*}
  */
 const getClassesStartingWithString = function (item, prefixClassName) {
-    // const prefixClassName = filter.name + '-[a-z]*'
+    // console.log('getClassesStartingWithString', prefixClassName)
     const regExp = new RegExp(prefixClassName,'g')
     // console.log('classes:', item.className.match(regExp))
     return item.className.match(regExp)
@@ -64,10 +64,12 @@ const listing = function() {
             const filterDiv = getFilterDivByName(checkboxName)
             console.log(checkbox)
             checkbox.items.forEach(function(item) {
-                const patchedTemplate = patchTemplate(checkboxes[checkboxName].template, filters[checkboxName][item])
-                const $checkboxesContainer = $(filterDiv).find('.collapse-body')
-                // console.log('filterdiv', $checkboxesContainer)
-                $checkboxesContainer.append(patchedTemplate)
+                // const patchedTemplate = patchTemplate(checkboxes[checkboxName].template, filters[checkboxName][item])
+                // const $checkboxesContainer = $(filterDiv).find('.collapse-body')
+                // // console.log('filterdiv', $checkboxesContainer)
+                // $checkboxesContainer.append(patchedTemplate)
+                // console.log('showing', item, $("#" + item))
+                $("#" + item).parent().removeClass('d-none')
             })
         })
     }
@@ -90,10 +92,7 @@ const listing = function() {
     const fillCheckboxesArrays = function (filter, cssclasses) {
         cssclasses.forEach(function (cssclass) {
             // console.log('adding checkbox for cssclass', cssclass)
-            if(filters[filter.name][cssclass]) {
-                // console.log(patchTemplate(template, filters[filter.name][option]))
-                addCheckboxInArray(filter.name, cssclass)
-            }
+            addCheckboxInArray(filter.name, cssclass)
         })
     }
 
@@ -106,10 +105,6 @@ const listing = function() {
         const cssclasses = getClassesStartingWithString(item, prefixClassName)
         // console.log('adding checkboxes for filter', filter.name, ': ', filters[filter.name])
 
-        // get the filter template
-        const template = $(filter.filterDiv).data('filtertemplate')
-        // add the template in checkboxes object
-        checkboxes[filter.name].template = template
         // fill checkboxes arrays
         fillCheckboxesArrays(filter, cssclasses)
     }
@@ -120,12 +115,12 @@ const listing = function() {
             checkboxes[filter.name] = {}
             checkboxes[filter.name].items = []
         })
-        // init DOM
+        // hide checkboxes
         Object.keys(checkboxes).forEach(function (checkboxName) {
-            const checkbox = checkboxes[checkboxName]
             const filterDiv = getFilterDivByName(checkboxName)
-            const $checkboxesContainer = $(filterDiv).find('.collapse-body')
-            $checkboxesContainer.html('')
+            console.log('filterDiv',filterDiv)
+            $(filterDiv).find('.form-check-group').addClass('d-none')
+            // $checkboxesContainer.html('')
         })
     }
 
@@ -137,7 +132,6 @@ const listing = function() {
             const filter = new Filter(item)
             filterArray.push(filter)
             filterNamesArray.push(filter.name)
-            // addCheckboxProperty(filter.name)
         })
         console.log('filterArray', filterArray)
         console.log('filterNames', filterNamesArray)
@@ -169,8 +163,6 @@ const listing = function() {
 
         // update filters
         initFilterCheckboxes()
-        // add handlers again
-        addChangeHandlers()
     }
 
     const onChangeCheckbox = function ($item, filter) {
