@@ -1,23 +1,24 @@
-- name: Informazioni
-  metaname: informazioni
 
-- name: Pratica
+- name: pratica
   metaname: pratica
 
-- name: Licenze permessi nulla osta
+- name: licenze permessi nulla osta
   metaname: licenze
 
-- name: Segnalazioni
+- name: segnalazioni
   metaname: segnalazioni
 
-- name: Certificazioni attestati accreditamenti
+- name: certificati attestati accreditamenti
   metaname: certificazioni
 
-- name: Albi elenchi registri
+- name: albi elenchi registri
   metaname: albi
 
-- name: Autorizzazioni concessioni
+- name: autorizzazioni concessioni
   metaname: autorizzazioni
 
-- name: Accesso atti
+- name: accesso atti
   metaname: accesso
+
+- name: informazioni
+  metaname: informazioni
