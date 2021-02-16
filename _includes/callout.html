@@ -1,9 +1,9 @@
 <div class="callout {{ include.additionalClasses }}">
-    <div class="callout-title">
+    <div class="callout-title" style="position: relative">
         {% if box.icon %}
         <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-{{ box.icon }}"></use></svg>
         {% endif %}
         {{ box.title }}
     </div>
-    <p class="text-sans-serif">{{ box-content | markdownify }}</p>
+    {{ box-content | markdownify }}
 </div>
