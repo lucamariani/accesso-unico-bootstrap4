@@ -31,3 +31,14 @@ ul.list-inline img {max-width: 45px}
 .carousel-icon {max-width:50px;display:inline !important}
 .home-carousel-category {font-weight: bold;}
 .home-carousel-data {font-size: 0.8em}
+
+/* handle login mask*/
+#login-div > img {height:12px}
+.Headroom--fixed.Headroom--not-top .Headroom-showme {max-height: 5em}
+.Headroom-showme {max-height:0; overflow-y:hidden;}
+.Header-login, #logout-icon {cursor: pointer;}
+.login-mask, .logout-mask {display: none}
+#users-list li {font-weight: 600; cursor: pointer}
+#users-list li:hover {color:grey;}
+/* handle login menu entries */
+.Linklist li[data-megamenu-class~="only-loggedin"] {display: none !important} /* display again with removing only-loggedin attibute */
