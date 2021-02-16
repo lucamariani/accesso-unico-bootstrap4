@@ -54,6 +54,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - .idea
 
 collections:
   docs:
