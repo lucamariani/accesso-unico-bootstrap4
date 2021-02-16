@@ -11,9 +11,9 @@
 {% endfor %}
 
 <div class="link-list-wrapper">
-  <ul class="link-list">
+  <div>
     {% for doc in docs_by_scheda_array %}
-    <li><a class="list-item" target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></li>
+    <p><a class="list-item" target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></p>
     {% endfor %}
-  </ul>
+  </div>
 </div>

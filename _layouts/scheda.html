@@ -25,8 +25,6 @@ layout: default
           {% endif %}
         </div>
 
-        {% assign user_items = site.data.profiles | where_exp: "item", "item.metaname == page.utenza" %}
-        {% assign user_item = user_items[0] %}
         {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
         {% assign type_item = type_items[0] %}
 
@@ -48,7 +46,7 @@ layout: default
                     <img title="{{ theme_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ theme_item.image_red_circle }}">
                   </li>
                   <li class="list-inline-item">
-                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
+                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ type_item.image_red_circle }}">
                   </li>
                 </ul>
               </div>
@@ -75,18 +73,6 @@ layout: default
 
         {% include schede/sidebar.html %}
         {% include novita_box.html %}
-      <!-- si nasconde perchè non attivo ma solo dimostrativo
-        <div id="handle-favorite" class="u-margin-bottom-l" scheda_title="{{ page.object }}-{{ page.utenza }}" scheda_url="{{ page.url }}">
-          <button id="add-scheda-to-favorites-btn" class="Button Button--default u-text-xs u-sizeFull">
-            Aggiungi ai preferiti
-            <!-- <span id="" class="white u-text-r-xxs Icon Icon-favorite" title="Aggiungi ai preferiti"></span>
-          </button>
-          <button id="remove-scheda-from-favorites-btn" class="Button Button--default u-text-xs u-sizeFull">
-            Rimuovi dai preferiti
-            <!-- <span id="" class="white u-text-r-xxs Icon Icon-cancel" title="Rimuovi dai preferiti"></span>
-          </button>
-        </div>
-        -->
         {% if site.data.schede.riferimenti[page.object] %}
           {% include riferimenti.html %}
         {% endif %}
@@ -99,7 +85,9 @@ layout: default
             <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-horn"></use></svg>
             Partecipa
           </div>
-          <p>Il tuo contributo è importante</p> <a href="mailto:{{site.accesso_unico_mail}}?subject=Accesso Unico - Partecipazione">Proponi suggerimenti ed idee: questa è la mail</a>
+          <div>
+            <p>Il tuo contributo è importante</p> <a href="mailto:{{site.accesso_unico_mail}}?subject=Accesso Unico - Partecipazione">Proponi suggerimenti ed idee: questa è la mail</a>
+          </div>
         </div>
         <!-- / box partecipa -->
 

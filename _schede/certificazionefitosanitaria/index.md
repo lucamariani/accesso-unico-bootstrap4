@@ -3,7 +3,7 @@ layout: scheda
 object: certificazionefitosanitaria
 utenza: cittadini
 tema: agricoltura
-tipo: certificazioni attestati accreditamenti
+tipo: certificazioni
 title: Certificazione fitosanitaria per l’esportazione
 description: Documentazione necessaria per l’esportazione di vegetali e prodotti vegetali verso Paesi terzi
 subtitle: servizi fitosanitari, certificato fitosanitario, richiesta ispezione, RUOP, piante, esportazione, extra Ue, servizio fitosanitario
