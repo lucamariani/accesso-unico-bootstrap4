@@ -12,6 +12,11 @@ url: ""
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea
+
 collections:
   docs:
     output: true

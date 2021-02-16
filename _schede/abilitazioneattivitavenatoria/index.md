@@ -4,7 +4,7 @@ object: abilitazioneattivitavenatoria
 utenza:
     - cittadini
 tema: cacciapesca
-tipo: certificazioni attestati accreditamenti
+tipo: certificazioni
 title: Abilitazione all'attività venatoria
 description: L’abilitazione venatoria è un requisito necessario per il rilascio della licenza di caccia
 subtitle: caccia, venatorio, licenza, cacciatore, esame

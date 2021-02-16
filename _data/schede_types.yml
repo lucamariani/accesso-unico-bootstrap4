@@ -1,24 +1,32 @@
 
 - name: pratica
   metaname: pratica
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: licenze permessi nulla osta
   metaname: licenze
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: segnalazioni
   metaname: segnalazioni
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: certificati attestati accreditamenti
   metaname: certificazioni
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: albi elenchi registri
   metaname: albi
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: autorizzazioni concessioni
   metaname: autorizzazioni
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: accesso atti
   metaname: accesso
+  image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
 
 - name: informazioni
   metaname: informazioni
+  image_red_circle: /assets/images/icons/cerchio_rosso_servizio.png
