@@ -26,53 +26,18 @@ window.Users = window.Users || {};
   }
 
   // hide
-  var hideUserMenu = function() {
-    $('.only-loggedin').removeClass('Megamenu-item')
+  const hideUserMenu = function() {
+    $('li.demo').addClass('d-none')
   }
 
-  const showMobileMenuEntry = function(roleClass) {
-    const entries = $('li[data-megamenu-class~="' + roleClass + '"]')
-    var dataMegamenuClass = entries.attr('data-megamenu-class').replace('only-loggedin','');
-    console.log('setting ' + dataMegamenuClass)
-    entries.attr('data-megamenu-class', dataMegamenuClass)
-  }
-
-  const addNameOnMobile = function(name) {
-    const icon = '<img style="height:15px" src="/accesso-unico/assets/images/icons/man.png">'
-    $('.Offcanvas-toggleContainer').append('<span class="user-name-mobile u-text-xs">' + icon + ' ' + name +'</span>')
-  }
-
-  // show
-  var showUserMenu = function(role) {
+  // show menu entries
+  const showUserMenu = function(role) {
+    console.log('showUserMenu for', role)
     // remove all user's entries
     hideUserMenu()
-    // then shows only the role granted
-    switch (role) {
-      case 'pa':
-        // add name on desktop
-        const paName = 'Gianni Verdi – Comune di Cittadella'
-        $('.user-name-class').text(paName);
-        // add name on mobile
-        addNameOnMobile(paName)
-        // show on desktop
-        $('.user-pa-entry').addClass('Megamenu-item')
-        // show on mobile
-        showMobileMenuEntry('user-pa-entry')
-        break;
-      case 'private':
-        const privateName = 'Mario Rossi'
-        $('.user-name-class').text(privateName);
-        // add name on mobile
-        addNameOnMobile(privateName)
-        // desktop
-        $('.user-private-entry').addClass('Megamenu-item')
-        // show on mobile
-        showMobileMenuEntry('user-private-entry')
-        break;
-
-      default:
-
-    }
+    // menu entries selector
+    const selector = 'li.' + role
+    $(selector).removeClass('d-none')
   }
 
   const enableMenuPopupClick = function() {
@@ -83,23 +48,18 @@ window.Users = window.Users || {};
       })
   }
 
-  // const enableListViewClick = function() {
-  //   $('#login-btn').click(function() {
-  //     console.log('toggling users list...')
-  //     $('#users-list').toggle()
-  //   })
-  // }
+  const loginWithRole = function (role) {
+    // add loggedin status
+    Cookies.set(USER_STATUS_COOKIE, role, { sameSite:'strict' })
+    location.reload()
+  }
 
   var enableLoginClick = function() {
-    $('.users-list-class li').click(function() {
-      console.log('login clicked...');
+    $('#user-login-btns button').click(function() {
+      // console.log('login clicked...');
       const role = $(this).attr('user-role')
       console.log('user role: ' + role)
-      // hide listing
-      $('#users-list').hide()
-      // add loggedin status
-      Cookies.set(USER_STATUS_COOKIE, role)
-      location.reload()
+      loginWithRole(role)
     })
   }
 
@@ -107,7 +67,7 @@ window.Users = window.Users || {};
     $('.logout-icon-class').click(function() {
       console.log('logout clicked...');
       // add loggedin status
-      Cookies.set(USER_STATUS_COOKIE, 0)
+      Cookies.set(USER_STATUS_COOKIE, 0, { sameSite:'strict' })
       location.reload()
     })
   }
@@ -116,11 +76,10 @@ window.Users = window.Users || {};
   // if USER_STATUS_COOKIE is not 1
   var startVisibility = function() {
     const userLogged = Cookies.get(USER_STATUS_COOKIE) || 0
-    console.log('userLogged status: ' + userLogged)
+    console.log('userLogged with role', userLogged)
 
     if ( userLogged != 0 ) {
       console.log('setting logout content...');
-      // switchLoginClass()
       setLogoutContentMask(userLogged)
     } else {
       setLoginContentMask()
@@ -135,20 +94,27 @@ window.Users = window.Users || {};
       $('.login-mask').show()
   }
 
-  var setLogoutContentMask = function(role) {
-    console.log('setLogoutContentMask')
+  const getUserText = function(role) {
+    let html = '';
+    switch (role) {
+      case 'pa':
+        html = 'Gianni Verdi – Comune di Cittadella'
+        break;
+      case 'private':
+        html = 'Mario Rossi'
+        break;
+    }
+
+    return html;
+  }
+
+  const setLogoutContentMask = function(role) {
+    console.log('show logged in mask')
+
     showUserMenu(role)
 
-    // hide login mask
-    $('.login-mask').hide()
-    $('.Headroom-showme.login-mask').css('max-height', '0')
+    $('#user-name').html(getUserText(role))
     $('.logout-mask').show()
-    $('.Headroom-showme.logout-mask').css('max-height', '5em')
-
-    //hide on mobile
-    $('.Treeview .users-list-class').css('height',0)
-    $('.Treeview .login-mask').text('ESCI')
-    $('.Treeview .login-mask').addClass('logout-icon-class')
   }
 
 
