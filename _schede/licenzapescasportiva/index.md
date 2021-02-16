@@ -3,7 +3,7 @@ layout: scheda
 object: licenzapescasportiva
 utenza: cittadini
 tema: cacciapesca
-tipo: licenze permessi nulla osta
+tipo: licenze
 title: Licenza di pesca
 description: L'esercizio della pesca sportiva e agonistica è subordinato al possesso della licenza
 subtitle: pesca, ittico, pescatore, tassa, pagamento

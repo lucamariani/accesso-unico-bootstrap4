@@ -25,8 +25,6 @@ layout: default
           {% endif %}
         </div>
 
-        {% assign user_items = site.data.profiles | where_exp: "item", "item.metaname == page.utenza" %}
-        {% assign user_item = user_items[0] %}
         {% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == page.tipo" %}
         {% assign type_item = type_items[0] %}
 
@@ -48,7 +46,7 @@ layout: default
                     <img title="{{ theme_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ theme_item.image_red_circle }}">
                   </li>
                   <li class="list-inline-item">
-                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ site.iconsurl }}cerchio_rosso_{{ page.tipo }}.png">
+                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ type_item.image_red_circle }}">
                   </li>
                 </ul>
               </div>

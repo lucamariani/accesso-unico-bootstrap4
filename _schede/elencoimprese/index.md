@@ -3,7 +3,7 @@ layout: scheda
 object: elencoimprese
 utenza: imprese
 tema: operepubbliche
-tipo: albi elenchi registri
+tipo: albi
 title: Elenco regionale delle imprese
 description: Elenco delle imprese per l’affidamento di lavori pubblici di importo inferiore a un milione di euro
 subtitle: opere pubbliche, affidamento lavori pubblici, elenco, imprese
