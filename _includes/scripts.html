@@ -7,6 +7,11 @@
 <!-- Lunr JS -->
 <script src="{{ site.baseurl }}/assets/scripts/lunr.js"></script>
 
+<!-- JS Cookie -->
+<script src="{{ site.baseurl }}/assets/scripts/js.cookie.min.js"></script>
+<!-- Users -->
+<script src="{{ site.baseurl }}/assets/scripts/users.js"></script>
+
 {% for script in page.scripts %}
 {% capture scriptFullPath %}{{ script | relative_url }}{% endcapture %}
 <script src="{{ scriptFullPath }}"></script>
@@ -16,3 +21,11 @@
 {% capture scriptFullPath %}{{ script | relative_url }}{% endcapture %}
 <script src="{{ scriptFullPath }}"></script>
 {% endfor %}
+
+<!-- initialize demo -->
+<script>
+    $(function() {
+        // Favorites.initialize()
+        Users.initialize()
+    })
+</script>

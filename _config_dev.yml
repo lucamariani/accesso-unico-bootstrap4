@@ -28,3 +28,9 @@ collections:
 
 iconsurl: "/assets/images/icons/"
 
+popup:
+  pratiche: "Un cruscotto riassume lo storico delle pratiche attivate, grazie allo scambio dati tra sistemi, i frontend di gestione pratica dei singoli enti comunicano lo stato pratica."
+  preferiti: "Grazie ai servizi interoperabili si potranno ricevere avvisi e scadenze da più enti, le scelte dell’utente profilano i servizi a catalogo secondo le sue preferenze."
+  forum: "Uno spazio di discussione sui temi trattati all’interno delle comunità tematiche, uno strumento di partecipazione e comunicazione per gli operatori delle PA."
+  aggiornamento: "Una piattaforma di gestione condivisa dei dati del portale riferiti alle PA partecipanti consente di aggiornare le informazioni di propria competenza."
+

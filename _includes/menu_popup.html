@@ -1,0 +1,24 @@
+{% assign keys = "pratiche, preferiti, forum, aggiornamento" | split: ", " %}
+
+<div>
+{% for key in keys %}
+    <div id="{{key}}-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{key}}">
+        <div role="document" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header primary-bg">
+                    <h5 class="modal-title" style="color:#fff !important">{{key}}</h5>
+                </div>
+                <div class="modal-dialog">
+                    <figure class="figure mx-1">
+                        <img src="{{site.baseurl}}/assets/images/popups/{{key}}.png" class="figure-img img-fluid rounded" alt="{{key}}">
+                        <figcaption class="figure-caption text-center">{{ site.popup[key] }}</figcaption>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
