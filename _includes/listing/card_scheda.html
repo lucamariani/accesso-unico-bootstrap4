@@ -1,11 +1,15 @@
+{% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == include.scheda.tipo" %}
+{% assign type_item = type_items[0] %}
+
 <!--start card-->
 <div class="card-wrapper card-space">
     <div class="card card-bg no-after">
         <div class="card-body">
             <div class="categoryicon-top">
-                <a href="#">
-                {% include tema_scheda_icona.html %}
-                </a>
+                <p>
+                    {% include tema_scheda_icona.html %}
+                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ type_item.image_red }}">
+                </p>
             </div>
             <h5 class="card-title">
                 {{ include.scheda.title }}
