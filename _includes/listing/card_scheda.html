@@ -17,10 +17,8 @@
             </h5>
             <p class="card-text">{{ include.scheda.description }}</p>
             <div class="it-card-footer">
-                <a href="{{ site.baseurl }}{{ include.scheda.url }}">
-                    <svg class="icon">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
-                    </svg>
+                <a type="button" class="btn btn-outline-primary btn-sm" href="{{ site.baseurl }}{{ include.scheda.url }}">
+                    <span class="font-weight-bold">vai al servizio</span>
                 </a>
             </div>
         </div>

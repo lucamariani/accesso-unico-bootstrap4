@@ -1,41 +1,5 @@
 {% assign doc = include.scheda %}
 
-{% assign category_items = site.data.docs.category | where_exp: "item", "item.metaname == doc.categoria" %}
-{% assign category_item = category_items[0] %}
-{% assign category = category_item.name %}
-
-{% assign tema_items = site.data.docs.tema | where_exp: "item", "item.metaname == doc.tema" %}
-{% assign tema_item = tema_items[0] %}
-{% assign doctema = tema_item.name %}
-
-<!-- schede -->
-{% assign doc_scheda_names = '' %}
-{% assign separator = ', ' %}
-
-{% for docscheda in doc.schede %}
-    {% assign schede_items = site.schede | where: "object", docscheda %}
-    {% assign scheda_item = schede_items[0] %}
-    {% if forloop.last == true %}
-        {% assign separator = '' %}
-    {% endif %}
-    {% assign doc_scheda_names = doc_scheda_names | append: scheda_item.title | append: separator %}
-{% endfor %}
-<!-- / schede -->
-
-<!-- TAGS -->
-{% assign doc_tag_names = '' %}
-{% assign separator = ', ' %}
-
-{% for doctag in doc.tags %}
-    {% assign tags_items = site.data.docs.tags | where_exp: "item", "item.metaname == doctag" %}
-    {% assign tag_item = tags_items[0] %}
-    {% if forloop.last == true %}
-        {% assign separator = '' %}
-    {% endif %}
-    {% assign doc_tag_names = doc_tag_names | append: tag_item.name | append: separator %}
-{% endfor %}
-<!-- / TAGS -->
-
 <!--start card-->
 <div class="card-wrapper card-space">
     <div class="card card-bg no-after">
@@ -46,23 +10,15 @@
             <p class="card-text">
                 <strong>{{ doc.oggetto }}</strong>
             </p>
-            <hr>
-            <div class="card-text"><strong>Categoria: </strong>{{ category }}</div>
-            <div class="card-text"><strong>Argomento: </strong>{{ doctema }}</div>
-            <div class="card-text"><strong>Anno: </strong>{{ doc.anno }}</div>
-            <div class="card-text"><strong>Ente: </strong>{{ doc.ente }}</div>
-            <div class="card-text"><strong>Servizi: </strong>{{ doc_scheda_names }}</div>
-            <div class="card-text"><strong>Tags: </strong>{{ doc_tag_names }}</div>
+
             {% if doc.interno %}
                 {% assign documentUrl = site.baseurl|append: doc.url %}
             {% else %}
                 {% assign documentUrl = doc.url %}
             {% endif %}
             <div class="it-card-footer">
-                <a href="{{ documentUrl }}">
-                    <svg class="icon">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
-                    </svg>
+                <a type="button" class="btn btn-outline-primary btn-sm" href="{{ documentUrl }}">
+                    <span class="font-weight-bold">vai al documento</span>
                 </a>
             </div>
         </div>
