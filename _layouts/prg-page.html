@@ -12,26 +12,21 @@ layout: default
   {% endif %}
 
     <div class="container mx-auto pt-3 mb-3 px-4">
-      <section class="row">
-        <div class="w-100">
-          <h1>{{ page.title }}</h1>
-          {% if page.img %}
-          <div class="page-img-div">
-            <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
-          </div>
-          {% endif %}
-          {% if page.subtitle %}
-          <h6>{{ page.subtitle }}</h6>
-          {% endif %}
-          {% if page.author %}
-          <h6>{{ page.author }}</h6>
-          {% endif %}
+      <h1 class="">{{ page.title }}</h1>
+        {% if page.img %}
+        <div class="page-img-div">
+          <img class="page-img" src="{{ page.img | prepend: site.baseurl | replace: '//', '/' }}">
         </div>
-      </section>
-    </div>
-  </div>
+        {% endif %}
+        {% if page.subtitle %}
+        <h6>{{ page.subtitle }}</h6>
+        {% endif %}
+        {% if page.author %}
+        <h6>{{ page.author }}</h6>
+        {% endif %}
 
-    <div class="container mx-auto mb-3 px-4">
+      <div class="container mx-auto mb-3 px-4">
+
         <section class="row">
           <div class="w-100 col-12">
 
@@ -59,7 +54,7 @@ layout: default
               </div>
             {% endif %}
 
-            {{ content }}
+              {{ content }}
 
             {% if page.content_files[2] %}
               <div class="pb-3">
@@ -79,5 +74,8 @@ layout: default
 
         </section>
       </div>
+
+
+
   </div>
 </div>
