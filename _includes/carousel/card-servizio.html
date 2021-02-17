@@ -15,7 +15,7 @@
                         {% include tema_scheda_icona.html additional_classes="carousel-icon" scheda=include.scheda %}
                         {{ category_name }}
                         <!-- category data-->
-                        <a class="data home-carousel-data" href="{{ site.baseurl }}{{ include.scheda.statusLink }}">{{ include.scheda.status }}</a>
+                        <a class="data home-carousel-data" href="#" data-toggle="modal" data-target="#status-modal">{{ include.scheda.status }}</a>
                     </p>
                 </div>
                 <h5 class="card-title">{{ include.scheda.title }}</h5>
