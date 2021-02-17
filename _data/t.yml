@@ -38,10 +38,10 @@ cookie-policy-accept-btn: "Accetto"
 footer-links:
   privacy-policy:
     name: "Privacy policy"
-    url: "/privacy-policy"
+    url: "https://www.regione.umbria.it/privacy-policy"
   cookie-policy:
     name: "Cookie Policy"
-    url: "/cookie-policy"
+    url: "https://www.regione.umbria.it/privacy-policy"
 
 # Footer data
 recapiti1: "Regione Umbria"
