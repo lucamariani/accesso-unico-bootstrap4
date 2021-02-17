@@ -12,7 +12,7 @@ layout: default
           <h1 class="neutral-1-color-b5 h2">
           {{ page.title }}
             {% if page.status%}
-            <sup class="h6"><a href="{{site.baseurl}}{{page.statusLink}}">{{page.status}}</a></sup>
+            <sup class="h6"><a href="#" data-toggle="modal" data-target="#status-modal">{{page.status}}</a></sup>
             {% endif %}
           </h1>
           {% if page.img %}
@@ -86,7 +86,8 @@ layout: default
             Partecipa
           </div>
           <div>
-            <p>Il tuo contributo è importante</p> <a href="mailto:{{site.accesso_unico_mail}}?subject=Accesso Unico - Partecipazione">Proponi suggerimenti ed idee: questa è la mail</a>
+            <p>Il tuo contributo è importante</p>
+            <p><a href="mailto:{{site.accesso_unico_mail}}?subject=Accesso Unico - Partecipazione">Proponi suggerimenti ed idee: questa è la mail</a></p>
           </div>
         </div>
         <!-- / box partecipa -->

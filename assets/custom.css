@@ -42,3 +42,6 @@ ul.list-inline img {max-width: 45px}
 #users-list li:hover {color:grey;}
 
 /* handle login menu entries */
+
+/* change font for all links */
+a {font-family: "Titillium Web",Geneva,Tahoma,sans-serif!important;}

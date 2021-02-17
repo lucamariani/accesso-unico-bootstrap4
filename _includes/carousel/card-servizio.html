@@ -11,21 +11,20 @@
                             {% assign category_icon = item.image %}
                         {% endif %}
                     {% endfor %}
-                    <a class="home-carousel-category primary-color" href="">
+                    <p class="home-carousel-category primary-color">
                         {% include tema_scheda_icona.html additional_classes="carousel-icon" scheda=include.scheda %}
                         {{ category_name }}
-                    </a>
-                    <!-- category data-->
-                    <a class="data home-carousel-data" href="{{ site.baseurl }}{{ include.scheda.statusLink }}">{{ include.scheda.status }}</a>
+                        <!-- category data-->
+                        <a class="data home-carousel-data" href="#" data-toggle="modal" data-target="#status-modal">{{ include.scheda.status }}</a>
+                    </p>
                 </div>
-                <h5 class="card-title big-heading">{{ include.scheda.title }}</h5>
+                <h5 class="card-title">{{ include.scheda.title }}</h5>
                 <p class="card-text">{{ include.scheda.description }}</p>
-                <a href="{{ site.baseurl }}{{ include.scheda.url }}">
-                    <svg class="icon mr-1">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
-                    </svg>
+
+                <a type="button" class="read-more btn btn-outline-primary btn-sm" href="{{ site.baseurl }}{{ include.scheda.url }}">
                     <span class="font-weight-bold">vai al servizio</span>
                 </a>
+
             </div>
         </div>
     </div>

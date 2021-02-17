@@ -1,6 +1,7 @@
 {% assign keys = "pratiche, preferiti, forum, aggiornamento" | split: ", " %}
 
 <div>
+    <!-- MODALI PER MENU -->
 {% for key in keys %}
     <div id="{{key}}-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{key}}">
         <div role="document" class="modal-dialog">
@@ -21,4 +22,5 @@
         </div>
     </div>
 {% endfor %}
+    <!-- / MODALI PER MENU -->
 </div>

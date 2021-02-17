@@ -1,22 +1,24 @@
+{% assign type_items = site.data.schede_types | where_exp: "item", "item.metaname == include.scheda.tipo" %}
+{% assign type_item = type_items[0] %}
+
 <!--start card-->
 <div class="card-wrapper card-space">
     <div class="card card-bg no-after">
         <div class="card-body">
             <div class="categoryicon-top">
-                <a href="#">
-                {% include tema_scheda_icona.html %}
-                </a>
+                <p>
+                    {% include tema_scheda_icona.html %}
+                    <img title="{{ type_item.name | capitalize }}" class="icon icon-lg" src="{{ site.baseurl}}{{ type_item.image_red }}">
+                </p>
             </div>
             <h5 class="card-title">
                 {{ include.scheda.title }}
-                <sup class="h6"><a href="{{site.baseurl}}{{include.scheda.statusLink}}">{{include.scheda.status}}</a></sup>
+                <sup class="h6"><a href="#" data-toggle="modal" data-target="#status-modal">{{include.scheda.status}}</a></sup>
             </h5>
             <p class="card-text">{{ include.scheda.description }}</p>
             <div class="it-card-footer">
-                <a href="{{ site.baseurl }}{{ include.scheda.url }}">
-                    <svg class="icon">
-                        <use xlink:href="{{site.baseurl}}/assets/bootstrap-italia/dist/svg/sprite.svg#it-link"></use>
-                    </svg>
+                <a type="button" class="btn btn-outline-primary btn-sm" href="{{ site.baseurl }}{{ include.scheda.url }}">
+                    <span class="font-weight-bold">vai al servizio</span>
                 </a>
             </div>
         </div>
