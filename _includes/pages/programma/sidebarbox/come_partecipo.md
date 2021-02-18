@@ -1,3 +1,3 @@
-[Your opinion is important!][3b0b4bfc]
-
-  [3b0b4bfc]: {{ site.baseurl }}/partecipazione "vai alla pagina di partecipazione"
+La tua opinione e il tuo contributo sono importanti!
+<br><br>
+<a href="mailto:accessounico@regione.umbria.it ?subject=Accesso Unico - Partecipazione">questa è la mail</a>
