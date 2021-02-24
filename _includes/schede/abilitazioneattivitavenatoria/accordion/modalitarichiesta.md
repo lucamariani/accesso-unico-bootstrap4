@@ -10,7 +10,7 @@ La domanda può essere spedita
 
 •	Via posta ordinaria
 
-•	Via pec al seguente indirizzo: direzioneagricoltura.regione@postacert.umbria.it
+•	Via pec al seguente indirizzo: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it)
 
 •	Consegnata direttamente presso la sede regionale del Broletto, Ufficio protocollo, Via Mario Angeloni, 61- 06124 Perugia
 

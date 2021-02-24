@@ -5,6 +5,6 @@ Per acquisire **attestazioni, autorizzazioni o comunque avviare altri procedimen
 
 **Alcuni casi di procedimenti collegati**
 
-Qualora l'attività di acconciatore presenti un **consumo idrico giornaliero superiore a 1 mc** al momento di massima attività, occorre avviare la pratica **[AUA]({{ site.baseurl }}/schede/aua/{{page.utenza}} "vai alla scheda")**
+Qualora l'attività di acconciatore presenti un **consumo idrico giornaliero superiore a 1 mc** al momento di massima attività, occorre avviare la pratica **[AUA]({{ site.baseurl }}/schede/aua/ "vai alla scheda")**
 
-Occorre avviare la pratica di **[cambio di destinazione d’uso]({{ site.baseurl }}/schede/cambio_destinazione_uso/{{ page.utenza }} "Vai alla scheda")** nel caso in cui i locali sede dell'attività richiedano questo adeguamento.
+Occorre avviare la pratica di **[cambio di destinazione d’uso]({{ site.baseurl }}/schede/cambio_destinazione_uso/ "Vai alla scheda")** nel caso in cui i locali sede dell'attività richiedano questo adeguamento.
