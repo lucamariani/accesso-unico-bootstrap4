@@ -6,7 +6,7 @@
 - title: Vai al Servizio
   type: calltoaction
   linktitle: sei un ATC? </br> entra in gestione stagioni
-  linkurl: http://applicazioni.regione.umbria.it/caccia-admi
+  linkurl: http://applicazioni.regione.umbria.it/caccia-admin
 
 - title: Servizi collegati
   file: servizicollegatibattutecinghiale.md

@@ -2,4 +2,4 @@ Gli [Operatori Professionali](https://www.regione.umbria.it/documents/18/1884901
 
 A partire dal **14 dicembre 2019** i richiedenti devono essere **iscritti al Registro Ufficiale degli Operatori Professionali (RUOP)**, istituito ai sensi del Regolamento (UE) 2016/2031 presso il Servizio Fitosanitario Regione Umbria ottenendo apposita **autorizzazione all’importazione**.
 
-Chi intende iscriversi deve farlo attraverso il servizio online il cui link è presente nella scheda "[Registro Ufficiale degli Operatori Professioni - RUOP]({{site.baseurl}}/schede/ruop/cittadini/index.html)".
+Chi intende iscriversi deve farlo attraverso il servizio online il cui link è presente nella scheda "[Registro Ufficiale degli Operatori Professioni - RUOP]({{site.baseurl}}/schede/ruop/index.html)".
