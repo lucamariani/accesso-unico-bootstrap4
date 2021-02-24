@@ -1,10 +1,11 @@
-{% assign docs_by_scheda_array = "" | split: ',' %}
-  
-{% for doc in site.data.docs.docs %}      
-  {% for scheda in doc.schede %}
-    {% assign downcasescheda = scheda | downcase %}
-    {% if downcasescheda == page.object %}
-      {% assign docs_by_scheda_array = docs_by_scheda_array | push: doc %}
+{% assign docs_by_tema_array = "" | split: ',' %}
+
+{% for doc in site.data.docs.docs %}
+  <!-- è stato eliminato il filtro scheda sostituito con tema-->
+  {% for tema in doc.tema %}
+    {% assign downcasetema = tema | downcase %}
+    {% if downcasetema == page.tema %}
+      {% assign docs_by_tema_array = docs_by_tema_array | push: doc %}
       {%- break -%}
     {% endif %}
   {% endfor %}
@@ -12,7 +13,7 @@
 
 <div class="link-list-wrapper">
   <div>
-    {% for doc in docs_by_scheda_array %}
+    {% for doc in docs_by_tema_array %}
     <p><a class="list-item" target="_blank" href="{{ doc.url }}">{{ doc.title }}</a></p>
     {% endfor %}
   </div>
