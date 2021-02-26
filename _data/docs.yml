@@ -909,3 +909,51 @@ docs:
     numero: 1357
     schede:
         - albotutori
+
+  - title: Decreto legislativo 15 novembre 2017, n. 183
+    metaname: doc75
+    oggetto: Attuazione della direttiva (UE) 2015/2193 del Parlamento europeo e del Consiglio, del 25 novembre 2015, relativa alla limitazione delle emissioni nell'atmosfera di taluni inquinanti originati da impianti di combustione medi, nonché per il riordino del quadro normativo degli stabilimenti che producono emissioni nell'atmosfera, ai sensi dell'articolo 17 della legge 12 agosto 2016, n. 170.
+    categoria: normativa
+    tema: ambiente
+    url: "http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017-11-15;183!vig=2021-02-25"
+    anno: 2017
+    ente:
+    numero: 183
+    tags:
+        - acg
+
+  - title: Deliberazione della Giunta Regionale 7 maggio 2019, n. 627
+    metaname: doc76
+    oggetto: Direttiva Tecnica in materia di scarichi acque reflue - approvazione e pubblicazione.
+    categoria: atti
+    tema: ambiente
+    url: "https://www.va.regione.umbria.it/documents/3852172/10456087/DIRETTIVA+SCARICHI+DGR+627-2019/3826918e-7531-4200-aa27-1bb1cbb2e505"
+    anno: 2019
+    ente: Regione Umbria
+    numero: 627
+    tags:
+        - AUA
+
+  - title: Deliberazione della Giunta Regionale 24 aprile 2019, n. 499
+    metaname: doc77
+    oggetto: Piano dei controlli degli impianti/attività di competenza regionale autorizzati ai sensi del DPR n. 59/2013 (AUA). Approvazione
+    categoria: atti
+    tema: ambiente
+    url: "https://www.va.regione.umbria.it/documents/3852172/10884019/PIANO+DEI+CONTROLLI+degli+impiantiattivit%c3%a0%20di+competenza+regionale+autorizzati+ai+sensi+del+DPR+n592013+AUA.pdf/a040ba2c-2ec6-4629-9634-530c35b90de6"
+    anno: 2019
+    ente: Regione Umbria
+    numero: 499
+    tags:
+        - AUA
+
+  - title: Deliberazione della Giunta Regionale 24 settembre 2019, n. 1074
+    metaname: doc78
+    oggetto: Linee guida per il procedimento dell’Autorizzazione Unica Ambientale (AUA). Modello semplificato e unificato per la presentazione della richiesta di AUA - Adozione.
+    categoria: atti
+    tema: ambiente
+    url: "https://www.va.regione.umbria.it/documents/3852172/10456087/LINEE+GUIDA+AUA+DGR+1074-2019/b31fc719-2ea1-40eb-8e36-0156d53e5111"
+    anno: 2019
+    ente: Regione Umbria
+    numero: 1074
+    tags:
+        - AUA

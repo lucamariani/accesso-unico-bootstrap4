@@ -20,3 +20,6 @@
 
 - title: "Costi, Durata e Tempi di rilascio"
   file: "costi.md"
+
+- title: "Controlli"
+  file: "controlli.md"
