@@ -27,8 +27,26 @@ tema:
 tags:
   - name: Direttiva Scarichi
     metaname: direttivascarichi
-  - name: SUAPE
-    metaname: SUAPE
+  - name: suape
+    metaname: suape
+  - name: autorizzazioni ambientali
+    metaname: autorizzazioniambientali
+  - name: caccia
+    metaname: caccia
+  - name: pesca
+    metaname: pesca
+  - name: servizi fitosanitari
+    metaname: servizifitosanitari
+  - name: zootecnia
+    metaname: zootecnia
+  - name: acconciatore
+    metaname: acconciatore
+  - name: paesaggio
+    metaname: paesaggio
+  - name: formazione salute
+    metaname: formazionesalute
+
+
 
 docs:
   - title: D.P.R. 6 giugno 2001, n. 380
