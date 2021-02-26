@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: autorizzazionepaesaggistica
-utenza: cittadini
+utenza:
+    - cittadini
+    - intermediari
 tema: territorio
 tipo: autorizzazioni
 title: Autorizzazione Paesaggistica

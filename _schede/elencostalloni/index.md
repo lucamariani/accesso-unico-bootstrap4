@@ -1,7 +1,10 @@
 ---
 layout: scheda
 object: elencostalloni
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
+    - intermediari
 tema: agricoltura
 tipo: albi
 title: Elenco stalloni operanti nelle stazioni di monta equina

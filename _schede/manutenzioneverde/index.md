@@ -1,7 +1,10 @@
 ---
 layout: scheda
 object: manutenzioneverde
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
+    - intermediari
 tema: agricoltura
 tipo: certificazioni
 title: Responsabile tecnico per la manutenzione del verde

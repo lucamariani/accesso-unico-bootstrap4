@@ -3,6 +3,8 @@ layout: scheda
 object: abilacconciatore
 utenza:
     - cittadini
+    - imprese
+    - intermediari
 tema: artigianato
 tipo: certificazioni
 title: Abilitazione per l’esercizio dell’attività di acconciatore

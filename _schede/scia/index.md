@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: scia
-utenza: cittadini
+utenza:
+    - cittadini
+    - intermediari
 tema: edilizia
 tipo: segnalazioni
 title: SCIA edilizia

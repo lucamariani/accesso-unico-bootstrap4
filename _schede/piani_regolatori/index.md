@@ -1,7 +1,10 @@
 ---
 layout: scheda
 object: piani_regolatori
-utenza: imprese
+utenza:
+    - cittadini
+    - pa
+    - intermediari
 tema: territorio
 tipo: informazioni
 title: Piani Regolatori Comunali

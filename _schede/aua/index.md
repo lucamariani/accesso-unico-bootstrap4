@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: aua
-utenza: imprese
+utenza:
+    - imprese
+    - intermediari
 tema: ambiente
 tipo: autorizzazioni
 title: Autorizzazione Unica Ambientale

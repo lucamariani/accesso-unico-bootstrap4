@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: elencoesperti
-utenza: intermediari
+utenza:
+    - intermediari
+    - cittadini
 tema: territorio
 tipo: albi
 title: Elenco degli esperti in beni ambientali e architettonici

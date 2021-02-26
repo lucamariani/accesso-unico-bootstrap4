@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: ruop
-utenza: cittadini
+utenza:
+    - imprese
+    - intermediari
 tema: agricoltura
 tipo: albi
 title: Registro Ufficiale degli Operatori Professionali - RUOP

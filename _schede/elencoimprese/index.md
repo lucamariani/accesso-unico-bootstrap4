@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: elencoimprese
-utenza: imprese
+utenza:
+    - imprese
+    - pa
 tema: operepubbliche
 tipo: albi
 title: Elenco regionale delle imprese

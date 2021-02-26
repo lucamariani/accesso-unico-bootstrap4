@@ -1,7 +1,10 @@
 ---
 layout: scheda
 object: elencoprofessionisti
-utenza: imprese
+utenza:
+    - imprese
+    - pa
+    - intermediari
 tema: operepubbliche
 tipo: albi
 title: Elenco regionale dei professionisti

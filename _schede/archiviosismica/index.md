@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: archiviosismica
-utenza: cittadini
+utenza:
+    - cittadini
+    - intermediari
 tema: edilizia
 tipo: accesso
 title: Archivio sismica - accesso atti

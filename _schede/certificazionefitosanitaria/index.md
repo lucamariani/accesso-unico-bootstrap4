@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: certificazionefitosanitaria
-utenza: cittadini
+utenza:
+    - intermediari
+    - imprese
 tema: agricoltura
 tipo: certificazioni
 title: Certificazione fitosanitaria per l’esportazione

@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: cambio_destinazione_uso
-utenza: cittadini
+utenza:
+  - cittadini
+  - intermediari
 tema: edilizia
 tipo: informazioni
 title: Cambio di destinazione d'uso

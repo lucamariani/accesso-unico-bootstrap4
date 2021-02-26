@@ -1,7 +1,10 @@
 ---
 layout: scheda
 object: modulistica-unificata
-utenza: cittadini
+utenza:
+    - pa
+    - imprese
+    - intermediari
 tema: semplificazione
 tipo: informazioni
 title: Modulistica Unificata

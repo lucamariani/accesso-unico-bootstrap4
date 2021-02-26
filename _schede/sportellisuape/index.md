@@ -1,7 +1,11 @@
 ---
 layout: scheda
 object: sportellisuape
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
+    - intermediari
+    - pa
 tema: semplificazione
 tipo: informazioni
 title: Sportelli Suape Comunali

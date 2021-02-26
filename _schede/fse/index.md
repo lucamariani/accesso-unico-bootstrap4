@@ -1,8 +1,7 @@
 ---
 layout: scheda
 object: fse
-utenza:
-    - cittadini
+utenza: cittadini
 tema: salute
 tipo: informazioni
 title: Fascicolo Sanitario Elettronico

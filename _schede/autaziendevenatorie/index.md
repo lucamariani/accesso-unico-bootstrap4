@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: autaziendevenatorie
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
 tema: cacciapesca
 tipo: autorizzazioni
 title: Autorizzazioni per la costituzione di Aziende Faunistico Venatorie e Aziende Agrituristico Venatorie

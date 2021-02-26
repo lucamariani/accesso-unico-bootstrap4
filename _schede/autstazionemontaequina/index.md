@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: autstazionemontaequina
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
 tema: agricoltura
 tipo: autorizzazioni
 title: Autorizzazione a gestire una stazione di monta equina

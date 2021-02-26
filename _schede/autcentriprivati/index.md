@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: autcentriprivati
-utenza: cittadini
+utenza:
+    - cittadini
+    - imprese
 tema: cacciapesca
 tipo: autorizzazioni
 title: Autorizzazione per la costituzione di centri privati di riproduzione di fauna selvatica

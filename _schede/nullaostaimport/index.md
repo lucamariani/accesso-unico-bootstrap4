@@ -1,7 +1,9 @@
 ---
 layout: scheda
 object: nullaostaimport
-utenza: cittadini
+utenza:
+    - imprese
+    - intermediari
 tema: agricoltura
 tipo: licenze
 title: Nulla-osta all’importazione di materiale sementiero

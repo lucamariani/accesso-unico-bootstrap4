@@ -3,6 +3,8 @@ layout: scheda
 object: acconciatore
 utenza:
     - cittadini
+    - imprese
+    - intermediari
 tema: artigianato
 tipo: segnalazioni
 title: Esercizio dell’attività di acconciatore
