@@ -9,7 +9,7 @@ categories: [ambiente]
 summary: ''
 ---
 
-Con **DGR n. 1074 del 24/09/2019**, pubblicata sul B.U.R. - Supplemento ordinario n. 1 al «Bollettino Ufficiale» - Serie Generale - n. 52 del 9 ottobre 2019 – sono state adottate le **Linee Guida per il procedimento dell'Autorizzazione Unica Ambientale (AUA) e il modello semplificato e unificato per la presentazione della richiesta di AUA**.
+Con **DGR n. 1074 del 24/09/2019**, pubblicata sul B.U.R. - Supplemento ordinario n. 1 al «Bollettino Ufficiale» - Serie Generale - n. 52 del 9 ottobre 2019 – sono state adottate le **[Linee Guida per il procedimento dell'Autorizzazione Unica Ambientale (AUA) e il modello semplificato e unificato per la presentazione della richiesta di AUA](https://www.va.regione.umbria.it/documents/3852172/10456087/LINEE+GUIDA+AUA+DGR+1074-2019/b31fc719-2ea1-40eb-8e36-0156d53e5111)**.
 
 Le **Linee Guida** contengono indicazioni operative in merito ai procedimenti per il rilascio, il rinnovo, la modifica sostanziale, la modifica non sostanziale e la voltura dell'Autorizzazione Unica Ambientale.
 
