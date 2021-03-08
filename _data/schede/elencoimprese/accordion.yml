@@ -41,6 +41,13 @@
     - intermediari
     - pa
 
+- title: "Come utilizzare l'elenco"
+  file: "come_utilizzare_elenco.md"
+  utenza:
+    - imprese
+    - intermediari
+    - pa
+
 - title: "Soggetti aggiudicatori che utilizzano l'elenco imprese"
   file: "soggettiaggiudicatori.md"
   utenza:

@@ -4,6 +4,9 @@
   linktitle: vai al servizio
   linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=20&nome_famiglia=Elenco%20Imprese
 
+- title: Modulistica
+  file: modulistica.md
+  icon: download
 
 - title: Documenti
   file: documenti.md
