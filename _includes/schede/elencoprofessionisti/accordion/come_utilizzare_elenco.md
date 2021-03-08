@@ -6,8 +6,8 @@ Per utilizzare l’Elenco si procede come segue:
 
 successivamente
 
-2.	Per ogni Responsabile del procedimento nominato, il legale rappresentante del Soggetto aggiudicatore invia **richiesta di accesso**, compilando il **Modello A2**, all’Area riservata del Sistema informatico (raggiungibile all’indirizzo: http://elencoprofessionisti.regione.umbria.it), a Umbria Digitale S.c.a.r.l. (indirizzo PEC umbriadigitale@pec.it) e, per conoscenza al Servizio regionale Opere e lavori pubblici, osservatorio dei contratti pubblici, ricostruzione post sisma (indirizzo PEC direzioneterritorio@pec.regione.umbria.it).
+2.	Per ogni Responsabile del procedimento nominato, il legale rappresentante del Soggetto aggiudicatore invia **richiesta di accesso**, compilando il **Modello A2**, all’Area riservata del Sistema informatico (raggiungibile all’indirizzo: [http://elencoprofessionisti.regione.umbria.it](http://elencoprofessionisti.regione.umbria.it)), a Umbria Digitale S.c.a.r.l. (indirizzo PEC [umbriadigitale@pec.it](umbriadigitale@pec.it)) e, per conoscenza al Servizio regionale Opere e lavori pubblici, osservatorio dei contratti pubblici, ricostruzione post sisma (indirizzo PEC [direzioneterritorio@pec.regione.umbria.it](direzioneterritorio@pec.regione.umbria.it)).
 
 Si rammenta che a tale modello, qualora non firmato digitalmente, va allegata copia del documento di riconoscimento del legale rappresentante.
 
-I Soggetti aggiudicatori che per l’utilizzo dell’Elenco hanno stipulato la Convenzione, procedono alla richiesta di accesso all’Area riservata del Sistema informatico (raggiungibile all’indirizzo: http://elencoprofessionisti.regione.umbria.it) secondo le modalità già stabilite nella medesima Convenzione.
+I Soggetti aggiudicatori che per l’utilizzo dell’Elenco hanno stipulato la Convenzione, procedono alla richiesta di accesso all’Area riservata del Sistema informatico (raggiungibile all’indirizzo: [http://elencoprofessionisti.regione.umbria.it](http://elencoprofessionisti.regione.umbria.it)) secondo le modalità già stabilite nella medesima Convenzione.
