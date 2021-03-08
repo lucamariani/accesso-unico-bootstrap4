@@ -14,7 +14,7 @@
   image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
   image_red: /assets/images/icons/rosso_pratica.png
 
-- name: certificati attestati accreditamenti
+- name: certificati attestati abilitazioni
   metaname: certificazioni
   image_red_circle: /assets/images/icons/cerchio_rosso_pratica.png
   image_red: /assets/images/icons/rosso_pratica.png
