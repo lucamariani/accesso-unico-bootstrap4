@@ -1,4 +1,4 @@
-La richiesta corredata di curriculum e i documenti necessari può essere presentata durante tutto il corso dell’anno:
+La richiesta corredata di curriculum e i documenti necessari può essere presentata durante tutto il corso dell’anno secondo le modalità specificate nei vari avvisi pubblici periodici:
 
 •	con invio a **mezzo posta, mediante raccomandata A/R**, all’indirizzo indicato nel modulo di richiesta, in busta chiusa recante la dicitura: “Avviso pubblico per la presentazione di domanda per l’abilitazione all’esercizio della professione di acconciatore”
 

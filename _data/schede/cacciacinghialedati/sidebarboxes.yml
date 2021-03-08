@@ -6,22 +6,19 @@
 - title: Vai al servizio
   type: calltoaction
   linktitle: battute di caccia
-  linkurl: http://www.regione.umbria.it/web/servizi/battute
+  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Battute
 
 - title: Vai al servizio
   type: calltoaction
   linktitle: squadre
-  linkurl: http://www.regione.umbria.it/web/servizi/squadre
+  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Squadre
 
 - title: Vai al servizio
   type: calltoaction
   linktitle: esemplari
-  linkurl: http://applicazioni.regione.umbria.it/esemplari
+  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Esemplari
 
 - title: Vai al servizio
   type: calltoaction
   linktitle: analisi su mappa
-  linkurl: http://www.regione.umbria.it/web/servizi/analisi-su-mappa
-
-
-  
+  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=cockpit_gis_distr
