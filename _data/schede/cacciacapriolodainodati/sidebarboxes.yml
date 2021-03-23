@@ -3,14 +3,14 @@
   linktitle: vai al servizio
   linkurl: https://cacciadiselezione.regione.umbria.it/cacciadiselezione/
 
-- title: Manualistica
-  file: manualistica.md
-  icon: download
-
 - title: Modulistica
   file: modulistica.md
   icon: download
 
+- title: Documenti
+  file: documenti.md
+  utenza: files
+
 - title: Servizi collegati
   file: servizicollegati.md
-  icon: link  
+  icon: link
