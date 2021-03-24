@@ -4,4 +4,4 @@
 <option value="/docs/modulistica/Istruzioni FED-Umbria.pdf">Istruzioni per la registrazione in FED-Umbria</option>
 {% endcapture %}
 
-{% include modulistica_select_include.html options=options %}
+{% include manualistica_select_include.html options=options %}
