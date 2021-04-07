@@ -10,5 +10,6 @@ subtitle: caccia, venatorio, cacciatore, capriolo, daino, battuta
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/cacciacapriolodainodati/cittadini/index.html
 ---

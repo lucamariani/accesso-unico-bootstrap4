@@ -14,5 +14,8 @@ accordion_open: true
 status: BETA
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/piani_regolatori/pa/index.html
+    - schede/piani_regolatori/intermediari/index.html
+    - schede/piani_regolatori/cittadini/index.html
 ---

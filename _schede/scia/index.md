@@ -13,5 +13,7 @@ accordion_open: false
 status: BETA
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/scia/intermediari/index.html
+    - schede/scia/cittadini/index.html
 ---

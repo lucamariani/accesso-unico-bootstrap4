@@ -12,4 +12,7 @@ subtitle: stallone, pubblica, privata, equini, monta equina naturale, riproduzio
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/autstazionemontaequina/cittadini/index.html
+    - schede/autstazionemontaequina/imprese/index.html
 ---

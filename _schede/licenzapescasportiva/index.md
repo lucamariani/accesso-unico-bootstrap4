@@ -10,5 +10,6 @@ subtitle: pesca, ittico, pescatore, tassa, pagamento
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/licenzapescasportiva/cittadini/index.html
 ---

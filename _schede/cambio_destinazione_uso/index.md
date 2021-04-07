@@ -12,5 +12,8 @@ subtitle: mutamento della destinazione di appartamenti, uffici, magazzini, negoz
 status: BETA
 statusLink: /onboard
 evidenza: 0
-
+redirect_from:
+    - schede/cambio_destinazione_uso/cittadini/index.html
+    - schede/cambio_destinazione_uso/imprese/index.html
+    - schede/cambio_destinazione_uso/intermediari/index.html
 ---

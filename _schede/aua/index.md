@@ -12,4 +12,9 @@ subtitle: scarichi, emissioni in atmosfera, utilizzazione agronomica, acustica, 
 status: Livello2,3
 statusLink: /onboard
 evidenza: 15
+redirect_from:
+    - schede/aua/cittadini/index.html
+    - schede/aua/imprese/index.html
+    - schede/aua/intermediari/index.html
+    - schede/aua/pa/index.html
 ---

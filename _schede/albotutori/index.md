@@ -10,4 +10,6 @@ subtitle: albo, medici tutori, corsi formazione, medicina generale, servizio san
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/albotutori/cittadini/index.html
 ---

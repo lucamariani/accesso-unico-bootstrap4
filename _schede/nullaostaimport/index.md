@@ -12,5 +12,7 @@ subtitle: servizi fitosanitari, RUOP, sementi, importazione, extra Ue, servizio 
 status: Livello2
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/nullaostaimport/imprese/index.html
+    - schede/nullaostaimport/intermediari/index.html
 ---

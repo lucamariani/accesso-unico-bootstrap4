@@ -10,4 +10,6 @@ subtitle: elenco, coordinatori, docenti, corsi formazione, medicina generale, se
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/elencocoorddocenti/cittadini/index.html
 ---

@@ -13,5 +13,8 @@ subtitle: conferenza unificata, moduli, suape, edilizia, attività commerciali e
 status: Livello2
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/modulistica-unificata/imprese/index.html
+    - schede/modulistica-unificata/intermediari/index.html
+    - schede/modulistica-unificata/pa/index.html
 ---

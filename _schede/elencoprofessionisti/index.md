@@ -13,5 +13,8 @@ subtitle: opere pubbliche, affidamento diretto, architettura, ingegneria
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/elencoprofessionisti/imprese/index.html
+    - schede/elencoprofessionisti/intermediari/index.html
+    - schede/elencoprofessionisti/pa/index.html
 ---

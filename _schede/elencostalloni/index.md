@@ -13,5 +13,7 @@ subtitle: stallone, equini, asini, stazione di monta naturale
 status: Livello2
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/elencostalloni/imprese/index.html
+    - schede/elencostalloni/cittadini/index.html
 ---

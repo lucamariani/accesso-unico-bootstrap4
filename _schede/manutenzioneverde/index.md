@@ -13,5 +13,7 @@ subtitle: servizi fitosanitari, costruzione del verde, attestato, idoneità, res
 status: Livello2
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/manutenzioneverde/imprese/index.html
+    - schede/manutenzioneverde/cittadini/index.html
 ---

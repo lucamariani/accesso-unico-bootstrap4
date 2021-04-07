@@ -12,4 +12,9 @@ subtitle: progetti, rischio sismico, costruzioni, edilizia
 status: Livello2,3
 statusLink: /onboard
 evidenza: 10
+redirect_from:
+    - schede/archiviosismica/cittadini/index.html
+    - schede/archiviosismica/imprese/index.html
+    - schede/archiviosismica/intermediari/index.html
+    - schede/archiviosismica/pa/index.html
 ---

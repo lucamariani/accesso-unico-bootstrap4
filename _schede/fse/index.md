@@ -10,5 +10,6 @@ subtitle: FSE, referti, prescrizioni mediche, vaccinazioni, storia clinica, stat
 status: Livello4
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/fse/cittadini/index.html
 ---

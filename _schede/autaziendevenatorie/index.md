@@ -12,4 +12,6 @@ subtitle: caccia, fauna, immissioni, prelievi, territorio, autorizzazioni
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/autaziendevenatorie/cittadini/index.html
 ---

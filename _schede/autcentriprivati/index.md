@@ -12,4 +12,6 @@ subtitle: caccia, fauna, riproduzione, autorizzazione
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/autcentriprivati/cittadini/index.html
 ---
