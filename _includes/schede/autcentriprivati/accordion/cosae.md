@@ -1,12 +1,5 @@
 Un provvedimento autorizzato dalla Regione per consentire al richiedente l'**allevamento** (a scopo alimentare o a scopo ripopolamento o a scopo amatoriale e ornamentale di fauna selvatica) e l'**incremento** delle seguenti **specie**: anatidi, lepre comune, fagiano, starna, pernice rossa, coturnice, quaglia, muflone, daino, capriolo, cinghiale e cervo.
 
-
-I centri di riproduzione di fauna selvatica:
-
-•	Sono individuati nel Piano faunistico venatorio regionale
-
-•	Sono istituiti dalla Regione preferibilmente su terreni demaniali e hanno per **scopo** la **riproduzione di fauna selvatica autoctona allo stato naturale**, da utilizzare per il ripopolamento del territorio regionale, ai fini della ricostituzione e dell'incremento del patrimonio faunistico.
-
 In tali centri **è vietata l'attività venatoria**.
 
 La **superficie dei Centri privati** può variare fra un minimo di 20 ettari (10 nelle zone montane svantaggiate) e un massimo di 90; complessivamente essi non possono occupare più dell’1% della SASP (superficie agro - silvo - pastorale) regionale.

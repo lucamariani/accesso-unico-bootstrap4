@@ -1,8 +1,11 @@
 L’**Autorità competente** ai fini del rilascio, rinnovo e cessazione dell’autorizzazione è la **Regione Umbria**.
 
-•	La **domanda di autorizzazione** deve essere inoltrata al Servizio Foreste, Montagna, Sistemi naturalistici e Faunistica-venatoria all’indirizzo Pec: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it);
+L’Istanza, completa della relativa documentazione, va presentata a Regione Umbria secondo le seguenti modalità:
 
-•	Il **Rinnovo dell’autorizzazione** deve essere inoltrato al Servizio Foreste, Montagna, Sistemi naturalistici e Faunistica-venatoria, **almeno tre mesi prima della scadenza**, all’indirizzo Pec: [direzioneagricoltura.regione@postacert.umbria.it.](direzioneagricoltura.regione@postacert.umbria.it)
+1. utilizzando il servizio online che permette la compilazione e la trasmissione dell’istanza raggiungibile al seguente indirizzo: https://serviziinrete.regione.umbria.it
+
+2. trasmessa via PEC all’indirizzo: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it).
+
 
 La domanda di nuova autorizzazione di centro privato di riproduzione di fauna selvatica allo stato naturale deve essere corredata dei seguenti documenti:
 
