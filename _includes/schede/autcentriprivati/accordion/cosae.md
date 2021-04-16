@@ -9,5 +9,4 @@ La selvaggina disponibile è acquistata con **diritto di prelazione dagli Enti p
 **Nei centri organizzati in forma di azienda agricola, è consentito il prelievo** di animali allevati nel centro da parte del titolare dell'impresa agricola, di dipendenti della stessa o di persone nominativamente indicate.
 
 I centri privati di riproduzione di fauna selvatica devono essere delimitati da **tabelle di forma rettangolare**, delle dimensioni di cm 25 per cm 33, di colore bianco, recanti in nero la scritta «Divieto di caccia» e la denominazione dell'ambito territoriale cui si riferiscono.
-
 Le suddette tabelle devono essere visibili l'una dall'altra.
