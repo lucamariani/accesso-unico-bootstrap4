@@ -10,5 +10,6 @@ subtitle: licenza di caccia, anagrafica cacciatori, attività venatoria, pagamen
 status: Livello3
 statusLink: /onboard
 evidenza: 30
-lang: it
+redirect_from:
+    - schede/tassaeserciziovenatorio/cittadini/index.html
 ---

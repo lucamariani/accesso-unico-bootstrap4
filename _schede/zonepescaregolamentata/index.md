@@ -10,5 +10,6 @@ subtitle: tesserino no kill, pesca, ittico, permesso, tratti, giornaliero, preno
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/zonepescaregolamentata/cittadini/index.html
 ---

@@ -13,4 +13,8 @@ subtitle: barbiere, parrucchiere, coiffeur, salone
 status: ALFA
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/acconciatore/cittadini/index.html
+    - schede/acconciatore/imprese/index.html
+    - schede/acconciatore/intermediari/index.html
 ---

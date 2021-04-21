@@ -5,20 +5,9 @@
 
 - title: Vai al servizio
   type: calltoaction
-  linktitle: battute di caccia
-  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Battute
+  linktitle: statistiche caccia al cinghiale in battuta
+  linkurl: https://das.regione.umbria.it/knowage/public/servlet/AdapterHTTP?ACTION_NAME=EXECUTE_DOCUMENT_ACTION&OBJECT_LABEL=DASH_CA_BATT_CINGHIALE&TOOLBAR_VISIBLE=false&ORGANIZATION=FAUNA&NEW_SESSION=true&PARAMETERS=link%3D%26link_field_visible_description%3D&DOCUMENT_IS_PUBLIC=true
 
-- title: Vai al servizio
-  type: calltoaction
-  linktitle: squadre
-  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Squadre
-
-- title: Vai al servizio
-  type: calltoaction
-  linktitle: esemplari
-  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=6_4_Esemplari
-
-- title: Vai al servizio
-  type: calltoaction
-  linktitle: analisi su mappa
-  linkurl: https://das.regione.umbria.it/knowagesdk/viewDocument.jsp?targetDocumentLabel=cockpit_gis_distr
+- title: Servizi collegati
+  file: servizicollegati.md
+  icon: link

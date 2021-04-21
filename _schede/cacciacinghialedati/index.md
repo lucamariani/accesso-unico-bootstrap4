@@ -10,5 +10,9 @@ subtitle: caccia, venatorio, cacciatore, cinghiale, battuta
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/cacciacinghialedati/cittadini/index.html
+    - schede/cacciacinghialedati/imprese/index.html
+    - schede/cacciacinghialedati/intermediari/index.html
+    - schede/cacciacinghialedati/pa/index.html
 ---

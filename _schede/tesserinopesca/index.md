@@ -10,5 +10,6 @@ subtitle: segnacatture, trota, diario, pagamento, licenza
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/tesserinopesca/cittadini/index.html
 ---

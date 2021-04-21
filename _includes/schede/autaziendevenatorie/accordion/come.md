@@ -1,4 +1,8 @@
-Il richiedente, a seconda delle sue esigenze, può inoltrare la domanda di autorizzazione alla Regione Umbria compilando l’apposito modulo e inviandolo via Pec:  [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it) al Servizio Foreste, Montagna, Sistemi naturalistici e Faunistica-venatoria.
+L’Istanza, completa della relativa documentazione, va presentata a Regione Umbria secondo le seguenti modalità:
+
+1. utilizzando il **servizio online** che permette la compilazione e la trasmissione dell’istanza raggiungibile al seguente indirizzo: https://serviziinrete.regione.umbria.it
+
+2. trasmessa **via PEC** all’indirizzo: [direzioneagricoltura.regione@postacert.umbria.it](direzioneagricoltura.regione@postacert.umbria.it).
 
 La richiesta deve essere corredata dai seguenti documenti:
 

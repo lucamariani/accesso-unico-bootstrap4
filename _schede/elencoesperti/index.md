@@ -12,5 +12,7 @@ subtitle: commissione comunale, qualità architettonica, paesaggio
 status: Livello2
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/elencoesperti/intermediari/index.html
+    - schede/elencoesperti/pa/index.html
 ---

@@ -1,14 +1,16 @@
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: vai al servizio
+  linkurl: https://serviziinrete.regione.umbria.it/Servizi/RicercaServizi?id_ente=1&id_dipartimento=4&nome_famiglia=Istituti%20privati&form_id=Comunicazione_Semplice1
 
 - title: Modulistica
   file: modulistica.md
   icon: download
 
+- title: Servizi collegati
+  file: servizicollegati.md
+  icon: link
 
 - title: Documenti
   file: documenti.md
   icon: files
-
-
-- title: Servizi collegati
-  file: servizicollegati.md
-  icon: link

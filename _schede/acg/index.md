@@ -12,4 +12,8 @@ subtitle: emissioni in atmosfera, ridotto inquinamento, procedura semplificata, 
 status: Livello2
 statusLink: /onboard
 evidenza: 0
+redirect_from:
+    - schede/acg/cittadini/index.html
+    - schede/acg/imprese/index.html
+    - schede/acg/intermediari/index.html
 ---

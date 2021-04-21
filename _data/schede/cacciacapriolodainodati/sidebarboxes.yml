@@ -1,0 +1,16 @@
+- title: Vai al servizio
+  type: calltoaction
+  linktitle: vai al servizio
+  linkurl: https://cacciadiselezione.regione.umbria.it/cacciadiselezione/
+
+- title: Modulistica
+  file: modulistica.md
+  icon: download
+
+- title: Documenti
+  file: documenti.md
+  utenza: files
+
+- title: Servizi collegati
+  file: servizicollegati.md
+  icon: link

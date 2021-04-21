@@ -12,5 +12,7 @@ subtitle: servizi fitosanitari, certificato fitosanitario, richiesta ispezione, 
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/certificazionefitosanitaria/cittadini/index.html
+    - schede/certificazionefitosanitaria/imprese/index.html
 ---

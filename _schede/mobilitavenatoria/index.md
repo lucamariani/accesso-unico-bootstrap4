@@ -10,5 +10,6 @@ subtitle: caccia, selvaggina, migratoria, cacciatore, mobilità
 status: Livello3
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/mobilitavenatoria/cittadini/index.html
 ---

@@ -15,5 +15,9 @@ accordion_open: true
 status: BETA
 statusLink: /onboard
 evidenza: 0
-lang: it
+redirect_from:
+    - schede/sportellisuape/pa/index.html
+    - schede/sportellisuape/intermediari/index.html
+    - schede/sportellisuape/cittadini/index.html
+    - schede/sportellisuape/imprese/index.html
 ---
